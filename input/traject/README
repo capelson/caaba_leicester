@@ -1,0 +1,20 @@
+Please read nml/caaba_traject.nml for more information on how to use the
+example files in this directory.
+
+------------------------------------------------------------------------------
+Documentation for model developers
+------------------------------------------------------------------------------
+
+example files from /ptmp/hriede/BACKUP_mpcdata_20170330/LAG_5h_windx1.1/
+
+SPEC/B192/20061214_176_MNL_CAN_EMAC/\
+20061214_176_MNL_CAN_EMAC_20061214_1400-20061214_140005.spec.nc
+-> init_spec
+
+WORK/lsl/20061214_176_MNL_CAN_EMAC/\
+20061214_1400/20061214_176_MNL_CAN_EMAC_20061214_1400-20061214_140005.nc
+-> input_physc
+
+JVAL/B192/20061214_176_MNL_CAN_EMAC/\
+20061214_176_MNL_CAN_EMAC_20061214_1400-20061214_140005.jval.nc
+-> input_jval

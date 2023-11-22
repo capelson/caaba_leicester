@@ -1,0 +1,83 @@
+******************************************************************************
+USAGE
+******************************************************************************
+
+./caaba_graph.py -i myfile.ini
+
+Here, myfile.ini is the configuration file that determines what to do.
+Examples are:
+
+- def_som.ini: take CAABA/MECCA results for sulfur mechanism and write a
+  *.xml.gz file in graph-tool format
+
+- S.ini: read sulfur graph and show the whole sulfur mechanism
+
+- S_DMSO_to_SO2.ini: read sulfur graph and show only the reactions
+  involved in the oxidation of DMSO to SO2
+
+- S_DMS_to_SO2_maxflow.ini: read sulfur graph and show the maximum flow
+  of the reactions involved in the oxidation of DMS to SO2
+
+- S_info.ini: print info about sulfur mechanism
+
+- example.ini: example config (*.ini) file
+
+- S_interactive.ini: create interactive window for sulfur mechanism
+
+******************************************************************************
+GRAPH-TOOL SOFTWARE
+******************************************************************************
+
+https://graph-tool.skewed.de/
+
+- installation:
+  https://git.skewed.de/count0/graph-tool/wikis/installation-instructions
+  - edit /etc/apt/sources.list
+    - add the line:
+      deb [ arch=amd64 ] http://downloads.skewed.de/apt bionic main
+  sudo apt-key adv --keyserver pgp.skewed.de --recv-key 612DEFB798507F25
+  apt-key list
+  sudo apt-get update
+  sudo apt-get install python3-graph-tool
+
+******************************************************************************
+INPUT FILES
+******************************************************************************
+
+- all input files are in subdirectories of input/
+
+- mecca.spc:                      elemental composition of the species
+
+- mecca.eqn:                      chemical reactions
+
+- caaba_mecca_rr.nc:              reaction rates
+
+- OIC.dat:                        OIC values (optional, only for skeleton)
+
+******************************************************************************
+PYTHON FILES
+******************************************************************************
+
+- caaba_graph.py:   the user interface
+
+- define_graph.py:  uses CAABA/MECCA output to define a graph of the
+                    chemical mechanism and saves it in *.xml.gz
+
+- analyze_graph.py: analyze the graph and create a new graph,
+                    e.g, showing the maximum flow:
+                    https://graph-tool.skewed.de/static/doc/flow.html
+                    - Edmonds–Karp: algorithm for computing the maximum
+                      flow in a flow network
+                      https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm
+                    - Push-Relabel: Calculate maximum flow on the graph
+                      with the push-relabel algorithm
+                    - Boykov-Kolmogorov: Calculate maximum flow on the
+                      graph with the Boykov-Kolmogorov algorithm
+
+- info_graph.py:    print info about a graph
+
+- show_graph.py:    create a plot of the graph (as a pdf or interactively)
+
+- utils_graph.py:   some utilities
+
+******************************************************************************

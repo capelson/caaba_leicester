@@ -1,0 +1,367 @@
+// ------------------------------- gas.eqn -----------------------------------
+// Time-stamp: <2020-06-15 17:29:30 b302010>
+// ---------------------------------------------------------------------------
+
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, get it from:
+// http://www.gnu.org/copyleft/gpl.html
+
+// ---------------------------------------------------------------------------
+
+// This file contains all gas-phase reactions of the MECCA chemistry module.
+// Use the script 'xmecca' to select reactions and run kpp.
+// The syntax of reaction labels in *.eqn file is explained in the supplement
+// of our paper in Atmos. Chem. Phys. 5, 445-450 (2005)
+
+// Authors:
+// - Rolf von Kuhlmann:
+//   - Tropospheric hydrocarbon chemistry nmhc8.eqn from MATCH
+// - Stefanie Meilinger (Nov 2002):
+//   - Stratospheric heterogeneous chemistry
+//   - Stratospheric Br chemistry from the Mainz Chemical Box Model
+//   - Gas-phase reaction rates updated to JPL2000
+// - Astrid Kerkweg (2003):
+//   - Mbl halogen reactions from MISTRA (von Glasow et al. 2002) added
+// - Rolf Sander (2002-...):
+//   - Stratospheric gas-phase chemistry ECHAM4CHEM (Steil et al. 1998) added
+//   - Reaction mechanisms merged, sorted, labeled, and maintained
+//   - Gas-phase reaction rates updated to JPL2006
+// - Franziska Koellner (2009):
+//   - added uncertainties for reaction constants
+// - Klaus-Dirk Gottschaldt (2011): 
+//   - added HO2 + NO = HNO3, which can be activated with butkovskaya_*.rpl
+
+// ---------------------------------------------------------------------------
+
+// Monte-Carlo information:
+
+// - The uncertainty factor, e.g. "{§1.13}" is placed directly behind
+//   the value of the rate coefficient
+// - Uncertainties refer to only one temperature, usually 298 K.
+//   Uncertainties in the Temperature-dependencies are not considered
+
+// ---------------------------------------------------------------------------
+
+#INLINE F90_GLOBAL
+  !
+  REAL(dp), PUBLIC :: k_adv, k_mixL, k_mixH, k_diff, k_fix, k_resp, discr ! public is for kp4 (sets all private)
+  ! parameters of Farquhar''s discrimination model for C3 plants
+  ! (updated after [2015.TG5.7.Affek&Yakir]
+  REAL(dp), PARAMETER :: eps_13C_dif =  +4.4e-3_dp  ! diffusion step fractionation
+  REAL(dp), PARAMETER :: eps_13C_fix = +29.0e-3_dp  ! ensymatic step fractionation
+
+  ! Parameters included for acid-base equilibria calculation
+  ! used to enable the double use of the aqueous.eqn for liquid
+  ! and aerosol phase.
+  REAL(dp), PARAMETER :: &
+    f_equil_HO2   = 1.e5_dp, f_equil_HONO   = 1.e5_dp, &
+    f_equil_HNO3  = 1.e7_dp, f_equil_HNO4   = 1.e5_dp, &
+    f_equil_HCOOH = 1.e5_dp, f_equil_SO2    = 1.e9_dp, &
+    f_equil_HSO3m = 1.e9_dp, f_equil_HSO4m  = 1.e7_dp, &
+    f_equil_NH3   = 1.e7_dp, f_equil_H2O    = 1.e9_dp, &
+    f_equil_CO2   = 1.e5_dp, f_equil_HCl    = 1.e2_dp, &
+    f_equil_HBr   = 1.e6_dp,                           &
+    f_equil_HOCl  = 1.e2_dp, f_equil_HOBr   = 1.e2_dp, &
+    f_equil_ICl   = 1.e2_dp, f_equil_IBr    = 1.e2_dp, &
+    f_equil_IClBr = 1.e2_dp, f_equil_H2SO4  = 1.e7_dp
+#ENDINLINE {above lines go to messy_mecca_kpp_global}
+
+#INLINE F90_RCONST
+  !
+  ! start of executable statements
+  ! define some rate constants here if the expressions are too long
+  ! for kpp or if they are used more than once
+
+  !* rates are defined by the MC initiator
+  !
+  ! advection rate
+  !*k_adv = 1./(24.*60.*60.) ! 1/s advection, for 350 ppm CO2, yields 350 ppm/day throughput
+  !
+  ! en/de-trainment (mixing) rate
+  !*k_mixL = 0.3 * k_adv
+  !*k_mixH = 0.3 * k_adv
+  !
+  ! diffusion rate (defines chloroplast influx/retrodiffusion)
+  !*k_diff =  0.5*k_adv
+  !
+  ! fixation rate (= k_diff * (Ca/Cc-1) @ steady state [derived following TG5.7.Yakir&Affek]
+  !*k_fix = (370./210.-1)*k_diff
+  !
+  ! respiration rate (defines "breathing" emission flux)
+  !*k_resp = 0.15*k_adv
+  !
+  ! terrestrial 13C discrimination (per mil)
+  !*discr = 19.
+
+#ENDINLINE {above lines go into the SUBROUTINES UPDATE_RCONST and UPDATE_PHOTO}
+
+// also, add the following functions manually to KPP_SUBROUTINE_LIST in kp4.sh:
+#INLINE F90_RATES
+
+  ELEMENTAL REAL(dp) FUNCTION k_SIV_H2O2 (k_298,tdep,cHp,temp)
+    ! special rate function for S(IV) + H2O2
+    REAL,     INTENT(IN) :: k_298 ! k at T = 298.15K
+    REAL,     INTENT(IN) :: tdep  ! temperature dependence
+    REAL(dp), INTENT(IN) :: cHp   ! c(H+)
+    REAL(dp), INTENT(IN) :: temp  ! temperature
+    INTRINSIC :: EXP
+!*  k_SIV_H2O2 = k_298 * EXP(tdep*(1._dp/temp-3.3540E-3_dp)) &
+!*    * cHp / (cHp+0.1_dp)
+  END FUNCTION k_SIV_H2O2
+
+  ELEMENTAL REAL(dp) FUNCTION k_3rd_iupac(temp,cair,k0_300K,n,kinf_300K,m,fc)
+    ! IUPAC three body reaction formula (iupac.pole-ether.fr)
+
+    INTRINSIC :: LOG10
+
+    REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+    REAL(dp), INTENT(IN) :: cair      ! air concentration [molecules/cm3]
+    REAL,     INTENT(IN) :: k0_300K   ! low pressure limit at 300 K
+    REAL,     INTENT(IN) :: n         ! exponent for low pressure limit
+    REAL,     INTENT(IN) :: kinf_300K ! high pressure limit at 300 K
+    REAL,     INTENT(IN) :: m         ! exponent for high pressure limit
+    REAL,     INTENT(IN) :: fc        ! broadening factor (e.g. 0.45 or 0.6...)
+    REAL                 :: nu        ! N
+    REAL                 :: zt_help, k0_T, kinf_T, k_ratio
+
+!*  zt_help = 300._dp/temp
+!*  k0_T    = k0_300K   * zt_help**(n) * cair ! k_0   at current T
+!*  kinf_T  = kinf_300K * zt_help**(m)        ! k_inf at current T
+!*  k_ratio = k0_T/kinf_T
+!*  nu      = 0.75-1.27*LOG10(fc)
+!*  k_3rd_iupac = k0_T/(1._dp+k_ratio)* &
+!*    fc**(1._dp/(1._dp+(LOG10(k_ratio)/nu)**2))
+
+  END FUNCTION k_3rd_iupac
+! mz_dt_20141104+
+
+  ELEMENTAL REAL(dp) FUNCTION alpha_AN(n,ro2type,temp,cair)
+  ! Alkyl nitrate yields dependent on T and P according to
+  ! Arey et al., doi:10.1021/jp003292z
+  ! Teng et al., ACPD 2014 doi:10.5194/acpd-14-6721-2014
+
+    INTRINSIC :: LOG10
+
+    INTEGER,  INTENT(IN) :: n         ! number of heavy atoms (C, O, N) excluding the O-O moiety
+    INTEGER,  INTENT(IN) :: ro2type   ! 1, 2 or 3 for primary, secondary and tertiary RO2
+    REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+    REAL(dp), INTENT(IN) :: cair      ! air concentration [molecules/cm3]
+    REAL, PARAMETER      :: alpha=2.E-22, beta=1.0, Yinf_298K=0.43, &
+                            F=0.41, m0=0., minf=8.0
+    REAL                 :: m ! factor for primary, secondary and tertiary RO2
+    REAL                 :: Y0_298K, Y0_298K_tp, Yinf_298K_t, zeta, k_ratio
+
+! According to Teng et al. the nature of the radical does not affect the nitrate yield
+!!    IF (ro2type = 1) THEN
+!!      m = 0.4              ! primary RO2
+!!    ELSE IF (ro2type = 2) THEN
+!!      m = 1.               ! secondary RO2
+!!    ELSE IF (ro2type = 3) THEN
+!!      m = 0.3              ! tertiary RO2
+!!    ELSE
+!!      m = 1.
+!!    ENDIF
+
+        m = 1.
+
+!*  Y0_298K     = alpha*EXP(beta*n)
+!*  Y0_298K_tp  = Y0_298K * cair * (temp/298)**(-m0)
+!*  Yinf_298K_t = Yinf_298K * (temp/298)**(-minf)
+!*  zeta        = 1/(1+LOG10(Y0_298K_tp/Yinf_298K_t)**2)
+!*  k_ratio     = (Y0_298K_tp/(1+Y0_298K_tp/Yinf_298K_t))*F**zeta
+
+!*  alpha_AN    = k_ratio/(1+k_ratio) * m
+
+  END FUNCTION alpha_AN
+! mz_dt_20141104+
+
+  ELEMENTAL REAL(dp) FUNCTION k_limited (k3rd,cHp)
+    ! diffusion limitation caps 3rd order rate coefficients
+    REAL(dp), INTENT(IN) :: k3rd  ! 3rd order rate coefficient
+    REAL(dp), INTENT(IN) :: cHp   ! c(H+)
+    REAL(dp), PARAMETER  :: DiffLimit = 1E10 ! diffusion limitation [M-1s-1]
+    INTRINSIC :: EXP
+!*  k_limited = 1._dp / ( 1._dp/k3rd + cHp/DiffLimit)
+  END FUNCTION k_limited
+
+  ELEMENTAL REAL(dp) FUNCTION k_N2_O(temp,temp_ion)
+    REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+    REAL(dp), INTENT(IN) :: temp_ion  ! ion temperature [K]
+    REAL                 :: temp_mean
+!*  temp_mean = (temp_ion + temp)/2
+//  IF (temp_mean<1500.) THEN
+!*  k_N2_O = 1.4E-10*(300./temp_mean)**0.44
+//  ELSE
+//  k_N2_O = 5.2E-11*(temp_mean/300.)**0.2
+//  ENDIF
+  END FUNCTION k_N2_O
+
+  ELEMENTAL REAL(dp) FUNCTION k_Op_O2(temp,temp_ion)
+    REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+    REAL(dp), INTENT(IN) :: temp_ion  ! ion temperature [K]
+    REAL(dp)             :: temp_mean
+!*  temp_mean  = .667*temp_ion + .333*temp
+!*  k_Op_O2  = 2.82E-11 - 7.74E-12*(temp_mean/300.) + &
+!*    1.073E-12*(temp_mean/300.)**2 - 5.17E-14*(temp_mean/300.)**3 + &
+!*    9.65E-16*(temp_mean/300.)**4
+  END FUNCTION k_Op_O2
+
+  ELEMENTAL REAL(dp) FUNCTION k_Op_N2(temp,temp_ion)
+    REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+    REAL(dp), INTENT(IN) :: temp_ion  ! ion temperature [K]
+    REAL(dp)             :: temp_mean
+!*  temp_mean = .6363*temp_ion + .3637*temp
+//  IF (temp_mean<1700.) THEN
+!*  k_Op_N2 = 1.533E-12 - 5.92E-13*(temp_mean/300.) + 8.6E-14*(temp_mean/300.)**2
+//  ELSE
+//  k_Op_N2 = 2.73E-12 - 1.155E-12*(temp_mean/300.) + 1.483E-13*(temp_mean/300.)**2
+//  ENDIF
+  END FUNCTION k_Op_N2
+
+//  ! op_pj_20120803+
+//  ! This function has been introduced for sensitivity studies on OClO
+//  ! within the PRACE project CASiMIR (Chemistry of the Atmosphere Simulated
+//  ! with an Earth System Model for the Interpretation of Satellite based
+//  ! Remote sensing observations)
+//  ! To activate it again:
+//  !   1) uncomment it here
+//  !   2) activate it in kp4.sh
+//  !   3) re-create mechanism
+//  ELEMENTAL REAL(dp) FUNCTION uef(temp)
+//
+//    ! uncertainty estimate function 
+//    ! (approximated by 3rd order polynomial) for G7603
+//
+//    REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+//
+//    REAL(dp), PARAMETER :: a0 =  8.4096792e+000_dp
+//    REAL(dp), PARAMETER :: a1 = -6.8484593e-002_dp
+//    REAL(dp), PARAMETER :: a2 =  2.3044184e-004_dp
+//    REAL(dp), PARAMETER :: a3 = -2.7257885e-007_dp
+//
+//    uef = (a0 + a1 * temp + a2 * temp**2 + a3 * temp**3)
+//
+//  END FUNCTION uef
+//  ! op_pj_20120803-
+
+#ENDINLINE {above lines go into MODULE messy_mecca_kpp_Rates}
+
+#INLINE F90_INIT
+  rtol(:) = 1E-2_dp ! relative tolerance
+  atol(:) = 1E1_dp  ! absolute tolerance
+#ENDINLINE {above lines go to the end of subroutine Initialize}
+
+// ---------------------------------------------------------------------------
+
+#EQUATIONS
+
+// ---------------------------------------------------------------------------
+
+// ***** CO2 *****************************************************************
+
+// ===== transport/mixing =====
+// --- advection
+<adv2BL>  RLL = BL             : {%TrG}  k_adv; {&&}
+<adv2UA>   BL = UA             : {%TrG}  k_adv; {&&}
+<adv2CM>   UA = CM             : {%TrG}  k_adv; {&&}
+
+// continuous outflow
+<adv4CM>   CM = Dummy          : {%TrG}  k_adv; {&&}
+
+// --- en/de-trainment
+<entH2UA> RHL = UA             : {%TrG}  k_mixH; {&&}
+<detH4UA>  UA = Dummy          : {%TrG}  k_mixH; {&&}
+<entL2UA> RLL = UA             : {%TrG}  k_mixL; {&&}
+<detL4UA>  UA = Dummy          : {%TrG}  k_mixL; {&&}
+
+// ===== biospheric CO2 interaction =====
+// --- (retro-)diffusion & photosynthetic uptake
+<indif2PC> BL = PC + FXindi    : {%TrG}  k_diff; {&&}
+<redif2BL> PC = BL + FXredi    : {%TrG}  k_diff; {&&}
+<fix4PC>   PC = FC + FXfix     : {%TrG}  k_fix; {&&}
+<adv4FC>   FC = Dummy          : {%TrG}  k_adv; {&&}
+
+// --- respiraton (breathing of plant(/soil?)) ---
+<resp2BL>  RC = BL + FXresp    : {%TrG}  k_resp; {&&}
+
+
+// *** OTHER TRACERS *********************************************************
+
+//* // === throughput (advection) ===
+//* <adv2BL_xxx>  RLL_xxx = BL_xxx : {%TrG}  k_adv; {&&}
+//* <adv2UA_xxx>   BL_xxx = UA_xxx : {%TrG}  k_adv; {&&}
+//* <adv2CM_xxx>   UA_xxx = CM_xxx : {%TrG}  k_adv; {&&}
+//* <adv4CM_xxx>   CM_xxx = Dummy  : {%TrG}  k_adv; {&&}
+//*
+//* // --- mixing via en/de-trainment ---
+//* <entH2UA_xxx> RHL_xxx = UA_xxx : {%TrG}  k_mixH; {&&}
+//* <detH4UA_xxx>  UA_xxx = Dummy  : {%TrG}  k_mixH; {&&}
+//* <entL2UA_xxx> RLL_xxx = UA_xxx : {%TrG}  k_mixL; {&&}
+//* <detL4UA_xxx>  UA_xxx = Dummy  : {%TrG}  k_mixL; {&&}
+//*
+//* // --- emission? ---
+//* //<emis2BL_xxx>       = BL_xxx   : {%TrG}  k_mix; {&&}
+
+// CO
+<adv2BL_CO>    RLL_CO = BL_CO  : {%TrG}  k_adv; {&&}
+<adv2UA_CO>     BL_CO = UA_CO  : {%TrG}  k_adv; {&&}
+<adv2CM_CO>     UA_CO = CM_CO  : {%TrG}  k_adv; {&&}
+<adv4CM_CO>     CM_CO = Dummy  : {%TrG}  k_adv; {&&}
+<entH2UA_CO>   RHL_CO = UA_CO  : {%TrG}  k_mixH; {&&}
+<detH4UA_CO>    UA_CO = Dummy  : {%TrG}  k_mixH; {&&}
+<entL2UA_CO>   RLL_CO = UA_CO  : {%TrG}  k_mixL; {&&}
+<detL4UA_CO>    UA_CO = Dummy  : {%TrG}  k_mixL; {&&}
+
+// O3
+<adv2BL_O3>    RLL_O3 = BL_O3  : {%TrG}  k_adv; {&&}
+<adv2UA_O3>     BL_O3 = UA_O3  : {%TrG}  k_adv; {&&}
+<adv2CM_O3>     UA_O3 = CM_O3  : {%TrG}  k_adv; {&&}
+<adv4CM_O3>     CM_O3 = Dummy  : {%TrG}  k_adv; {&&}
+<entH2UA_O3>   RHL_O3 = UA_O3  : {%TrG}  k_mixH; {&&}
+<detH4UA_O3>    UA_O3 = Dummy  : {%TrG}  k_mixH; {&&}
+<entL2UA_O3>   RLL_O3 = UA_O3  : {%TrG}  k_mixL; {&&}
+<detL4UA_O3>    UA_O3 = Dummy  : {%TrG}  k_mixL; {&&}
+
+// CH4
+<adv2BL_CH4>  RLL_CH4 = BL_CH4 : {%TrG}  k_adv; {&&}
+<adv2UA_CH4>   BL_CH4 = UA_CH4 : {%TrG}  k_adv; {&&}
+<adv2CM_CH4>   UA_CH4 = CM_CH4 : {%TrG}  k_adv; {&&}
+<adv4CM_CH4>   CM_CH4 = Dummy  : {%TrG}  k_adv; {&&}
+<entH2UA_CH4> RHL_CH4 = UA_CH4 : {%TrG}  k_mixH; {&&}
+<detH4UA_CH4>  UA_CH4 = Dummy  : {%TrG}  k_mixH; {&&}
+<entL2UA_CH4> RLL_CH4 = UA_CH4 : {%TrG}  k_mixL; {&&}
+<detL4UA_CH4>  UA_CH4 = Dummy  : {%TrG}  k_mixL; {&&}
+
+// N2O
+<adv2BL_N2O>  RLL_N2O = BL_N2O : {%TrG}  k_adv; {&&}
+<adv2UA_N2O>   BL_N2O = UA_N2O : {%TrG}  k_adv; {&&}
+<adv2CM_N2O>   UA_N2O = CM_N2O : {%TrG}  k_adv; {&&}
+<adv4CM_N2O>   CM_N2O = Dummy  : {%TrG}  k_adv; {&&}
+<entH2UA_N2O> RHL_N2O = UA_N2O : {%TrG}  k_mixH; {&&}
+<detH4UA_N2O>  UA_N2O = Dummy  : {%TrG}  k_mixH; {&&}
+<entL2UA_N2O> RLL_N2O = UA_N2O : {%TrG}  k_mixL; {&&}
+<detL4UA_N2O>  UA_N2O = Dummy  : {%TrG}  k_mixL; {&&}
+
+// SF6
+<adv2BL_SF6>  RLL_SF6 = BL_SF6 : {%TrG}  k_adv; {&&}
+<adv2UA_SF6>   BL_SF6 = UA_SF6 : {%TrG}  k_adv; {&&}
+<adv2CM_SF6>   UA_SF6 = CM_SF6 : {%TrG}  k_adv; {&&}
+<adv4CM_SF6>   CM_SF6 = Dummy  : {%TrG}  k_adv; {&&}
+<entH2UA_SF6> RHL_SF6 = UA_SF6 : {%TrG}  k_mixH; {&&}
+<detH4UA_SF6>  UA_SF6 = Dummy  : {%TrG}  k_mixH; {&&}
+<entL2UA_SF6> RLL_SF6 = UA_SF6 : {%TrG}  k_mixL; {&&}
+<detL4UA_SF6>  UA_SF6 = Dummy  : {%TrG}  k_mixL; {&&}
+
+
+// ----- COMPATIBILITY ISSUES -----
+// <WATER>  H2O = H2O                            : {%StTrG}   0.0; {&&}

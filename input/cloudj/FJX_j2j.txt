@@ -1,0 +1,139 @@
+<--J-value data from cmn_photol_mem: id#, reaction,       factor/fastJX/code(a6)
+   1 O2                                                    1.000 /O2    /
+   2 O3P                                                   1.000 /O3    /
+   3 O1D                                                   1.000 /O3(1D)/
+   4 H2O2                                                  1.000 /H2O2  /
+   5 NO2                                                   1.000 /NO2   /
+   6 NO2O                                                  0.886 /NO3   /
+   7 NOO2                                                  0.114 /NO3   /
+   8 N2O5                                                  1.000 /N2O5  /
+   9 HNO3                                                  1.000 /HNO3  /
+  10 HNO4                                                  1.000 /HNO4  /
+  11 PAN                                                   1.000 /PAN   /
+  12 HONO                                                  1.000 /HNO2  /
+  13 CH3OOH                                                1.000 /CH3OOH/
+  14 COH2                                                  1.000 /H2COb /
+  15 CHOH                                                  1.000 /H2COa /
+  16 CH3CO3H     no map
+  17 CH3CHO                                                1.000 /ActAld/
+  18 CH3COCH3    no map
+  19 MGLYOX                                                1.000 /MGlyxl/
+  20 HOCl                                                  1.000 /HOCl  /
+  21 OClO                                                  1.000 /OClO  /
+  22 Cl2O2                                                 1.000 /Cl2O2 /
+  23 ClNO3                                                 1.000 /ClNO3a/
+  24 ClNO2       no map
+  25 Cl2                                                   1.000 /Cl2   /
+  26 BrO                                                   1.000 /BrO   /
+  27 HOBr                                                  1.000 /HOBr  /
+  28 BrCl                                                  1.000 /BrCl  /
+  29 BrNO3                                                 1.000 /BrNO3 /
+  30 BrNO2       no map
+  31 Br2         no map
+  32 CCl4                                                  1.000 /CCl4  /
+  33 CH3Cl                                                 1.000 /CH3Cl /
+  34 CH3CCl3                                               1.000 /MeCCl3/
+  35 CFCl3                                                 1.000 /CFCl3 /
+  36 CF2Cl2                                                1.000 /CF2Cl2/
+  37 CH3Br                                                 1.000 /CH3Br /
+  38 CF2ClBr     no map
+  39 CF3Br       no map
+  40 CH3I                                                  1.000 /CH3I  /
+  41 C3H7I       no map
+  42 CH2ClI      no map
+  43 CH2I2       no map
+  44 IO          no map
+  45 HOI         no map
+  46 I2          no map
+  47 ICl         no map
+  48 IBr         no map
+  49 INO2        no map
+  50 INO3        no map
+  51 SO2         no map
+  52 SO3         no map
+  53 OCS                                                   1.000 /OCS   /
+  54 CS2         no map
+  55 H2O         no map
+  56 N2O                                                   1.000 /N2O   /
+  57 NO                                                    1.000 /NO    /
+  58 CO2         no map
+  59 HCl         no map
+  60 CHCl2Br     no map
+  61 CHClBr2     no map
+  62 CH2ClBr     no map
+  63 CH2Br2                                                1.000 /CH2Br2/
+  64 CHBr3                                                 1.000 /CHBr3 /
+  65 SF6         no map
+  66 NO3NOO      no map
+  67 ClONO2                                                1.000 /ClNO3b/
+  68 MACR                                                  1.000 /MeAcr /
+  69 MVK                                                   0.600 /MeVK  /
+  70 GLYOX       no map
+  71 HOCH2CHO                                              0.830 /GlyAld/
+  72 CH4         no map
+  73 O2_b1b2     no map
+  74 O2_b1       no map
+  75 O2_b2       no map
+  76 O3PO1D      no map
+  77 O3Pp        no map
+  78 H2O1D       no map
+  79 N2          no map
+  80 N2_b1       no map
+  81 N2_b2       no map
+  82 N2_b3       no map
+  83 NN2D        no map
+  84 NOp         no map
+  85 Op_em       no map
+  86 O2p_em      no map
+  87 Op_O_em     no map
+  88 N2p_em      no map
+  89 Np_N_em     no map
+  90 Np_N2D_em   no map
+  91 N_N2D_em    no map
+  92 Op_em_b     no map
+  93 se_O2_b1    no map
+  94 se_O2_b2    no map
+  95 se_N2_b1    no map
+  96 se_N2_b2    no map
+  97 se_N2_b3    no map
+  98 se_N2_b4    no map
+  99 se_Op_em    no map
+ 100 O2_aurq     no map
+ 101 N2_aurq     no map
+ 102 H2SO4       no map
+ 103 C3O2        no map
+ 104 CH3NO3                                                1.000 /CH3NO3/
+ 105 CH3O2NO2    no map
+ 106 CH3ONO      no map
+ 107 CH3O2       no map
+ 108 HCOOH       no map
+ 109 HO2NO2      no map
+ 110 OHNO3       no map
+ 111 BrONO2      no map
+ 112 CH3OCl      no map
+ 113 MEO2NO2     no map
+ 114 CHF2Cl                                                1.000 /CHF2Cl/
+ 115 F113        no map
+ 116 C2H5NO3     no map
+ 117 NOA         no map
+ 118 MEKNO3      no map
+ 119 BENZAL      no map
+ 120 HOPh3Me2NO2 no map
+ 121 HOC6H4NO2   no map
+ 122 CH3CHO2VINY no map
+ 123 CH3COCO2H   no map
+ 124 IPRCHO2HCO  no map
+ 125 C2H5CHO2HCO no map
+ 126 C2H5CHO2ENOLno map
+ 127 C3H7CHO2HCO no map
+ 128 C3H7CHO2VINYno map
+ 129 PeDIONE24   no map
+ 130 PINAL2HCO   no map
+ 131 PINAL2ENOL  no map
+ 132 CF2ClCFCl2  no map
+ 133 CH3CFCl2    no map
+ 134 CF3CF2Cl    no map
+ 135 CF2ClCF2Cl  no map
+ 136 CHCl3       no map
+ 137 CH2Cl2      no map
+9999

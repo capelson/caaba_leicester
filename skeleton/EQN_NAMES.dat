@@ -1,0 +1,2091 @@
+             O1D + O2 --> O3P + O2
+             O3P + O2 --> O3
+             O3 + O1D --> 2 O2
+             O3 + O3P --> 2 O2
+               H + O2 --> HO2
+               H + O3 --> OH + O2
+             H2 + O1D --> H + OH
+             O3P + OH --> H + O2
+              O3 + OH --> HO2 + O2
+              H2 + OH --> H + H2O
+            O3P + HO2 --> OH + O2
+             O3 + HO2 --> OH + 2 O2
+              H + HO2 --> 2 OH
+              H + HO2 --> H2 + O2
+              H + HO2 --> O3P + H2O
+             OH + HO2 --> H2O + O2
+                2 HO2 --> H2O2 + O2
+            H2O + O1D --> 2 OH
+            H2O2 + OH --> HO2 + H2O
+                2 H2O --> H2OH2O
+               H2OH2O --> 2 H2O
+               N + O2 --> O3P + NO
+             O1D + N2 --> O3P + N2
+            N2O + O1D --> 2 NO
+            N2O + O1D --> O2 + N2
+              O3 + NO --> NO2 + O2
+               N + NO --> O3P + N2
+            O3P + NO2 --> NO + O2
+             O3 + NO2 --> NO3 + O2
+              N + NO2 --> N2O + O3P
+             NO + NO3 --> 2 NO2
+            NO3 + NO2 --> N2O5
+                 N2O5 --> NO3 + NO2
+              NO + OH --> HONO
+             NO + HO2 --> OH + NO2
+             OH + NO2 --> HNO3
+            HO2 + NO2 --> HNO4
+            NO3 + HO2 --> OH + NO2 + O2
+            HONO + OH --> H2O + NO2
+            HNO3 + OH --> NO3 + H2O
+                 HNO4 --> HO2 + NO2
+            HNO4 + OH --> H2O + NO2
+             NH3 + OH --> NH2 + H2O
+             NH2 + O3 --> NH2O + O2
+            NH2 + HO2 --> NH2O + OH
+            NH2 + HO2 --> HNO + H2O
+             NH2 + NO --> OH + HO2 + N2
+             NH2 + NO --> H2O + N2
+            NH2 + NO2 --> N2O + H2O
+            NH2 + NO2 --> NH2O + NO
+            NH2O + O3 --> NH2 + O2
+                 NH2O --> NHOH
+             HNO + OH --> NO + H2O
+           NHOH + HNO --> NH2OH + NO
+            HNO + NO2 --> HONO + NO
+            NHOH + OH --> HNO + H2O
+           NH2OH + OH --> NHOH + H2O
+             HNO + O2 --> NO + HO2
+            CH4 + O1D --> 0.05 H2 + 0.4 H + 0.75 CH3 + 0.25 HCHO + 0.75 OH
+             CH4 + OH --> CH3 + H2O
+           CH3OH + OH --> 0.15 CH3O + 0.85 HCHO + 0.85 HO2 + H2O
+          CH3O2 + HO2 --> CH3OOH + O2
+          CH3O2 + HO2 --> HCHO + H2O + O2
+           NO + CH3O2 --> CH3O + NO2
+           NO + CH3O2 --> CH3NO3
+          CH3O2 + NO3 --> CH3O + NO2 + O2
+                CH3O2 --> CH3O + 0.5 O2
+                CH3O2 --> 0.5 CH3OH + 0.5 HCHO + 0.5 O2
+          CH3OOH + OH --> 0.6 CH3O2 + 0.4 HCHO + 0.4 OH + H2O
+            HCHO + OH --> CO + HO2 + H2O
+           NO3 + HCHO --> HNO3 + CO + HO2
+              CO + OH --> H + CO2
+           HCOOH + OH --> HO2 + H2O + CO2
+             CO + O3P --> CO2
+            CH4 + O3P --> 0.49 H + 0.51 CH3 + 0.49 CH3O + 0.51 OH
+          CH3O2 + NO2 --> CH3O2NO2
+             CH3O2NO2 --> CH3O2 + NO2
+        CH3O2NO2 + OH --> NO3 + HCHO + H2O
+          CH3NO3 + OH --> HCHO + H2O + NO2
+                 CH3O --> HCHO + HO2
+           CH3O + NO2 --> CH3NO3
+           CH3O + NO2 --> HONO + HCHO
+            CH3O + NO --> CH3ONO
+            CH3O + NO --> HNO + HCHO
+           O3 + CH3O2 --> CH3O + 2 O2
+          CH3ONO + OH --> NO + HCHO + H2O
+           HCHO + HO2 --> HOCH2O2
+              HOCH2O2 --> HCHO + HO2
+        HOCH2O2 + HO2 --> 0.5 HOCH2OOH + 0.5 HCOOH + 0.2 OH + 0.2 HO2 + 0.3 H2O ... etc.
+         HOCH2O2 + NO --> HCOOH + HO2 + NO2
+        HOCH2O2 + NO3 --> HCOOH + HO2 + NO2
+              HOCH2O2 --> HCOOH + HO2
+              HOCH2O2 --> 0.5 HOCH2OH + 0.5 HCOOH + 0.5 O2
+        HOCH2OOH + OH --> HOCH2O2 + H2O
+        HOCH2OOH + OH --> HCOOH + OH + H2O
+         HOCH2OH + OH --> HCOOH + HO2 + H2O
+           CH3O2 + OH --> CH3O + HO2
+                CH2OO --> CO + OH + HO2
+          CH2OO + H2O --> HOCH2OOH
+       H2OH2O + CH2OO --> HOCH2OOH + H2O
+           CH2OO + NO --> HCHO + NO2
+          CH2OO + NO2 --> NO3 + HCHO
+           CH2OO + CO --> HCHO + CO2
+        CH2OO + HCOOH --> 2 HCOOH
+         CH2OO + HCHO --> 2 LCARBON
+        CH3OH + CH2OO --> 2 LCARBON
+        CH2OO + CH3O2 --> 2 LCARBON
+          CH2OO + HO2 --> LCARBON
+           CH2OO + O3 --> HCHO + 2 O2
+              2 CH2OO --> 2 HCHO + O2
+        HOCH2O2 + NO2 --> HOCH2O2NO2
+           HOCH2O2NO2 --> HOCH2O2 + NO2
+      HOCH2O2NO2 + OH --> HCOOH + NO3 + H2O
+             CH3 + O2 --> CH3O2
+             CH3 + O3 --> 0.956 H + 0.044 CH3O + 0.956 HCHO + O2
+            CH3 + O3P --> 0.17 H2 + H + 0.17 CO + 0.83 HCHO
+            CH3O + O3 --> CH3O2 + O2
+           CH3O + O3P --> 0.75 CH3 + 0.25 HCHO + 0.25 OH + 0.75 O2
+          O3P + CH3O2 --> CH3O + O2
+           O3P + HCHO --> 0.3 H + 0.7 CO + 0.7 OH + HO2 + 0.3 CO2
+               CH2OOA --> 0.37 CH2OO + 0.63 CO + 0.16 OH + 0.16 HO2 + 0.47 H2O ... etc.
+             HCN + OH --> CN + H2O
+            HCN + O1D --> HCN + O3P
+            HCN + O1D --> NCO + H
+            HCN + O1D --> CN + OH
+            HCN + O3P --> NCO + H
+              CN + O2 --> NCO + O3P
+              CN + O2 --> CO + NO
+             NCO + O2 --> NO + CO2
+            C2H6 + OH --> C2H5O2 + H2O
+            C2H4 + O3 --> CH2OOA + HCHO
+            C2H4 + OH --> HOCH2CH2O2
+         C2H5O2 + HO2 --> C2H5OOH
+          C2H5O2 + NO --> CH3CHO + HO2 + NO2
+          C2H5O2 + NO --> C2H5NO3
+         C2H5O2 + NO3 --> CH3CHO + HO2 + NO2
+               C2H5O2 --> 0.2 C2H5OH + 0.8 CH3CHO + 0.6 HO2
+         C2H5OOH + OH --> C2H5O2 + H2O
+         C2H5OOH + OH --> CH3CHO + OH
+          CH3CHO + OH --> CH3CO + H2O
+          CH3CHO + OH --> HCOCH2O2 + H2O
+         CH3CHO + NO3 --> HNO3 + CH3CO
+         CH3CO2H + OH --> CH3 + H2O + CO2
+         CH3CO3 + HO2 --> CH3 + OH + CO2
+         CH3CO3 + HO2 --> CH3CO3H
+         CH3CO3 + HO2 --> CH3CO2H + O3
+          CH3CO3 + NO --> CH3 + NO2 + CO2
+         CH3CO3 + NO2 --> PAN
+         CH3CO3 + NO3 --> CH3 + NO2 + CO2
+               CH3CO3 --> CH3 + CO2
+               CH3CO3 --> CH3CO2H
+         CH3CO3H + OH --> CH3CO3 + H2O
+             PAN + OH --> CO + HCHO + H2O + NO2
+                  PAN --> CH3CO3 + NO2
+            C2H2 + OH --> GLYOX + OH
+            C2H2 + OH --> HCOOH + CO + HO2
+        HOCH2CHO + OH --> HOCH2CO + H2O
+        HOCH2CHO + OH --> HOCHCHO + H2O
+         HOCH2CO + O2 --> HOCH2CO3
+         HOCH2CO + O2 --> HCHO + OH + CO2
+              HOCHCHO --> GLYOX + HO2
+       HOCH2CHO + NO3 --> HOCH2CO + HNO3
+             HOCH2CO3 --> HCHO + HO2 + CO2
+             HOCH2CO3 --> HOCH2CO2H
+       HOCH2CO3 + HO2 --> HCHO + OH + HO2 + CO2
+       HOCH2CO3 + HO2 --> HOCH2CO3H
+       HOCH2CO3 + HO2 --> HOCH2CO2H + O3
+        HOCH2CO3 + NO --> HCHO + HO2 + NO2 + CO2
+       HOCH2CO3 + NO2 --> PHAN
+       HOCH2CO3 + NO3 --> HCHO + HO2 + NO2 + CO2
+       HOCH2CO2H + OH --> 0.91 HCOCO2H + 0.09 HCHO + HO2 + H2O + 0.09 CO2
+       HOCH2CO3H + OH --> HOCH2CO3 + H2O
+       HOCH2CO3H + OH --> HCOCO3H + HO2
+                 PHAN --> HOCH2CO3 + NO2
+            PHAN + OH --> CO + HCHO + H2O + NO2
+           GLYOX + OH --> HCOCO + H2O
+          GLYOX + NO3 --> HCOCO + HNO3
+                HCOCO --> 2 CO + HO2
+                HCOCO --> HCOCO3
+                HCOCO --> CO + OH + CO2
+               HCOCO3 --> CO + HO2 + CO2
+               HCOCO3 --> HCOCO2H
+         HCOCO3 + HO2 --> CO + OH + HO2 + CO2
+          HCOCO3 + NO --> CO + HO2 + NO2 + CO2
+         HCOCO3 + NO3 --> CO + HO2 + NO2 + CO2
+         HCOCO3 + NO2 --> CO + NO3 + HO2 + CO2
+         HCOCO2H + OH --> CO + HO2 + H2O + CO2
+         HCOCO3H + OH --> HCOCO3 + H2O
+         HCOCO3H + OH --> CO + OH + H2O + CO2
+           HOCH2CH2O2 --> 0.2 ETHGLY + 0.6 HOCH2CH2O + 0.2 HOCH2CHO
+      HOCH2CH2O2 + NO --> 0.75 HOCH2CH2O + 0.5 HCHO + 0.25 HO2 + NO2
+      HOCH2CH2O2 + NO --> ETHOHNO3
+     HOCH2CH2O2 + HO2 --> HYETHO2H
+     HOCH2CH2O2 + HO2 --> HOCH2CH2O + OH
+        ETHOHNO3 + OH --> 0.93 NO3CH2CHO + 0.07 HOCH2CHO + 0.93 HO2 + H2O + 0.07 NO2 ... etc.
+        HYETHO2H + OH --> HOCH2CH2O2 + H2O
+        HYETHO2H + OH --> HOCH2CHO + OH + H2O
+        HYETHO2H + OH --> HOOCH2CHO + HO2 + H2O
+            HOCH2CH2O --> HOCH2CHO + HO2
+            HOCH2CH2O --> 2 HCHO + HO2
+          ETHGLY + OH --> HOCH2CHO + HO2 + H2O
+             HCOCH2O2 --> 0.2 GLYOX + 0.2 HOCH2CHO + 0.6 CO + 0.6 HCHO + 0.6 HO2 ... etc.
+       HCOCH2O2 + HO2 --> HOOCH2CHO
+       HCOCH2O2 + HO2 --> CO + HCHO + OH + HO2
+        HCOCH2O2 + NO --> CO + HCHO + HO2 + NO2
+        HCOCH2O2 + NO --> NO3CH2CHO
+       HCOCH2O2 + NO3 --> CO + HCHO + HO2 + NO2
+       HOOCH2CHO + OH --> HCOCH2O2
+       HOOCH2CHO + OH --> CO + HCHO + OH
+       HOOCH2CHO + OH --> GLYOX + OH
+      HOOCH2CHO + NO3 --> HNO3 + CO + HCHO + OH
+       HOOCH2CO3 + NO --> HCHO + OH + NO2 + CO2
+      HOOCH2CO3 + NO3 --> HCHO + OH + NO2 + CO2
+      HOOCH2CO3 + HO2 --> HCHO + 2 OH + CO2
+      HOOCH2CO3 + HO2 --> HOOCH2CO3H
+      HOOCH2CO3 + HO2 --> HOOCH2CO2H + O3
+            HOOCH2CO3 --> HCHO + OH + CO2
+            HOOCH2CO3 --> HOOCH2CO2H
+      HOOCH2CO3H + OH --> HOOCH2CO3 + H2O
+      HOOCH2CO3H + OH --> HCOCO3H + OH + H2O
+      HOOCH2CO2H + OH --> HCOCO2H + OH + H2O
+           CH2CO + OH --> 0.4 HOOCH2CO2H + 0.6 CO + 0.6 HCHO + 0.6 HO2
+      CH3CHOHOOH + OH --> CH3CO2H + OH
+      CH3CHOHOOH + OH --> CH3CHOHO2
+            CH3CHOHO2 --> CH3CHO + HO2
+         CH3CHO + HO2 --> CH3CHOHO2
+      CH3CHOHO2 + HO2 --> 0.3 CH3CO2H + 0.5 CH3CHOHOOH + 0.2 CH3 + 0.2 HCOOH + 0.2 OH ... etc.
+            CH3CHOHO2 --> CH3 + HCOOH + OH
+       CH3CHOHO2 + NO --> CH3 + HCOOH + OH + NO2
+         C2H5NO3 + OH --> CH3CHO + H2O + NO2
+       NO3CH2CHO + OH --> GLYOX + H2O + NO2
+       NO3CH2CHO + OH --> NO3CH2CO3 + H2O
+      NO3CH2CO3 + HO2 --> HCHO + OH + NO2 + CO2
+       NO3CH2CO3 + NO --> HCHO + 2 NO2 + CO2
+      NO3CH2CO3 + NO2 --> NO3CH2PAN
+            NO3CH2CO3 --> HCHO + NO2 + CO2
+            NO3CH2PAN --> NO3CH2CO3 + NO2
+         C2H5O2 + NO2 --> C2H5O2NO2
+            C2H5O2NO2 --> C2H5O2 + NO2
+       C2H5O2NO2 + OH --> CH3CHO + NO3 + H2O
+           CH3CO + O2 --> CH3CO3
+           CH3CO + O2 --> CO + HCHO + OH
+          C2H5OH + OH --> 0.95 C2H5O2 + 0.05 HOCH2CH2O2 + 0.95 HO2 + H2O
+           CH3CN + OH --> NCCH2O2 + H2O
+           CH3CN + OH --> CH3CO + NO + OH
+          CH3CN + O1D --> CH3CN + O3P
+          CH3CN + O1D --> HCN + 2 H + CO
+          CH3CN + O1D --> 0.5 NCO + 0.5 NCCH2O2 + 0.5 CH3 + 0.5 OH
+         NCCH2O2 + NO --> HCN + HO2 + NO2 + CO2
+        NCCH2O2 + HO2 --> HCN + HO2 + CO2
+         CH2CHOH + OH --> HCOOH + HCHO + OH
+         CH2CHOH + OH --> HOCH2CHO + HO2
+      CH2CHOH + HCOOH --> CH3CHO + HCOOH
+       CH3CHO + HCOOH --> CH2CHOH + HCOOH
+            C3H8 + OH --> IC3H7O2 + H2O
+            C3H8 + OH --> NC3H7O2 + H2O
+            C3H6 + O3 --> 0.16 CH3CHOHOOH + 0.05 CH2CO + 0.09 CH3OH + 0.2 CH4 ... etc.
+            C3H6 + O3 --> CH2OOA + CH3CHO
+            C3H6 + OH --> HYPROPO2
+           C3H6 + NO3 --> PRONO3BO2
+        IC3H7O2 + HO2 --> IC3H7OOH
+         IC3H7O2 + NO --> CH3COCH3 + HO2 + NO2
+         IC3H7O2 + NO --> IC3H7NO3
+              IC3H7O2 --> 0.2 IPROPOL + 0.8 CH3COCH3 + 0.6 HO2
+        IC3H7OOH + OH --> IC3H7O2 + H2O
+        IC3H7OOH + OH --> CH3COCH3 + OH + H2O
+        NC3H7O2 + HO2 --> NC3H7OOH
+         NC3H7O2 + NO --> C2H5CHO + HO2 + NO2
+         NC3H7O2 + NO --> NC3H7NO3
+              NC3H7O2 --> 0.2 NPROPOL + 0.8 CH3COCH3 + 0.6 HO2
+        CH3COCH3 + OH --> CH3COCH2O2 + H2O
+     CH3COCH2O2 + HO2 --> HYPERACET
+     CH3COCH2O2 + HO2 --> CH3CO + HCHO + OH
+      CH3COCH2O2 + NO --> CH3CO + HCHO + NO2
+      CH3COCH2O2 + NO --> NOA
+           CH3COCH2O2 --> 0.2 ACETOL + 0.5 MGLYOX + 0.3 CH3CO + 0.3 HCHO
+       HYPERACET + OH --> CH3COCH2O2 + H2O
+       HYPERACET + OH --> MGLYOX + OH + H2O
+          ACETOL + OH --> MGLYOX + HO2 + H2O
+          MGLYOX + OH --> 0.6 CH3CO + 0.4 CH3 + 1.4 CO + H2O
+        IC3H7NO3 + OH --> CH3COCH3 + NO2
+     CH3COCH2O2 + NO3 --> CH3CO + HCHO + NO2
+             HYPROPO2 --> CH3CHO + HCHO + HO2
+       HYPROPO2 + HO2 --> HYPROPO2H
+       HYPROPO2 + HO2 --> CH3CHO + HCHO + OH + HO2
+        HYPROPO2 + NO --> CH3CHO + HCHO + HO2 + NO2
+        HYPROPO2 + NO --> PROPOLNO3
+       HYPROPO2 + NO3 --> CH3CHO + HCHO + HO2 + NO2
+       HYPROPO2H + OH --> HYPROPO2
+       HYPROPO2H + OH --> ACETOL + OH
+      PRONO3BO2 + HO2 --> PR2O2HNO3
+       PRONO3BO2 + NO --> NOA + HO2 + NO2
+      PRONO3BO2 + NO3 --> NOA + HO2 + NO2
+       PR2O2HNO3 + OH --> PRONO3BO2
+       PR2O2HNO3 + OH --> NOA + OH
+         MGLYOX + NO3 --> HNO3 + CH3CO + CO
+             NOA + OH --> MGLYOX + NO2
+      HOCH2COCHO + OH --> 0.1391 C33CO + 0.8609 HOCH2CO + 0.8609 CO + 0.1391 HO2 ... etc.
+     HOCH2COCHO + NO3 --> HOCH2CO + HNO3 + CO
+       CH3COCO2H + OH --> CH3CO + H2O + CO2
+           CHOCOCH2O2 --> 0.2 HOCH2COCHO + 0.2 C33CO + 0.6 HCOCO + 0.6 HCHO
+      CHOCOCH2O2 + NO --> HCOCO + HCHO + NO2
+     CHOCOCH2O2 + HO2 --> ALCOCH2OOH
+     CHOCOCH2O2 + HO2 --> HCOCO + HCHO + OH
+     CHOCOCH2O2 + NO3 --> HCOCO + HCHO + NO2
+      ALCOCH2OOH + OH --> HOOCH2CO3 + CO + H2O
+      ALCOCH2OOH + OH --> C33CO + OH + H2O
+      ALCOCH2OOH + OH --> CHOCOCH2O2 + H2O
+     ALCOCH2OOH + NO3 --> HOOCH2CO3 + HNO3 + CO
+         HOCH2COCH2O2 --> HOCH2CO + HCHO
+   HOCH2COCH2O2 + HO2 --> HOCH2COCH2OOH
+   HOCH2COCH2O2 + HO2 --> HOCH2CO + HCHO + OH
+    HOCH2COCH2O2 + NO --> HOCH2CO + HCHO + NO2
+   HOCH2COCH2OOH + OH --> HOCH2COCHO + OH
+   HOCH2COCH2OOH + OH --> HOCH2COCH2O2
+   HOCH2COCH2OOH + OH --> HCOCOCH2OOH + HO2
+         CH3CHCO + OH --> 0.21 CH3COCO2H + 0.79 CH3CHO + 0.72 CO + 0.79 HO2 + 0.07 CO2 ... etc.
+       PROPOLNO3 + OH --> ACETOL + NO2
+     CH3COCH2O2 + NO2 --> CH3COCH2O2NO2
+        CH3COCH2O2NO2 --> CH3COCH2O2 + NO2
+   CH3COCH2O2NO2 + OH --> MGLYOX + NO3 + H2O
+        NC3H7OOH + OH --> NC3H7O2 + H2O
+        NC3H7OOH + OH --> C2H5CHO + OH + H2O
+        NC3H7OOH + OH --> C2H5CHO + HO2 + H2O
+         C2H5CHO + OH --> C2H5CO3 + H2O
+        C2H5CHO + NO3 --> C2H5CO3 + HNO3
+              C2H5CO3 --> C2H5O2 + CO2
+              C2H5CO3 --> PROPACID
+        C2H5CO3 + HO2 --> C2H5O2 + OH + CO2
+        C2H5CO3 + HO2 --> PERPROACID
+        C2H5CO3 + HO2 --> PROPACID + O3
+         C2H5CO3 + NO --> C2H5O2 + NO2 + CO2
+        C2H5CO3 + NO2 --> PPN
+                  PPN --> C2H5CO3 + NO2
+        PROPACID + OH --> CH3CHO + H2O + CO2
+      PERPROACID + OH --> C2H5CO3 + H2O
+      PERPROACID + OH --> CH3CHO + H2O + CO2
+             PPN + OH --> CH3CHO + H2O + NO2 + CO2
+       CH3COCO3H + OH --> CH3COCO3 + H2O
+       CH3COCO3 + HO2 --> CH3CO + OH + CO2
+       CH3COCO3 + HO2 --> CH3COCO3H
+        CH3COCO3 + NO --> CH3CO + NO2 + CO2
+       CH3COCO3 + NO2 --> CH3CO + NO3 + CO2
+       CH3COCO3 + NO3 --> CH3CO3 + NO2 + CO2
+             CH3COCO3 --> CH3CO3 + CO2
+           C33CO + OH --> 3 CO + HO2
+         IPROPOL + OH --> CH3COCH3 + HO2 + H2O
+         NPROPOL + OH --> C2H5CHO + HO2 + H2O
+         NPROPOL + OH --> HYPROPO2 + H2O
+        PROPENOL + OH --> CH3CHO + HCOOH + OH
+     PROPENOL + HCOOH --> C2H5CHO + HCOOH
+      C2H5CHO + HCOOH --> PROPENOL + HCOOH
+     HCOCOCH2OOH + OH --> HCOCO + CO + OH + HO2
+       HCOCH2CHO + OH --> HCOCH2CO3
+      HCOCH2CHO + NO3 --> HCOCH2CO3 + HNO3
+            HCOCH2CO3 --> HCOCH2O2 + CO2
+            HCOCH2CO3 --> HCOCH2CO2H
+       HCOCH2CO3 + NO --> HCOCH2O2 + NO2 + CO2
+      HCOCH2CO3 + NO2 --> C3PAN2
+      HCOCH2CO3 + HO2 --> HCOCH2CO3H
+      HCOCH2CO3 + HO2 --> HCOCH2CO2H + O3
+      HCOCH2CO3 + HO2 --> HCOCH2O2 + OH + CO2
+               C3PAN2 --> HCOCH2CO3 + NO2
+          C3PAN2 + OH --> GLYOX + CO + NO2
+      HCOCH2CO2H + OH --> HCOCH2O2 + CO2
+            HOC2H4CO3 --> HOCH2CH2O2 + CO2
+            HOC2H4CO3 --> HOC2H4CO2H
+       HOC2H4CO3 + NO --> HOCH2CH2O2 + NO2 + CO2
+      HOC2H4CO3 + HO2 --> HOC2H4CO3H
+      HOC2H4CO3 + HO2 --> HOCH2CH2O2 + OH + CO2
+      HOC2H4CO3 + HO2 --> HOC2H4CO2H + O3
+      HOC2H4CO3 + NO2 --> C3PAN1
+      HOC2H4CO2H + OH --> HOCH2CH2O2 + CO2
+      HOC2H4CO3H + OH --> HOC2H4CO3
+               C3PAN1 --> HOC2H4CO3 + NO2
+          C3PAN1 + OH --> HOCH2CHO + CO + NO2
+      HCOCH2CO3H + OH --> HCOCH2O2 + H2O + CO2
+       C3DIALOOH + OH --> C33CO + OH
+       C3DIALO2 + HO2 --> C3DIALOOH
+       C3DIALO2 + HO2 --> GLYOX + CO + OH + HO2
+        C3DIALO2 + NO --> GLYOX + CO + HO2 + NO2
+       C3DIALO2 + NO3 --> GLYOX + CO + HO2 + NO2
+             C3DIALO2 --> GLYOX + CO + HO2
+      HCOCOHCO3 + HO2 --> GLYOX + OH + HO2 + CO2
+      HCOCOHCO3 + HO2 --> HCOCOHCO3H
+       HCOCOHCO3 + NO --> GLYOX + HO2 + NO2 + CO2
+      HCOCOHCO3 + NO2 --> HCOCOHPAN
+      HCOCOHCO3 + NO3 --> GLYOX + HO2 + NO2 + CO2
+            HCOCOHCO3 --> GLYOX + HO2 + CO2
+       METACETHO + OH --> CH3CO + CO2
+       HCOCOHPAN + OH --> GLYOX + CO + NO2
+            HCOCOHPAN --> HCOCOHCO3 + NO2
+       C32OH13CO + OH --> HCOCOHCO3
+      HCOCOHCO3H + OH --> HCOCOHCO3
+          NC4H10 + OH --> LC4H9O2 + H2O
+              LC4H9O2 --> C3H7CHO + HO2
+              LC4H9O2 --> 0.636 MEK + 0.364 C2H5O2 + 0.364 CH3CHO + 0.636 HO2 ... etc.
+        LC4H9O2 + HO2 --> LC4H9OOH
+         LC4H9O2 + NO --> C3H7CHO + HO2 + NO2
+         LC4H9O2 + NO --> 0.636 MEK + 0.364 C2H5O2 + 0.364 CH3CHO + 0.636 HO2 ... etc.
+         LC4H9O2 + NO --> LC4H9NO3
+        LC4H9O2 + NO3 --> C3H7CHO + HO2 + NO2
+        LC4H9O2 + NO3 --> 0.636 MEK + 0.364 C2H5O2 + 0.364 CH3CHO + 0.636 HO2 ... etc.
+        LC4H9OOH + OH --> LC4H9O2 + H2O
+        LC4H9OOH + OH --> C3H7CHO + OH + H2O
+        LC4H9OOH + OH --> MEK + OH + H2O
+          IC4H10 + OH --> TC4H9O2 + H2O
+          IC4H10 + OH --> IC4H9O2 + H2O
+              TC4H9O2 --> CH3COCH3 + CH3
+        TC4H9O2 + HO2 --> TC4H9OOH
+         TC4H9O2 + NO --> CH3COCH3 + CH3 + NO2
+         TC4H9O2 + NO --> TC4H9NO3
+        TC4H9OOH + OH --> TC4H9O2 + H2O
+        TC4H9OOH + OH --> CH3COCH3 + HCHO + OH + H2O
+        TC4H9NO3 + OH --> CH3COCH3 + HCHO + H2O + NO2
+              IC4H9O2 --> IPRCHO
+        IC4H9O2 + HO2 --> IC4H9OOH
+         IC4H9O2 + NO --> IPRCHO + NO2
+         IC4H9O2 + NO --> IC4H9NO3
+        IC4H9OOH + OH --> IC4H9O2 + H2O
+        IC4H9OOH + OH --> IPRCHO + OH + H2O
+        IC4H9NO3 + OH --> IPRCHO + H2O + NO2
+             MVK + O3 --> 0.02402 H2O2 + 0.00718 CH3COCO2H + 0.89402 MGLYOX + 0.0728 CH3CO ... etc.
+             MVK + OH --> LHMVKABO2
+             MEK + OH --> LMEKO2 + H2O
+         LMEKO2 + HO2 --> LMEKOOH
+          LMEKO2 + NO --> 0.38 HOCH2CH2O2 + 0.62 CH3CO + 0.62 CH3CHO + 0.38 HCHO ... etc.
+          LMEKO2 + NO --> LMEKNO3
+         LMEKOOH + OH --> LMEKO2 + H2O
+         LMEKOOH + OH --> 0.62 BIACET + 0.38 HOCH2CH2O2 + 0.38 HCHO + OH + H2O ... etc.
+        LC4H9NO3 + OH --> MEK + H2O + NO2
+        LC4H9NO3 + OH --> C3H7CHO + H2O + NO2
+            MPAN + OH --> ACETOL + CO + NO2
+                 MPAN --> MACO3 + NO2
+               LMEKO2 --> 0.079 C2H5O2 + 0.459 HOCH2CH2O2 + 0.462 CH3CO + 0.462 CH3CHO ... etc.
+            MACR + OH --> 0.45 MACO3 + 0.55 MACRO2
+            MACR + O3 --> 0.065 CHOCOCH2O2 + 0.87 MGLYOX + 0.065 CH3CO + 0.3219 CH2OO ... etc.
+           MACR + NO3 --> MACO3 + HNO3
+                MACO3 --> CH3CO + HCHO + CO2
+                MACO3 --> MACO2H
+          MACO3 + HO2 --> MACO2 + OH
+          MACO3 + HO2 --> MACO3H
+          MACO3 + HO2 --> MACO2H + O3
+           MACO3 + NO --> MACO2 + NO2
+          MACO3 + NO2 --> MPAN
+          MACO3 + NO3 --> MACO2 + NO2
+               MACRO2 --> 0.3 MACROH + 0.7 ACETOL + 0.7 HCHO + 0.7 HO2
+         MACRO2 + HO2 --> MACRO + OH
+         MACRO2 + HO2 --> MACROOH
+          MACRO2 + NO --> MACRO + NO2
+          MACRO2 + NO --> MACRNO3
+         MACRO2 + NO3 --> MACRO + NO2
+         MACROOH + OH --> MACRO2
+         MACROOH + OH --> ACETOL + CO + OH
+         MACROOH + OH --> MGLYOX + CO + HO2
+          MACROH + OH --> ACETOL + CO + HO2
+                MACRO --> 0.885 ACETOL + 0.115 MGLYOX + 0.885 CO + 0.115 HCHO ... etc.
+          MACO2H + OH --> ACETOL + HO2 + CO2
+          MACO3H + OH --> ACETOL + OH + CO2
+          MACO3H + OH --> MACO3
+            LHMVKABO2 --> 0.176 BIACETOH + 0.2 HO12CO3C4 + 0.072 MGLYOX + 0.024 CO2H3CHO ... etc.
+      LHMVKABO2 + HO2 --> CH3CO + HOCH2CHO + OH
+      LHMVKABO2 + HO2 --> LHMVKABOOH
+       LHMVKABO2 + NO --> 0.12 MGLYOX + 0.88 CH3CO + 0.88 HOCH2CHO + 0.12 HCHO ... etc.
+       LHMVKABO2 + NO --> MVKNO3
+      LHMVKABO2 + NO3 --> 0.12 MGLYOX + 0.88 CH3CO + 0.88 HOCH2CHO + 0.12 HCHO ... etc.
+      LHMVKABOOH + OH --> LHMVKABO2
+      LHMVKABOOH + OH --> 0.88 BIACETOH + 0.12 CO2H3CHO + OH
+        CO2H3CHO + OH --> CO2H3CO3
+        CO2H3CHO + OH --> CO23C3CHO + HO2 + H2O
+       CO2H3CHO + NO3 --> CO2H3CO3 + HNO3
+             CO2H3CO3 --> MGLYOX + HO2 + CO2
+       CO2H3CO3 + HO2 --> MGLYOX + OH + HO2 + CO2
+       CO2H3CO3 + HO2 --> CO2H3CO2H + O3
+       CO2H3CO3 + HO2 --> CO2H3CO3H
+        CO2H3CO3 + NO --> MGLYOX + HO2 + NO2 + CO2
+       CO2H3CO3 + NO3 --> MGLYOX + HO2 + NO2 + CO2
+       CO2H3CO3H + OH --> CO2H3CO3
+       CO2H3CO3H + OH --> CH3CO + CO + OH + CO2
+       CO2H3CO2H + OH --> CH3COCOCO2H + HO2
+       HO12CO3C4 + OH --> BIACETOH + HO2
+       HO12CO3C4 + OH --> CO2H3CHO + HO2
+                MACO2 --> 0.35 CH3COCH2O2 + 0.65 CH3 + 0.65 CO + 0.65 HCHO + 0.35 OH ... etc.
+            LHMVKABO2 --> 0.12 HOOCH2CHO + 0.88 MGLYOX + 0.12 CH3CO + 0.88 HCHO ... etc.
+               MACRO2 --> MGLYOX + HCHO + OH
+          MVKNO3 + OH --> MGLYOX + HO2 + H2O + NO2 + CO2
+          MVKNO3 + OH --> BIACETOH + H2O + NO2
+         MACRNO3 + OH --> ACETOL + H2O + NO2 + CO2
+         MACRNO3 + OH --> MGLYOX + CO + H2O + NO2
+               MACRO2 --> ACETOL + CO + OH
+        EZCH3CO2CHCHO --> 0.9 CH3COCHCO + 0.01 GLYOX + 0.1 CH3CO + 0.18 CO + OH ... etc.
+  EZCH3CO2CHCHO + HO2 --> CH3COOHCHCHO
+   EZCH3CO2CHCHO + NO --> CH3COCHO2CHO + NO2
+  EZCH3CO2CHCHO + NO3 --> CH3COCHO2CHO + NO2
+        EZCH3CO2CHCHO --> CH3COCHO2CHO
+        EZCHOCCH3CHO2 --> HCOCCH3CO + OH
+   EZCHOCCH3CHO2 + NO --> HCOCO2CH3CHO + NO2
+  EZCHOCCH3CHO2 + HO2 --> HCOCCH3CHOOH
+  EZCHOCCH3CHO2 + NO3 --> HCOCO2CH3CHO + NO2
+        EZCHOCCH3CHO2 --> HCOCO2CH3CHO
+         CH3COOHCHCHO --> CH3COCHO2CHO + OH
+         HCOCCH3CHOOH --> HCOCO2CH3CHO + OH
+    CH3COCHO2CHO + NO --> GLYOX + CH3CO + NO2
+   CH3COCHO2CHO + NO3 --> GLYOX + CH3CO + NO2
+   CH3COCHO2CHO + HO2 --> GLYOX + CH3CO + OH
+         CH3COCHO2CHO --> GLYOX + CH3CO
+         HCOCO2CH3CHO --> MGLYOX + CO + HO2
+    HCOCO2CH3CHO + NO --> MGLYOX + CO + HO2 + NO2
+   HCOCO2CH3CHO + HO2 --> MGLYOX + CO + OH + HO2
+   HCOCO2CH3CHO + NO3 --> MGLYOX + CO + HO2 + NO2
+       HCOCCH3CO + OH --> MGLYOX + CO + HO2
+       CH3COCHCO + OH --> MGLYOX + CO + HO2
+         LMEKNO3 + OH --> 0.38 NO3CH2CHO + 0.62 MGLYOX + 0.38 CH3CO + 0.62 HCHO ... etc.
+       MEPROPENE + OH --> IBUTOLBO2
+       MEPROPENE + O3 --> CH2OOA + CH3COCH3
+       MEPROPENE + O3 --> CH3COCH2O2 + HCHO + OH
+      MEPROPENE + NO3 --> CH3COCH3 + HCHO + NO2
+            IBUTOLBO2 --> CH3COCH3 + HCHO + HO2
+      IBUTOLBO2 + HO2 --> IBUTOLBOOH
+      IBUTOLBO2 + HO2 --> CH3COCH3 + HCHO + OH + HO2
+       IBUTOLBO2 + NO --> CH3COCH3 + HCHO + HO2 + NO2
+       IBUTOLBO2 + NO --> IBUTOLBNO3
+      IBUTOLBO2 + NO3 --> CH3COCH3 + HCHO + HO2 + NO2
+      IBUTOLBOOH + OH --> IBUTOLBO2
+      IBUTOLBOOH + OH --> CH3COCH3 + HCHO + HO2
+      IBUTOLBNO3 + OH --> CH3COCH3 + HCHO + HO2 + NO2
+         BUT1ENE + OH --> LBUT1ENO2
+         BUT1ENE + O3 --> 0.5 C2H5CHO + 0.5 H2O2 + 0.5 CH3CHO + 0.5 CO + HCHO ... etc.
+         BUT1ENE + O3 --> CH2OOA + C2H5CHO
+        BUT1ENE + NO3 --> C2H5CHO + HCHO + NO2
+            LBUT1ENO2 --> C2H5CHO + HCHO + HO2
+      LBUT1ENO2 + HO2 --> LBUT1ENOOH
+      LBUT1ENO2 + HO2 --> C2H5CHO + HCHO + OH + HO2
+       LBUT1ENO2 + NO --> C2H5CHO + HCHO + HO2 + NO2
+       LBUT1ENO2 + NO --> LBUT1ENNO3
+      LBUT1ENO2 + NO3 --> C2H5CHO + HCHO + HO2 + NO2
+      LBUT1ENOOH + OH --> LBUT1ENO2
+      LBUT1ENOOH + OH --> C2H5CO3 + HCHO + HO2
+      LBUT1ENNO3 + OH --> C2H5CHO + CO + HO2 + NO2
+        CBUT2ENE + OH --> BUT2OLO2
+        CBUT2ENE + O3 --> 0.16 CH3CHOHOOH + 0.05 CH2CO + 0.09 CH3OH + 0.2 CH4 ... etc.
+       CBUT2ENE + NO3 --> 2 CH3CHO + NO2
+        TBUT2ENE + OH --> BUT2OLO2
+        TBUT2ENE + O3 --> 0.16 CH3CHOHOOH + 0.05 CH2CO + 0.09 CH3OH + 0.2 CH4 ... etc.
+       TBUT2ENE + NO3 --> 2 CH3CHO + NO2
+             BUT2OLO2 --> C2H5CHO + HCHO + HO2
+       BUT2OLO2 + HO2 --> BUT2OLOOH
+       BUT2OLO2 + HO2 --> 2 CH3CHO + OH + HO2
+        BUT2OLO2 + NO --> 2 CH3CHO + HO2 + NO2
+        BUT2OLO2 + NO --> BUT2OLNO3
+       BUT2OLO2 + NO3 --> 2 CH3CHO + HO2 + NO2
+       BUT2OLOOH + OH --> BUT2OLO2
+       BUT2OLOOH + OH --> LMEKOOH + HO2
+       BUT2OLOOH + OH --> BUT2OLO + OH
+       BUT2OLNO3 + OH --> LMEKNO3 + HO2
+         BUT2OLO + OH --> BIACET + HO2
+          IPRCHO + OH --> IPRCO3 + H2O
+         IPRCHO + NO3 --> IPRCO3 + HNO3
+               IPRCO3 --> IC3H7O2 + CO2
+         IPRCO3 + HO2 --> PERIBUACID
+         IPRCO3 + HO2 --> IC3H7O2 + OH + CO2
+         IPRCO3 + NO2 --> PIPN
+          IPRCO3 + NO --> IC3H7O2 + NO2 + CO2
+      PERIBUACID + OH --> IPRCO3 + H2O
+      PERIBUACID + OH --> CH3COCH3 + H2O + CO2
+                 PIPN --> IPRCO3 + NO2
+            PIPN + OH --> CH3COCH3 + NO2 + CO2
+       MPROPENOL + OH --> CH3COCH3 + HCOOH + OH
+    MPROPENOL + HCOOH --> IPRCHO + HCOOH
+       IPRCHO + HCOOH --> MPROPENOL + HCOOH
+         BUTENOL + OH --> C2H5CHO + HCOOH + OH
+      BUTENOL + HCOOH --> C3H7CHO + HCOOH
+      C3H7CHO + HCOOH --> BUTENOL + HCOOH
+            HVMK + OH --> MGLYOX + HCOOH + OH
+         HVMK + HCOOH --> CO2C3CHO + HCOOH
+     CO2C3CHO + HCOOH --> HVMK + HCOOH
+            HMAC + OH --> MGLYOX + HCOOH + OH
+         HMAC + HCOOH --> IBUTDIAL + HCOOH
+     IBUTDIAL + HCOOH --> HMAC + HCOOH
+        CO2C3CHO + OH --> CH3COCH2O2 + H2O + CO2
+       CO2C3CHO + NO3 --> HNO3 + CH3COCH2O2 + CO2
+        IBUTDIAL + OH --> CH3CHO + CO + HO2 + H2O + CO2
+       IBUTDIAL + NO3 --> HNO3 + CH3CHO + CO + HO2 + CO2
+             BIACETO2 --> CH3CO + CO + HCHO
+       BIACETO2 + HO2 --> BIACETOOH
+        BIACETO2 + NO --> CH3CO + CO + HCHO + NO2
+       BIACETOOH + OH --> CO23C3CHO + OH
+       BIACETOOH + OH --> BIACETO2
+          C44O2 + HO2 --> C44OOH
+           C44O2 + NO --> HCOCH2CHO + HO2 + NO2 + CO2
+                C44O2 --> HCOCH2CHO + HO2 + CO2
+          C44OOH + OH --> C44O2
+            CHOC3COO2 --> HCOCH2CO3 + HCHO
+      CHOC3COO2 + HO2 --> C413COOOH
+       CHOC3COO2 + NO --> HCOCH2CO3 + HCHO + NO2
+       C413COOOH + OH --> CHOC3COO2
+        C4CODIAL + OH --> C312COCO3
+       C4CODIAL + NO3 --> C312COCO3 + HNO3
+            C312COCO3 --> CHOCOCH2O2 + CO2
+      C312COCO3 + HO2 --> C312COCO3H
+      C312COCO3 + HO2 --> CHOCOCH2O2 + OH + CO2
+      C312COCO3 + NO2 --> C312COPAN
+       C312COCO3 + NO --> CHOCOCH2O2 + NO2 + CO2
+      C312COCO3H + OH --> C312COCO3
+            C312COPAN --> C312COCO3 + NO2
+       C312COPAN + OH --> C33CO + CO + NO2
+       CO23C3CHO + OH --> CH3CO + 2 CO
+      CO23C3CHO + NO3 --> HNO3 + CH3CO + 2 CO
+        IBUTALOH + OH --> IPRHOCO3
+       IPRHOCO3 + HO2 --> CH3COCH3 + OH + HO2 + CO2
+       IPRHOCO3 + HO2 --> IPRHOCO2H + O3
+       IPRHOCO3 + HO2 --> IPRHOCO3H
+        IPRHOCO3 + NO --> CH3COCH3 + HO2 + NO2 + CO2
+       IPRHOCO3 + NO2 --> C4PAN5
+       IPRHOCO3 + NO3 --> CH3COCH3 + HO2 + NO2 + CO2
+             IPRHOCO3 --> CH3COCH3 + HO2 + CO2
+             IPRHOCO3 --> IPRHOCO2H
+       IPRHOCO2H + OH --> CH3COCH3 + HO2 + H2O + CO2
+       IPRHOCO3H + OH --> IPRHOCO3
+               C4PAN5 --> IPRHOCO3 + NO2
+          C4PAN5 + OH --> CH3COCH3 + CO + NO2
+                MBOOO --> IPRHOCO2H
+                MBOOO --> IBUTALOH + H2O2
+           MBOOO + CO --> IBUTALOH + CO2
+           MBOOO + NO --> IBUTALOH + NO2
+          MBOOO + NO2 --> IBUTALOH + NO3
+         MALANHY + OH --> MALANHYO2
+      MALDIALOOH + OH --> HOCOC4DIAL + OH
+      MALDIALOOH + OH --> MALDIALO2
+        NC4DCO2H + OH --> MALANHY + NO2
+      CO14O3CO2H + OH --> HCOCH2O2 + 2 CO2
+         BZFUOOH + OH --> BZFUO2
+      HOCOC4DIAL + OH --> CO2C4DIAL + HO2
+     MALDIALCO3 + HO2 --> MALDALCO2H + O3
+     MALDIALCO3 + HO2 --> MALDALCO3H
+     MALDIALCO3 + HO2 --> 0.6 MALANHY + 0.4 GLYOX + 0.4 CO + OH + HO2 + 0.4 CO2 ... etc.
+      MALDIALCO3 + NO --> 0.6 MALANHY + 0.4 GLYOX + 0.4 CO + HO2 + NO2 + 0.4 CO2 ... etc.
+     MALDIALCO3 + NO2 --> MALDIALPAN
+     MALDIALCO3 + NO3 --> 0.6 MALANHY + 0.4 GLYOX + 0.4 CO + HO2 + NO2 + 0.4 CO2 ... etc.
+           MALDIALCO3 --> 0.6 MALANHY + 0.4 GLYOX + 0.4 CO + HO2 + 0.4 CO2
+        BZFUONE + NO3 --> NBZFUO2
+         BZFUONE + O3 --> 0.3125 CO14O3CO2H + 0.1875 CO14O3CHO + 0.1875 H2O2 + 0.5 HCOCH2O2 ... etc.
+         BZFUONE + OH --> BZFUO2
+        NBZFUOOH + OH --> NBZFUO2
+      MALDALCO3H + OH --> MALDIALCO3
+       EPXDLCO2H + OH --> C3DIALO2 + CO2
+       EPXDLCO3 + HO2 --> C3DIALO2 + OH + CO2
+       EPXDLCO3 + HO2 --> EPXDLCO2H + O3
+       EPXDLCO3 + HO2 --> EPXDLCO3H
+        EPXDLCO3 + NO --> C3DIALO2 + NO2 + CO2
+       EPXDLCO3 + NO2 --> EPXDLPAN
+       EPXDLCO3 + NO3 --> C3DIALO2 + NO2 + CO2
+             EPXDLCO3 --> C3DIALO2 + CO2
+      MALNHYOHCO + OH --> 3 CO + HO2 + CO2
+        MALDIAL + NO3 --> MALDIALCO3 + HNO3
+         MALDIAL + O3 --> 0.1125 HCOCO2H + 0.0675 H2O2 + 1.0675 GLYOX + 1.265 CO ... etc.
+         MALDIAL + OH --> 0.17 MALDIALO2 + 0.83 MALDIALCO3
+      MALANHYOOH + OH --> MALNHYOHCO + OH
+      MALDIALPAN + OH --> GLYOX + 2 CO + NO2
+           MALDIALPAN --> MALDIALCO3 + NO2
+      MALANHYO2 + HO2 --> MALANHYOOH
+      MALANHYO2 + HO2 --> HCOCOHCO3 + OH + CO2
+       MALANHYO2 + NO --> HCOCOHCO3 + NO2 + CO2
+      MALANHYO2 + NO3 --> HCOCOHCO3 + NO2 + CO2
+            MALANHYO2 --> HCOCOHCO3 + CO2
+       EPXDLCO3H + OH --> EPXDLCO3
+       CO2C4DIAL + OH --> 4 CO + HO2
+        NBZFUO2 + HO2 --> NBZFUOOH
+        NBZFUO2 + HO2 --> 0.5 NBZFUONE + 0.5 CO14O3CHO + OH + 0.5 HO2 + 0.5 NO2 ... etc.
+         NBZFUO2 + NO --> 0.5 NBZFUONE + 0.5 CO14O3CHO + 0.5 HO2 + 1.5 NO2
+        NBZFUO2 + NO3 --> 0.5 NBZFUONE + 0.5 CO14O3CHO + 0.5 HO2 + 1.5 NO2
+              NBZFUO2 --> 0.5 NBZFUONE + 0.5 CO14O3CHO + 0.5 HO2 + 0.5 NO2
+      MALDALCO2H + OH --> 0.6 MALANHY + 0.4 GLYOX + 0.4 CO + HO2 + 0.4 CO2
+      EPXC4DIAL + NO3 --> EPXDLCO3 + HNO3
+       EPXC4DIAL + OH --> EPXDLCO3
+     MECOACETO2 + HO2 --> MECOACEOOH
+     MECOACETO2 + HO2 --> CH3CO3 + HCHO + OH + CO2
+      MECOACETO2 + NO --> CH3CO3 + HCHO + NO2 + CO2
+     MECOACETO2 + NO3 --> CH3CO3 + HCHO + NO2 + CO2
+           MECOACETO2 --> CH3CO3 + HCHO + CO2
+      CO14O3CHO + NO3 --> HNO3 + HCOCH2O2 + CO + CO2
+       CO14O3CHO + OH --> HCOCH2O2 + CO + CO2
+        NBZFUONE + OH --> BZFUCO + NO2
+         BZFUO2 + HO2 --> BZFUOOH
+         BZFUO2 + HO2 --> CO14O3CHO + OH + HO2
+          BZFUO2 + NO --> CO14O3CHO + HO2 + NO2
+         BZFUO2 + NO3 --> CO14O3CHO + HO2 + NO2
+               BZFUO2 --> CO14O3CHO + HO2
+          BZFUCO + OH --> CO14O3CHO + HO2
+      MALDIALO2 + HO2 --> MALDIALOOH
+      MALDIALO2 + HO2 --> 2 GLYOX + OH + HO2
+       MALDIALO2 + NO --> 2 GLYOX + HO2 + NO2
+      MALDIALO2 + NO3 --> 2 GLYOX + HO2 + NO2
+            MALDIALO2 --> 2 GLYOX + HO2
+        EPXDLPAN + OH --> C33CO + CO + NO2
+             EPXDLPAN --> EPXDLCO3 + NO2
+      MECOACEOOH + OH --> MECOACETO2
+            C5H8 + O3 --> 0.05408 LCARBON + 0.01518 MACO2H + 0.244 MVK + 0.09482 H2O2 ... etc.
+            C5H8 + OH --> 0.63 LISOPAB + 0.3 LISOPCD + 0.07 LISOPEFO2
+           C5H8 + NO3 --> NISOPO2
+         LISOPAB + O2 --> LISOPACO2
+         LISOPAB + O2 --> ISOPBO2
+         LISOPCD + O2 --> LDISOPACO2
+         LISOPCD + O2 --> ISOPDO2
+            LISOPACO2 --> LISOPAB + O2
+              ISOPBO2 --> LISOPAB + O2
+           LDISOPACO2 --> LISOPCD + O2
+              ISOPDO2 --> LISOPCD + O2
+            LISOPACO2 --> C1ODC2O2C4OOH
+            LISOPACO2 --> LZCODC23DBCOOH + HO2
+           LDISOPACO2 --> C1OOHC3O2C4OD
+           LDISOPACO2 --> LZCODC23DBCOOH + HO2
+            LISOPACO2 --> 0.1 ISOPAOH + 0.9 LISOPACO
+      LISOPACO2 + HO2 --> LISOPACOOH
+       LISOPACO2 + NO --> LISOPACO + NO2
+       LISOPACO2 + NO --> LISOPACNO3
+      LISOPACO2 + NO3 --> LISOPACO + NO2
+           LDISOPACO2 --> 0.1 ISOPAOH + 0.9 LDISOPACO
+     LDISOPACO2 + HO2 --> LISOPACOOH
+      LDISOPACO2 + NO --> LDISOPACO + NO2
+      LDISOPACO2 + NO --> LISOPACNO3
+     LDISOPACO2 + NO3 --> LDISOPACO + NO2
+      LISOPACOOH + OH --> LISOPACO2
+      LISOPACOOH + OH --> LZCODC23DBCOOH + HO2
+      LISOPACOOH + OH --> LHC4ACCHO + OH
+      LISOPACOOH + OH --> LIEPOX + OH
+         ISOPAOH + OH --> LHC4ACCHO + HO2
+      LISOPACNO3 + OH --> LISOPACNO3O2
+              ISOPBO2 --> 0.2 ISOPBOH + 0.8 MVK + 0.8 HCHO + 0.8 HO2
+        ISOPBO2 + HO2 --> ISOPBOOH
+        ISOPBO2 + HO2 --> MVK + HCHO + OH + HO2
+         ISOPBO2 + NO --> MVK + HCHO + HO2 + NO2
+         ISOPBO2 + NO --> ISOPBNO3
+        ISOPBO2 + NO3 --> MVK + 0.25 CH3 + 0.75 HCHO + 0.75 HO2 + NO2
+        ISOPBOOH + OH --> LIEPOX + OH
+        ISOPBOOH + OH --> ISOPBO2
+        ISOPBOOH + OH --> MGLYOX + HOCH2CHO
+        ISOPBOOH + O3 --> 0.5668 MACROOH + 0.1368 H2O2 + 0.4332 ACETOL + 0.1591 CH2OO ... etc.
+         ISOPBOH + OH --> MVK + 0.25 CH3 + 0.75 HCHO + 0.75 HO2
+        ISOPBNO3 + OH --> ISOPBDNO3O2
+              ISOPDO2 --> 0.1 ISOPDOH + 0.1 HCOC5 + 0.8 MACR + 0.8 HCHO + 0.8 HO2 ... etc.
+        ISOPDO2 + HO2 --> ISOPDOOH
+        ISOPDO2 + HO2 --> MACR + HCHO + OH + HO2
+         ISOPDO2 + NO --> MACR + HCHO + HO2 + NO2
+         ISOPDO2 + NO --> ISOPDNO3
+        ISOPDO2 + NO3 --> MACR + HCHO + HO2 + NO2
+        ISOPDOOH + OH --> LIEPOX + OH
+        ISOPDOOH + OH --> ISOPDO2
+        ISOPDOOH + OH --> HCOC5 + OH
+        ISOPDOOH + OH --> ACETOL + GLYOX + OH
+        ISOPDOOH + O3 --> BIACETOH + 0.1221 CH2OO + 0.2079 CO + 0.67 HCHO + 1.393 OH ... etc.
+         ISOPDOH + OH --> HCOC5 + HO2
+        ISOPDNO3 + OH --> ISOPBDNO3O2
+              NISOPO2 --> 0.8 NC4CHO + 0.2 LISOPACNO3 + 0.6 HO2
+        NISOPO2 + HO2 --> NISOPOOH
+         NISOPO2 + NO --> NC4CHO + HO2 + NO2
+        NISOPO2 + NO3 --> NC4CHO + HO2 + NO2
+        NISOPOOH + OH --> NC4CHO + OH
+          NC4CHO + OH --> LNISO3
+          NC4CHO + O3 --> 0.27 NOA + 0.1458 HCOCO + 0.027 HCOCO2H + 0.0162 H2O2 ... etc.
+         NC4CHO + NO3 --> LNISO3 + HNO3
+         LNISO3 + HO2 --> LNISOOH
+          LNISO3 + NO --> 0.5 HOCHCHO + NOA + 0.5 CO + 0.5 HO2 + NO2 + 0.5 CO2 ... etc.
+         LNISO3 + NO3 --> 0.5 HOCHCHO + NOA + 0.5 CO + 0.5 HO2 + NO2 + 0.5 CO2 ... etc.
+         LNISOOH + OH --> LNISO3
+       LHC4ACCHO + OH --> LC578O2
+       LHC4ACCHO + OH --> LHC4ACCO3
+       LHC4ACCHO + OH --> C4MDIAL + HO2
+       LHC4ACCHO + O3 --> 0.0171875 HOCH2CO2H + 0.0171875 HCOCO2H + 0.075625 H2O2 ... etc.
+      LHC4ACCHO + NO3 --> LHC4ACCO3 + HNO3
+              LC578O2 --> 0.25 HOCHCHO + 0.25 ACETOL + 0.75 MGLYOX + 0.75 HOCH2CHO ... etc.
+        LC578O2 + HO2 --> MGLYOX + HOCH2CHO + OH
+        LC578O2 + HO2 --> LC578OOH
+         LC578O2 + NO --> 0.25 HOCHCHO + 0.25 ACETOL + 0.75 MGLYOX + 0.75 HOCH2CHO ... etc.
+        LC578O2 + NO3 --> 0.25 HOCHCHO + 0.25 ACETOL + 0.75 MGLYOX + 0.75 HOCH2CHO ... etc.
+              LC578O2 --> 0.25 ACETOL + 0.75 MGLYOX + HOCH2CHO + OH + HO2
+        LC578OOH + OH --> LC578O2
+        LC578OOH + OH --> C1ODC2OOHC4OD + HO2
+            LHC4ACCO3 --> 0.5 MACRO2 + 0.5 LHMVKABO2 + OH + CO2
+            LHC4ACCO3 --> LHC4ACCO2H
+      LHC4ACCO3 + HO2 --> 0.5 MACRO2 + 0.5 LHMVKABO2 + 2 OH + CO2
+      LHC4ACCO3 + HO2 --> LHC4ACCO3H
+      LHC4ACCO3 + HO2 --> LHC4ACCO2H + O3
+       LHC4ACCO3 + NO --> 0.5 MACRO2 + 0.5 LHMVKABO2 + NO2 + CO2
+      LHC4ACCO3 + NO2 --> LC5PAN1719
+      LHC4ACCO3 + NO3 --> 0.5 MACRO2 + 0.5 LHMVKABO2 + NO2 + CO2
+      LHC4ACCO2H + OH --> 0.5 MACRO2 + 0.5 LHMVKABO2 + OH + CO2
+      LHC4ACCO3H + OH --> LHC4ACCO3
+           LC5PAN1719 --> LHC4ACCO3 + NO2
+      LC5PAN1719 + OH --> 0.5 MACROH + 0.5 HO12CO3C4 + CO + NO2
+           HCOC5 + OH --> C59O2
+           HCOC5 + O3 --> BIACETOH + 0.335 H2O2 + 0.1221 CH2OO + 0.2079 CO + 0.67 HCHO ... etc.
+                C59O2 --> HOCH2CO + ACETOL
+          C59O2 + HO2 --> HOCH2CO + ACETOL + OH
+          C59O2 + HO2 --> C59OOH
+           C59O2 + NO --> HOCH2CO + ACETOL + NO2
+          C59O2 + NO3 --> HOCH2CO + ACETOL + NO2
+          C59OOH + OH --> C59O2
+          LIEPOX + OH --> DB1O + H2O
+              ISOPBO2 --> MVK + HCHO + OH
+              ISOPDO2 --> MACR + HCHO + OH
+  LZCODC23DBCOOH + OH --> 0.6 C1ODC2O2C4OOH + 0.4 C1OOHC2O2C4OD
+  LZCODC23DBCOOH + OH --> 0.4 C1OOHC3O2C4OD + 0.6 C1ODC3O2C4OOH
+  LZCODC23DBCOOH + OH --> LZCO3HC23DBCOD
+  LZCODC23DBCOOH + OH --> C4MDIAL + OH
+  LZCODC23DBCOOH + O3 --> 0.1314 HCOCOCH2OOH + 0.0972 HYPERACET + 0.06286 HCOCO ... etc.
+        C1OOHC2O2C4OD --> 0.78 HOCHCHO + 0.78 HYPERACET + 0.22 CO2H3CHO + 0.22 HCHO ... etc.
+   C1OOHC2O2C4OD + NO --> 0.78 HOCHCHO + 0.78 HYPERACET + 0.22 CO2H3CHO + 0.22 HCHO ... etc.
+  C1OOHC2O2C4OD + HO2 --> C1OOHC2OOHC4OD
+  C1OOHC2O2C4OD + HO2 --> 0.78 HOCHCHO + 0.78 HYPERACET + 0.22 CO2H3CHO + 0.22 HCHO ... etc.
+        C1OOHC2O2C4OD --> HYPERACET + GLYOX + OH
+        C1ODC2O2C4OOH --> C1ODC2OOHC4OD + OH
+  C1OOHC2OOHC4OD + OH --> C1ODC2OOHC4OD + OH
+  C1OOHC2OOHC4OD + OH --> HYPERACET + 2 CO + OH + 2 HO2
+  C1OOHC2OOHC4OD + OH --> C1OOHC2O2C4OD
+   C1ODC2OOHC4OD + OH --> CO2H3CHO + CO + OH + H2O
+        C1ODC3O2C4OOH --> HOOCH2CHO + MGLYOX + HO2
+   C1ODC3O2C4OOH + NO --> HOOCH2CHO + MGLYOX + HO2 + NO2
+  C1ODC3O2C4OOH + HO2 --> HOOCH2CO3 + 0.5 MGLYOX + 0.5 CH3CO + 0.5 CO + 0.5 HO2 ... etc.
+        C1ODC3O2C4OOH --> HOOCH2CHO + MGLYOX + OH
+        C1OOHC3O2C4OD --> 0.625 MGLYOX + 0.375 CH3CO + 2 CO + OH + 1.625 HO2 + 0.375 CO2 ... etc.
+            LHC4ACCO3 --> LZCO3HC23DBCOD + HO2
+         C4MDIAL + OH --> C1ODC2O2C4OD
+         C4MDIAL + OH --> LZCO3C23DBCOD
+        C4MDIAL + NO3 --> LZCO3C23DBCOD + HNO3
+   C1ODC2O2C4OD + HO2 --> HOCHCHO + MGLYOX + OH
+   C1ODC2O2C4OD + HO2 --> C1ODC2OOHC4OD
+    C1ODC2O2C4OD + NO --> HOCHCHO + MGLYOX + NO2
+         C1ODC2O2C4OD --> HOCHCHO + MGLYOX
+   C1ODC2OOHC4OD + OH --> MGLYOX + 2 CO
+   C1ODC2OOHC4OD + OH --> MGLYOX + 2 CO + OH
+    LISOPACNO3O2 + NO --> 0.49 HO12CO3C4 + 0.045 MVKNO3 + 0.21 NOA + 0.255 NO3CH2CHO ... etc.
+         LISOPACNO3O2 --> 0.49 HO12CO3C4 + 0.045 MVKNO3 + 0.21 NOA + 0.255 NO3CH2CHO ... etc.
+     ISOPBDNO3O2 + NO --> 0.26 MACRNO3 + 0.14 MVKNO3 + 0.6 ACETOL + 0.6 HOCH2CHO ... etc.
+          ISOPBDNO3O2 --> 0.26 MACRNO3 + 0.14 MVKNO3 + 0.6 ACETOL + 0.6 HOCH2CHO ... etc.
+      LISOPACNO3 + O3 --> 0.0675 HOCHCHO + 0.135 NOA + 0.0405 CH3OH + 0.0054 HOCH2CO ... etc.
+                DB1O2 --> DB1O
+          DB1O2 + HO2 --> DB1OOH
+          DB1O2 + HO2 --> DB1O + OH
+           DB1O2 + NO --> DB1O + NO2
+           DB1O2 + NO --> DB1NO3
+          DB1O2 + NO3 --> DB1O + NO2
+                DB1O2 --> DB2O2 + OH
+                 DB1O --> DB2O2
+                 DB1O --> 0.5 HMAC + 0.5 HVMK + HCHO + HO2
+                DB2O2 --> 0.48 ACETOL + 0.52 MGLYOX + 0.48 GLYOX + 0.52 HOCH2CHO ... etc.
+          DB2O2 + HO2 --> DB2OOH
+          DB2O2 + HO2 --> 0.48 ACETOL + 0.52 MGLYOX + 0.48 GLYOX + 0.52 HOCH2CHO ... etc.
+           DB2O2 + NO --> 0.48 ACETOL + 0.52 MGLYOX + 0.48 GLYOX + 0.52 HOCH2CHO ... etc.
+          DB2O2 + NO3 --> 0.48 ACETOL + 0.52 MGLYOX + 0.48 GLYOX + 0.52 HOCH2CHO ... etc.
+                DB2O2 --> 0.52 LHMVKABOOH + 0.48 MACROOH + CO + OH
+          DB1OOH + OH --> DB1O2
+          DB1OOH + OH --> CH3COCHO2CHO + HCOOH + HO2
+       DB1OOH + HCOOH --> C1ODC2OOHC4OD + HCOOH
+          DB1NO3 + OH --> CH3COCHO2CHO + HCOOH + NO2
+          DB2OOH + OH --> DB2O2
+      LISOPACOOH + O3 --> 0.0675 HOCHCHO + 0.135 HYPERACET + 0.00405 CH3OH + 0.1825 HOCH2COCH2O2 ...
+  LZCO3HC23DBCOD + OH --> 0.38 HCOCO3H + 0.38 MGLYOX + 0.62 CO2H3CHO + 0.62 OH ... etc.
+  LZCO3HC23DBCOD + OH --> 0.62 CH3COCO3H + 0.38 MGLYOX + 1.62 CO + 0.38 OH + 2 HO2 ... etc.
+            LISOPEFO2 --> LISOPEFO
+       LISOPEFO2 + NO --> LISOPEFO + NO2
+       LISOPEFO2 + NO --> ISOPDNO3
+      LISOPEFO2 + HO2 --> 0.7143 ISOPDOOH + 0.2857 ISOPBOOH
+      LISOPEFO2 + HO2 --> LISOPEFO + OH
+      LISOPEFO2 + NO3 --> LISOPEFO + NO2
+            LISOPEFO2 --> 0.2857 MVK + 0.7143 MACR + HCHO + OH
+             LISOPEFO --> 0.2857 MVK + 0.7143 MACR + HCHO + HO2
+             LISOPACO --> ME3FURAN + HO2
+             LISOPACO --> 0.35 DB1O2 + 0.65 LHC4ACCHO + 0.65 HO2
+            LDISOPACO --> ME3FURAN + HO2
+            LDISOPACO --> 0.35 DB1O2 + 0.65 LHC4ACCHO + 0.65 HO2
+        ME3FURAN + OH --> LME3FURANO2
+       ME3FURAN + NO3 --> LME3FURANO2 + NO2
+          LME3FURANO2 --> C4MDIAL + HO2
+     LME3FURANO2 + NO --> C4MDIAL + HO2 + NO2
+    LME3FURANO2 + HO2 --> C4MDIAL + HO2
+        LZCO3C23DBCOD --> 0.38 EZCHOCCH3CHO2 + 0.62 EZCH3CO2CHCHO + CO2
+  LZCO3C23DBCOD + HO2 --> 0.38 EZCHOCCH3CHO2 + 0.62 EZCH3CO2CHCHO + OH + CO2
+  LZCO3C23DBCOD + HO2 --> LZCO3HC23DBCOD
+   LZCO3C23DBCOD + NO --> 0.38 EZCHOCCH3CHO2 + 0.62 EZCH3CO2CHCHO + NO2 + CO2 ... etc.
+  LZCO3C23DBCOD + NO2 --> LZCPANC23DBCOD
+  LZCO3C23DBCOD + NO3 --> 0.38 EZCHOCCH3CHO2 + 0.62 EZCH3CO2CHCHO + NO2 + CO2 ... etc.
+       LZCPANC23DBCOD --> LZCO3C23DBCOD + NO2
+  LZCPANC23DBCOD + OH --> 0.38 EZCHOCCH3CHO2 + 0.62 EZCH3CO2CHCHO + NO2 + CO2 ... etc.
+               C511O2 --> HCOCH2CHO + CH3CO
+          C511O2 + NO --> HCOCH2CHO + CH3CO + NO2
+         C511O2 + HO2 --> C511OOH
+         C511O2 + HO2 --> HCOCH2CHO + CH3CO + OH
+         C511OOH + OH --> C511O2
+       CO23C4CHO + OH --> CO23C4CO3
+      CO23C4CHO + NO3 --> CO23C4CO3 + HNO3
+            CO23C4CO3 --> BIACETO2 + CO2
+       CO23C4CO3 + NO --> BIACETO2 + NO2 + CO2
+      CO23C4CO3 + NO2 --> C5PAN9
+      CO23C4CO3 + HO2 --> CO23C4CO3H
+      CO23C4CO3 + HO2 --> BIACETO2 + OH + CO2
+               C5PAN9 --> CO23C4CO3 + NO2
+          C5PAN9 + OH --> CO23C3CHO + CO + NO2
+               C512O2 --> C513O2
+         C512O2 + HO2 --> C512OOH
+          C512O2 + NO --> C513O2 + NO2
+         C512OOH + OH --> CO13C4CHO + OH
+               C513O2 --> HOC2H4CO3 + GLYOX
+          C513O2 + NO --> HOC2H4CO3 + GLYOX + NO2
+         C513O2 + HO2 --> C513OOH
+         C513O2 + HO2 --> HOC2H4CO3 + GLYOX + OH
+       CO13C4CHO + OH --> CHOC3COCO3
+      CO13C4CHO + NO3 --> CHOC3COCO3 + HNO3
+         C513OOH + OH --> C513CO + OH
+           CHOC3COCO3 --> CHOC3COO2 + CO2
+     CHOC3COCO3 + HO2 --> CHOC3COOOH
+     CHOC3COCO3 + NO2 --> CHOC3COPAN
+      CHOC3COCO3 + NO --> CHOC3COO2 + NO2 + CO2
+          C513CO + OH --> HOC2H4CO3 + 2 CO
+         C514O2 + HO2 --> C514OOH
+          C514O2 + NO --> CO13C4CHO + HO2 + NO2
+          C514O2 + NO --> C514NO3
+         C514O2 + NO3 --> CO13C4CHO + HO2 + NO2
+               C514O2 --> CO13C4CHO + HO2
+         C514OOH + OH --> CO13C4CHO + OH
+         C514NO3 + OH --> CO13C4CHO + NO2
+      CHOC3COOOH + OH --> CHOC3COCO3
+           CHOC3COPAN --> CHOC3COCO3 + NO2
+      CHOC3COPAN + OH --> C4CODIAL + CO + NO2
+             MBO + OH --> LMBOABO2
+             MBO + O3 --> 0.16 CH3COCH3 + 0.84 MBOOO + 0.16 CO + HCHO + 0.16 OH ... etc.
+             MBO + O3 --> 0.37 HOCH2OOH + IBUTALOH + 0.63 CO + 0.16 OH + 0.16 HO2 ... etc.
+            MBO + NO3 --> LNMBOABO2
+       LMBOABO2 + HO2 --> LMBOABOOH
+        LMBOABO2 + NO --> LMBOABNO3
+        LMBOABO2 + NO --> CH3COCH3 + HOCH2CHO + HO2 + NO2
+        LMBOABO2 + NO --> IBUTALOH + HCHO + HO2 + NO2
+             LMBOABO2 --> CH3COCH3 + HOCH2CHO + HO2
+             LMBOABO2 --> IBUTALOH + HCHO + HO2
+       LMBOABOOH + OH --> MBOACO
+       LMBOABOOH + OH --> LMBOABO2
+       LMBOABNO3 + OH --> MBOACO + NO2
+          MBOACO + OH --> MBOCOCO + HO2
+         MBOCOCO + OH --> IPRHOCO3 + CO
+      LNMBOABO2 + HO2 --> LNMBOABOOH
+       LNMBOABO2 + NO --> 0.35 IBUTALOH + 0.65 NO3CH2CHO + 0.65 CH3COCH3 + 0.35 HCHO ... etc.
+      LNMBOABO2 + NO3 --> 0.35 IBUTALOH + 0.65 NO3CH2CHO + 0.65 CH3COCH3 + 0.35 HCHO ... etc.
+            LNMBOABO2 --> 0.35 IBUTALOH + 0.65 NO3CH2CHO + 0.65 CH3COCH3 + 0.35 HCHO ... etc.
+      LNMBOABOOH + OH --> 0.35 NMBOBCO + 0.65 C4MCONO3OH
+      LNMBOABOOH + OH --> LNMBOABO2
+         NMBOBCO + OH --> NC4OHCO3
+       NC4OHCO3 + HO2 --> IBUTALOH + OH + NO2 + CO2
+       NC4OHCO3 + HO2 --> NC4OHCO3H
+        NC4OHCO3 + NO --> IBUTALOH + 2 NO2 + CO2
+       NC4OHCO3 + NO2 --> NC4OHCPAN
+       NC4OHCO3 + NO3 --> IBUTALOH + 2 NO2 + CO2
+             NC4OHCO3 --> IBUTALOH + NO2 + CO2
+       NC4OHCO3H + OH --> NC4OHCO3
+       NC4OHCPAN + OH --> IBUTALOH + CO + 2 NO2
+            NC4OHCPAN --> NC4OHCO3 + NO2
+      C4MCONO3OH + OH --> CH3COCH3 + HCHO + NO2 + CO2
+       NC4MDCO2H + OH --> MMALANHY + NO2
+          C54CO + NO3 --> CH3CO3 + HNO3 + 3 CO
+           C54CO + OH --> CH3CO3 + 3 CO
+        NTLFUO2 + HO2 --> NTLFUOOH
+        NTLFUO2 + HO2 --> ACCOMECHO + OH + NO2
+         NTLFUO2 + NO --> ACCOMECHO + 2 NO2
+        NTLFUO2 + NO3 --> ACCOMECHO + 2 NO2
+              NTLFUO2 --> ACCOMECHO + NO2
+      C5134CO2OH + OH --> C54CO + HO2
+       C5COO2NO2 + OH --> MGLYOX + 2 CO + NO2
+            C5COO2NO2 --> C5CO14O2 + NO2
+       C5DIALOOH + OH --> C5DIALCO + OH
+     C4CO2DBCO3 + HO2 --> C4CO2DCO3H
+     C4CO2DBCO3 + HO2 --> C33CO + CO + OH + HO2 + CO2
+      C4CO2DBCO3 + NO --> C33CO + CO + HO2 + NO2 + CO2
+     C4CO2DBCO3 + NO2 --> C4CO2DBPAN
+     C4CO2DBCO3 + NO3 --> C33CO + CO + HO2 + NO2 + CO2
+           C4CO2DBCO3 --> C33CO + CO + HO2 + CO2
+        MMALANHY + OH --> MMALANHYO2
+     MMALANHYO2 + HO2 --> MMALNHYOOH
+     MMALANHYO2 + HO2 --> CO2H3CO3 + OH + CO2
+      MMALANHYO2 + NO --> CO2H3CO3 + NO2 + CO2
+     MMALANHYO2 + NO3 --> CO2H3CO3 + NO2 + CO2
+           MMALANHYO2 --> CO2H3CO3 + CO2
+      C4CO2DBPAN + OH --> C33CO + CO + NO2 + CO2
+           C4CO2DBPAN --> C4CO2DBCO3 + NO2
+       C5CO14O2 + HO2 --> 0.83 MALANHY + 0.17 MGLYOX + 0.83 CH3 + 0.17 CO + OH ... etc.
+       C5CO14O2 + HO2 --> C5CO14OH + O3
+       C5CO14O2 + HO2 --> C5CO14OOH
+        C5CO14O2 + NO --> 0.83 MALANHY + 0.17 MGLYOX + 0.83 CH3 + 0.17 CO + 0.17 HO2 ... etc.
+       C5CO14O2 + NO2 --> C5COO2NO2
+       C5CO14O2 + NO3 --> 0.83 MALANHY + 0.17 MGLYOX + 0.83 CH3 + 0.17 CO + 0.17 HO2 ... etc.
+             C5CO14O2 --> 0.83 MALANHY + 0.17 MGLYOX + 0.83 CH3 + 0.17 CO + 0.17 HO2 ... etc.
+        C5CO14OH + OH --> 0.83 MALANHY + 0.17 MGLYOX + 0.83 CH3 + 0.17 CO + 0.17 HO2 ... etc.
+       C5DICARB + NO3 --> C5CO14O2 + HNO3
+        C5DICARB + O3 --> 0.0563 HCOCO2H + 0.348 CH3CO3 + 0.676 H2O2 + 0.0563 CH3COCO2H ... etc.
+        C5DICARB + OH --> 0.52 C5DICARBO2 + 0.48 C5CO14O2
+      MC3ODBCO2H + OH --> 0.65 MMALANHY + 0.35 GLYOX + 0.35 CH3 + 0.35 CO + 0.65 HO2 ... etc.
+        TLFUONE + NO3 --> NTLFUO2
+         TLFUONE + O3 --> 0.3125 C24O3CCO2H + 0.1875 ACCOMECHO + 0.5 MECOACETO2 ... etc.
+         TLFUONE + OH --> TLFUO2
+      ACCOMECO3 + HO2 --> ACCOMECO3H
+      ACCOMECO3 + HO2 --> MECOACETO2 + OH + CO2
+       ACCOMECO3 + NO --> MECOACETO2 + NO2 + CO2
+      ACCOMECO3 + NO2 --> ACCOMEPAN
+      ACCOMECO3 + NO3 --> MECOACETO2 + NO2 + CO2
+            ACCOMECO3 --> MECOACETO2 + CO2
+      C4CO2DCO3H + OH --> C4CO2DBCO3
+      ACCOMECHO + NO3 --> ACCOMECO3 + HNO3
+       ACCOMECHO + OH --> ACCOMECO3
+      MMALNHYOOH + OH --> MMALANHYO2
+      C5DICAROOH + OH --> C5134CO2OH + OH
+      C5DICAROOH + OH --> C5DICARBO2
+      C24O3CCO2H + OH --> MECOACETO2 + CO2
+        NTLFUOOH + OH --> NTLFUO2
+       ACCOMEPAN + OH --> METACETHO + 2 CO + NO2
+            ACCOMEPAN --> ACCOMECO3 + NO2
+         TLFUO2 + HO2 --> TLFUOOH
+         TLFUO2 + HO2 --> ACCOMECHO + OH + HO2
+          TLFUO2 + NO --> ACCOMECHO + HO2 + NO2
+         TLFUO2 + NO3 --> ACCOMECHO + HO2 + NO2
+               TLFUO2 --> ACCOMECHO + HO2
+       C5CO14OOH + OH --> C5CO14O2
+         TLFUOOH + OH --> TLFUO2
+      ACCOMECO3H + OH --> ACCOMECO3
+       C5DIALO2 + HO2 --> C5DIALOOH
+       C5DIALO2 + HO2 --> MALDIAL + CO + OH + HO2
+        C5DIALO2 + NO --> MALDIAL + CO + HO2 + NO2
+       C5DIALO2 + NO3 --> MALDIAL + CO + HO2 + NO2
+             C5DIALO2 --> MALDIAL + CO + HO2
+     C5DICARBO2 + HO2 --> C5DICAROOH
+     C5DICARBO2 + HO2 --> MGLYOX + GLYOX + OH + HO2
+      C5DICARBO2 + NO --> MGLYOX + GLYOX + HO2 + NO2
+     C5DICARBO2 + NO3 --> MGLYOX + GLYOX + HO2 + NO2
+           C5DICARBO2 --> MGLYOX + GLYOX + HO2
+      CO235C6O2 + HO2 --> CO235C6OOH
+      CO235C6O2 + HO2 --> CO23C4CO3 + HCHO + OH
+       CO235C6O2 + NO --> CO23C4CO3 + HCHO + NO2
+            CO235C6O2 --> CO23C4CO3 + HCHO
+      CO235C6OOH + OH --> CO235C6O2
+               C614O2 --> CO23C4CHO + HCHO + HO2
+          C614O2 + NO --> CO23C4CHO + HCHO + HO2 + NO2
+          C614O2 + NO --> C614NO3
+         C614O2 + HO2 --> C614OOH
+         C614O2 + HO2 --> CO23C4CHO + HCHO + OH + HO2
+         C614NO3 + OH --> C614CO + NO2
+         C614OOH + OH --> C614CO + OH
+          C614CO + OH --> CO235C5CHO + HO2
+      CO235C5CHO + OH --> CO23C4CO3 + CO
+     CO235C5CHO + NO3 --> CO23C4CO3 + HNO3 + CO
+         PHENOOH + OH --> PHENO2
+         C6CO4DB + OH --> C33CO + 3 CO + HO2
+      C5CO2DCO3H + OH --> C5CO2DBCO3
+      NDNPHENOOH + OH --> NDNPHENO2
+      C615CO2O2 + HO2 --> C615CO2OOH
+      C615CO2O2 + HO2 --> C5DICARB + CO + OH + HO2
+       C615CO2O2 + NO --> C5DICARB + CO + HO2 + NO2
+      C615CO2O2 + NO3 --> C5DICARB + CO + HO2 + NO2
+            C615CO2O2 --> C5DICARB + CO + HO2
+       BZEMUCPAN + OH --> MALDIAL + CO + NO2 + CO2
+            BZEMUCPAN --> BZEMUCCO3 + NO2
+      BZBIPERNO3 + OH --> BZOBIPEROH + NO2
+      HOC6H4NO2 + NO3 --> NPHEN1O + HNO3
+       HOC6H4NO2 + OH --> NPHEN1O
+      NDNPHENO2 + HO2 --> NDNPHENOOH
+      NDNPHENO2 + HO2 --> NC4DCO2H + HNO3 + 2 CO + OH + NO2
+       NDNPHENO2 + NO --> NC4DCO2H + HNO3 + 2 CO + 2 NO2
+      NDNPHENO2 + NO3 --> NC4DCO2H + HNO3 + 2 CO + 2 NO2
+            NDNPHENO2 --> NC4DCO2H + HNO3 + 2 CO + NO2
+          PBZQCO + OH --> C5CO2OHCO3
+       CATECHOL + NO3 --> CATEC1O + HNO3
+        CATECHOL + O3 --> MALDALCO2H + HCOCO2H + OH + HO2
+        CATECHOL + OH --> CATEC1O
+      C5COOHCO3H + OH --> C5CO2OHCO3
+      NCATECHOL + NO3 --> NNCATECO2
+       NCATECHOL + OH --> NCATECO2
+     C5CO2OHCO3 + HO2 --> C5COOHCO3H
+     C5CO2OHCO3 + HO2 --> HOCOC4DIAL + CO + OH + HO2 + CO2
+      C5CO2OHCO3 + NO --> HOCOC4DIAL + CO + HO2 + NO2 + CO2
+     C5CO2OHCO3 + NO2 --> C5CO2OHPAN
+     C5CO2OHCO3 + NO3 --> HOCOC4DIAL + CO + HO2 + NO2 + CO2
+           C5CO2OHCO3 --> HOCOC4DIAL + CO + HO2 + CO2
+      BZEPOXMUC + NO3 --> BZEMUCCO3 + HNO3
+       BZEPOXMUC + O3 --> EPXC4DIAL + 0.1125 HCOCO2H + 0.0675 H2O2 + 0.0675 GLYOX ... etc.
+       BZEPOXMUC + OH --> 0.31 BZEMUCCO3 + 0.69 BZEMUCO2
+       NCATECO2 + HO2 --> NCATECOOH
+       NCATECO2 + HO2 --> NC4DCO2H + HCOCO2H + OH + HO2
+        NCATECO2 + NO --> NC4DCO2H + HCOCO2H + HO2 + NO2
+       NCATECO2 + NO3 --> NC4DCO2H + HCOCO2H + HO2 + NO2
+             NCATECO2 --> NC4DCO2H + HCOCO2H + HO2
+       NPHEN1OOH + OH --> NPHEN1O2
+        NPHENO2 + HO2 --> NPHENOOH
+        NPHENO2 + HO2 --> MALDALCO2H + GLYOX + OH + NO2
+         NPHENO2 + NO --> MALDALCO2H + GLYOX + 2 NO2
+        NPHENO2 + NO3 --> MALDALCO2H + GLYOX + 2 NO2
+              NPHENO2 --> MALDALCO2H + GLYOX + NO2
+         BENZENE + OH --> 0.352 BZBIPERO2 + 0.53 PHENOL + 0.118 BZEPOXMUC + 0.648 HO2 ... etc.
+      C5CO2OHPAN + OH --> HOCOC4DIAL + 2 CO + NO2
+           C5CO2OHPAN --> C5CO2OHCO3 + NO2
+        CATEC1O + NO2 --> NCATECHOL
+         CATEC1O + O3 --> CATEC1O2
+        BZEMUCCO + OH --> EPXDLCO3 + GLYOX
+      NNCATECO2 + HO2 --> NNCATECOOH
+      NNCATECO2 + HO2 --> NC4DCO2H + HCOCO2H + OH + NO2
+       NNCATECO2 + NO --> NC4DCO2H + HCOCO2H + 2 NO2
+      NNCATECO2 + NO3 --> NC4DCO2H + HCOCO2H + 2 NO2
+            NNCATECO2 --> NC4DCO2H + HCOCO2H + NO2
+      BZEMUCCO2H + OH --> C5DIALO2 + CO2
+      NNCATECOOH + OH --> NNCATECO2
+        NPHEN1O + NO2 --> DNPHEN
+         NPHEN1O + O3 --> NPHEN1O2
+         DNPHEN + NO3 --> NDNPHENO2
+          DNPHEN + OH --> DNPHENO2
+         PHENOL + NO3 --> 0.258 NPHENO2 + 0.742 C6H5O + 0.742 HNO3
+          PHENOL + OH --> 0.8 CATECHOL + 0.14 PHENO2 + 0.06 C6H5O + 0.8 HO2
+        PBZQONE + NO3 --> NBZQO2
+         PBZQONE + OH --> PBZQO2
+         PHENO2 + HO2 --> PHENOOH
+         PHENO2 + HO2 --> 0.29 PBZQONE + 0.71 MALDALCO2H + 0.71 GLYOX + OH + HO2 ... etc.
+          PHENO2 + NO --> 0.29 PBZQONE + 0.71 MALDALCO2H + 0.71 GLYOX + HO2 + NO2 ... etc.
+         PHENO2 + NO3 --> 0.29 PBZQONE + 0.71 MALDALCO2H + 0.71 GLYOX + HO2 + NO2 ... etc.
+               PHENO2 --> 0.29 PBZQONE + 0.71 MALDALCO2H + 0.71 GLYOX + HO2
+      C615CO2OOH + OH --> C6125CO + OH
+     C5CO2DBCO3 + HO2 --> C5CO2DCO3H
+     C5CO2DBCO3 + HO2 --> C33CO + CH3CO + OH + CO2
+      C5CO2DBCO3 + NO --> C33CO + CH3CO + NO2 + CO2
+     C5CO2DBCO3 + NO2 --> C5CO2DBPAN
+     C5CO2DBCO3 + NO3 --> C33CO + CH3CO + NO2 + CO2
+           C5CO2DBCO3 --> C33CO + CH3CO + CO2
+       NPHEN1O2 + HO2 --> NPHEN1OOH
+        NPHEN1O2 + NO --> NPHEN1O + NO2
+       NPHEN1O2 + NO2 --> NPHEN1O + NO3
+       NPHEN1O2 + NO3 --> NPHEN1O + NO2
+             NPHEN1O2 --> NPHEN1O
+        NPHENOOH + OH --> NPHENO2
+          C6H5O + NO2 --> HOC6H4NO2
+           C6H5O + O3 --> C6H5O2
+       NCATECOOH + OH --> NCATECO2
+         PBZQOOH + OH --> PBZQCO + OH
+         PBZQO2 + HO2 --> PBZQOOH
+         PBZQO2 + HO2 --> C5CO2OHCO3 + OH
+          PBZQO2 + NO --> C5CO2OHCO3 + NO2
+         PBZQO2 + NO3 --> C5CO2OHCO3 + NO2
+               PBZQO2 --> C5CO2OHCO3
+      BZOBIPEROH + OH --> MALDIALCO3 + GLYOX
+       DNPHENO2 + HO2 --> DNPHENOOH
+       DNPHENO2 + HO2 --> NC4DCO2H + HCOCO2H + OH + NO2
+        DNPHENO2 + NO --> NC4DCO2H + HCOCO2H + 2 NO2
+       DNPHENO2 + NO3 --> NC4DCO2H + HCOCO2H + 2 NO2
+             DNPHENO2 --> NC4DCO2H + HCOCO2H + NO2
+      BZBIPEROOH + OH --> BZOBIPEROH + OH
+       BZEMUCO2 + HO2 --> BZEMUCOOH
+       BZEMUCO2 + HO2 --> 0.5 C32OH13CO + 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 GLYOX ... etc.
+        BZEMUCO2 + NO --> BZEMUCNO3
+        BZEMUCO2 + NO --> 0.5 C32OH13CO + 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 GLYOX ... etc.
+       BZEMUCO2 + NO3 --> 0.5 C32OH13CO + 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 GLYOX ... etc.
+             BZEMUCO2 --> 0.5 C32OH13CO + 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 GLYOX ... etc.
+      C5CO2DBPAN + OH --> C33CO + CH3CHO + NO2 + CO2
+           C5CO2DBPAN --> C5CO2DBCO3 + NO2
+         NBZQOOH + OH --> NBZQO2
+       CATEC1OOH + OH --> CATEC1O2
+         C6125CO + OH --> C5CO14O2 + CO
+         NBZQO2 + HO2 --> NBZQOOH
+         NBZQO2 + HO2 --> C6CO4DB + OH + NO2
+          NBZQO2 + NO --> C6CO4DB + 2 NO2
+         NBZQO2 + NO3 --> C6CO4DB + 2 NO2
+               NBZQO2 --> C6CO4DB + NO2
+       DNPHENOOH + OH --> DNPHENO2
+       CATEC1O2 + HO2 --> CATEC1OOH
+        CATEC1O2 + NO --> CATEC1O + NO2
+       CATEC1O2 + NO2 --> CATEC1O + NO3
+       CATEC1O2 + NO3 --> CATEC1O + NO2
+             CATEC1O2 --> CATEC1O
+      BZEMUCCO3H + OH --> BZEMUCCO3
+         C6H5OOH + OH --> C6H5O2
+       BZEMUCOOH + OH --> BZEMUCCO + OH
+      BZEMUCCO3 + HO2 --> BZEMUCCO2H + O3
+      BZEMUCCO3 + HO2 --> BZEMUCCO3H
+      BZEMUCCO3 + HO2 --> C5DIALO2 + OH + CO2
+       BZEMUCCO3 + NO --> C5DIALO2 + NO2 + CO2
+      BZEMUCCO3 + NO2 --> BZEMUCPAN
+      BZEMUCCO3 + NO3 --> C5DIALO2 + NO2 + CO2
+            BZEMUCCO3 --> C5DIALO2 + CO2
+         C6H5O2 + HO2 --> C6H5OOH
+          C6H5O2 + NO --> C6H5O + NO2
+         C6H5O2 + NO2 --> C6H5O + NO3
+         C6H5O2 + NO3 --> C6H5O + NO2
+               C6H5O2 --> C6H5O
+       BZEMUCNO3 + OH --> BZEMUCCO + NO2
+      BZBIPERO2 + HO2 --> BZBIPEROOH
+      BZBIPERO2 + HO2 --> BZFUONE + GLYOX + OH + HO2
+       BZBIPERO2 + NO --> BZBIPERNO3
+       BZBIPERO2 + NO --> BZFUONE + GLYOX + HO2 + NO2
+      BZBIPERO2 + NO3 --> BZFUONE + GLYOX + HO2 + NO2
+            BZBIPERO2 --> BZFUONE + GLYOX + HO2
+     CO235C6CHO + NO3 --> CO235C6CO3 + HNO3
+      CO235C6CHO + OH --> CO235C6CO3
+     CO235C6CO3 + HO2 --> C235C6CO3H
+     CO235C6CO3 + HO2 --> CO235C6O2 + OH + CO2
+      CO235C6CO3 + NO --> CO235C6O2 + NO2 + CO2
+     CO235C6CO3 + NO2 --> C7PAN3
+           CO235C6CO3 --> CO235C6O2 + CO2
+      C235C6CO3H + OH --> CO235C6CO3
+          C7PAN3 + OH --> CO235C5CHO + CO + NO2
+               C7PAN3 --> CO235C6CO3 + NO2
+         C716O2 + HO2 --> C716OOH
+         C716O2 + HO2 --> CO13C4CHO + CH3CO + OH
+          C716O2 + NO --> CO13C4CHO + CH3CO + NO2
+               C716O2 --> CO13C4CHO + CH3CO
+         C716OOH + OH --> CO235C6CHO + OH
+         C721O2 + HO2 --> C721OOH
+          C721O2 + NO --> C722O2 + NO2
+               C721O2 --> C722O2
+         C721OOH + OH --> C721O2
+         C722O2 + HO2 --> C722OOH
+          C722O2 + NO --> C44O2 + CH3COCH3 + NO2
+               C722O2 --> C44O2 + CH3COCH3
+         C722OOH + OH --> C722O2
+             ROO6R3O2 --> ROO6R5O2
+        ROO6R3O2 + NO --> ROO6R3O + NO2
+       ROO6R3O2 + HO2 --> 7 LCARBON
+             ROO6R3O2 --> ROO6R3O
+              ROO6R3O --> 7 LCARBON + HO2
+             ROO6R5O2 --> 7 LCARBON + OH
+         TOLUENE + OH --> 0.18 CRESOL + 0.07 C6H5CH2O2 + 0.1 TLEPOXMUC + 0.65 TLBIPERO2 ... etc.
+      C6H5CH2O2 + HO2 --> C6H5CH2OOH
+       C6H5CH2O2 + NO --> C6H5CH2NO3
+       C6H5CH2O2 + NO --> BENZAL + HO2 + NO2
+      C6H5CH2O2 + NO3 --> BENZAL + HO2 + NO2
+            C6H5CH2O2 --> BENZAL + HO2
+         CRESOL + NO3 --> 0.391 TOL1O + 0.103 CRESO2 + 0.506 NCRESO2 + 0.494 HNO3 ... etc.
+          CRESOL + OH --> 0.073 TOL1O + 0.2 CRESO2 + 0.727 MCATECHOL + 0.727 HO2 ... etc.
+      TLBIPERO2 + HO2 --> TLBIPEROOH
+      TLBIPERO2 + HO2 --> 0.2 BZFUONE + 0.2 TLFUONE + 0.2 MALDIAL + 0.2 C5DICARB ... etc.
+       TLBIPERO2 + NO --> 0.2 BZFUONE + 0.2 TLFUONE + 0.2 MALDIAL + 0.2 C5DICARB ... etc.
+       TLBIPERO2 + NO --> TLBIPERNO3
+      TLBIPERO2 + NO3 --> 0.2 BZFUONE + 0.2 TLFUONE + 0.2 MALDIAL + 0.2 C5DICARB ... etc.
+            TLBIPERO2 --> 0.2 BZFUONE + 0.2 TLFUONE + 0.2 MALDIAL + 0.2 C5DICARB ... etc.
+      TLEPOXMUC + NO3 --> TLEMUCCO3 + HNO3
+       TLEPOXMUC + O3 --> EPXC4DIAL + 0.0675 H2O2 + 0.1125 CH3COCO2H + 0.0675 MGLYOX ... etc.
+       TLEPOXMUC + OH --> 0.31 TLEMUCCO3 + 0.69 TLEMUCO2
+      C6H5CH2OOH + OH --> BENZAL + OH
+      C6H5CH2NO3 + OH --> BENZAL + NO2
+         BENZAL + NO3 --> C6H5CO3 + HNO3
+          BENZAL + OH --> C6H5CO3
+         CRESO2 + HO2 --> CRESOOH
+         CRESO2 + HO2 --> 0.32 PTLQONE + 0.68 C5CO14OH + 0.68 GLYOX + OH + HO2 ... etc.
+          CRESO2 + NO --> 0.32 PTLQONE + 0.68 C5CO14OH + 0.68 GLYOX + HO2 + NO2 ... etc.
+         CRESO2 + NO3 --> 0.32 PTLQONE + 0.68 C5CO14OH + 0.68 GLYOX + HO2 + NO2 ... etc.
+               CRESO2 --> 0.32 PTLQONE + 0.68 C5CO14OH + 0.68 GLYOX + HO2
+        NCRESO2 + HO2 --> NCRESOOH
+        NCRESO2 + HO2 --> C5CO14OH + GLYOX + OH + NO2
+         NCRESO2 + NO --> C5CO14OH + GLYOX + 2 NO2
+        NCRESO2 + NO3 --> C5CO14OH + GLYOX + 2 NO2
+              NCRESO2 --> C5CO14OH + GLYOX + NO2
+          TOL1O + NO2 --> TOL1OHNO2
+           TOL1O + O3 --> OXYL1O2
+      MCATECHOL + NO3 --> MCATEC1O + HNO3
+       MCATECHOL + O3 --> MC3ODBCO2H + HCOCO2H + OH + HO2
+       MCATECHOL + OH --> MCATEC1O
+      TLBIPEROOH + OH --> TLOBIPEROH + OH
+      TLBIPERNO3 + OH --> TLOBIPEROH + NO2
+      TLOBIPEROH + OH --> C5CO14O2 + GLYOX
+      TLEMUCCO3 + HO2 --> C615CO2O2 + OH + CO2
+      TLEMUCCO3 + HO2 --> TLEMUCCO2H + O3
+      TLEMUCCO3 + HO2 --> TLEMUCCO3H
+       TLEMUCCO3 + NO --> C615CO2O2 + NO2 + CO2
+      TLEMUCCO3 + NO2 --> TLEMUCPAN
+      TLEMUCCO3 + NO3 --> C615CO2O2 + NO2 + CO2
+            TLEMUCCO3 --> C615CO2O2 + CO2
+       TLEMUCO2 + HO2 --> TLEMUCOOH
+       TLEMUCO2 + HO2 --> 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 MGLYOX + 0.5 CO2H3CHO ... etc.
+        TLEMUCO2 + NO --> TLEMUCNO3
+        TLEMUCO2 + NO --> 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 MGLYOX + 0.5 CO2H3CHO ... etc.
+       TLEMUCO2 + NO3 --> 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 MGLYOX + 0.5 CO2H3CHO ... etc.
+             TLEMUCO2 --> 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 MGLYOX + 0.5 CO2H3CHO ... etc.
+        C6H5CO3 + HO2 --> C6H5CO3H
+        C6H5CO3 + HO2 --> C6H5O2 + OH + CO2
+        C6H5CO3 + HO2 --> PHCOOH + O3
+         C6H5CO3 + NO --> C6H5O2 + NO2 + CO2
+        C6H5CO3 + NO2 --> PBZN
+        C6H5CO3 + NO3 --> C6H5O2 + NO2 + CO2
+              C6H5CO3 --> C6H5O2 + CO2
+         CRESOOH + OH --> CRESO2
+        NCRESOOH + OH --> NCRESO2
+      TOL1OHNO2 + NO3 --> NCRES1O + HNO3
+       TOL1OHNO2 + OH --> NCRES1O
+        OXYL1O2 + HO2 --> OXYL1OOH
+         OXYL1O2 + NO --> TOL1O + NO2
+        OXYL1O2 + NO2 --> TOL1O + NO3
+        OXYL1O2 + NO3 --> TOL1O + NO2
+              OXYL1O2 --> TOL1O
+       MCATEC1O + NO2 --> MNCATECH
+        MCATEC1O + O3 --> MCATEC1O2
+      TLEMUCCO2H + OH --> C615CO2O2 + CO2
+      TLEMUCCO3H + OH --> TLEMUCCO3
+       TLEMUCPAN + OH --> C5DICARB + CO + NO2 + CO2
+            TLEMUCPAN --> TLEMUCCO3 + NO2
+       TLEMUCOOH + OH --> TLEMUCCO + OH
+       TLEMUCNO3 + OH --> TLEMUCCO + NO2
+        TLEMUCCO + OH --> EPXC4DIAL + CH3CO + CO
+        C6H5CO3H + OH --> C6H5CO3
+          PHCOOH + OH --> C6H5O2 + CO2
+            PBZN + OH --> C6H5OOH + CO + NO2
+                 PBZN --> C6H5CO3 + NO2
+        PTLQONE + NO3 --> NPTLQO2
+         PTLQONE + OH --> PTLQO2
+        NCRES1O + NO2 --> DNCRES
+         NCRES1O + O3 --> NCRES1O2
+        OXYL1OOH + OH --> OXYL1O2
+       MNCATECH + NO3 --> MNNCATECO2
+        MNCATECH + OH --> MNCATECO2
+      MCATEC1O2 + HO2 --> MCATEC1OOH
+       MCATEC1O2 + NO --> MCATEC1O + NO2
+      MCATEC1O2 + NO2 --> MCATEC1O + NO3
+      MCATEC1O2 + NO3 --> MCATEC1O + NO2
+            MCATEC1O2 --> MCATEC1O
+        NPTLQO2 + HO2 --> NPTLQOOH
+        NPTLQO2 + HO2 --> C7CO4DB + OH + NO2
+         NPTLQO2 + NO --> C7CO4DB + 2 NO2
+        NPTLQO2 + NO3 --> C7CO4DB + 2 NO2
+              NPTLQO2 --> C7CO4DB + NO2
+         PTLQO2 + HO2 --> PTLQOOH
+         PTLQO2 + HO2 --> C6CO2OHCO3 + OH
+          PTLQO2 + NO --> C6CO2OHCO3 + NO2
+         PTLQO2 + NO3 --> C6CO2OHCO3 + NO2
+               PTLQO2 --> C6CO2OHCO3
+         DNCRES + NO3 --> NDNCRESO2
+          DNCRES + OH --> DNCRESO2
+       NCRES1O2 + HO2 --> NCRES1OOH
+        NCRES1O2 + NO --> NCRES1O + NO2
+       NCRES1O2 + NO2 --> NCRES1O + NO3
+       NCRES1O2 + NO3 --> NCRES1O + NO2
+             NCRES1O2 --> NCRES1O
+     MNNCATECO2 + HO2 --> MNNCATCOOH
+     MNNCATECO2 + HO2 --> NC4MDCO2H + HCOCO2H + OH + NO2
+      MNNCATECO2 + NO --> NC4MDCO2H + HCOCO2H + 2 NO2
+     MNNCATECO2 + NO3 --> NC4MDCO2H + HCOCO2H + 2 NO2
+           MNNCATECO2 --> NC4MDCO2H + HCOCO2H + NO2
+      MNCATECO2 + HO2 --> MNCATECOOH
+      MNCATECO2 + HO2 --> NC4MDCO2H + HCOCO2H + OH + HO2
+       MNCATECO2 + NO --> NC4MDCO2H + HCOCO2H + HO2 + NO2
+      MNCATECO2 + NO3 --> NC4MDCO2H + HCOCO2H + HO2 + NO2
+            MNCATECO2 --> NC4MDCO2H + HCOCO2H + HO2
+      MCATEC1OOH + OH --> MCATEC1O2
+        NPTLQOOH + OH --> NPTLQO2
+         PTLQOOH + OH --> PTLQCO + OH
+          PTLQCO + OH --> C6CO2OHCO3
+      NDNCRESO2 + HO2 --> NDNCRESOOH
+      NDNCRESO2 + HO2 --> NC4MDCO2H + HNO3 + 2 CO + OH + NO2
+       NDNCRESO2 + NO --> NC4MDCO2H + HNO3 + 2 CO + 2 NO2
+      NDNCRESO2 + NO3 --> NC4MDCO2H + HNO3 + 2 CO + 2 NO2
+            NDNCRESO2 --> NC4MDCO2H + HNO3 + 2 CO + NO2
+       DNCRESO2 + HO2 --> DNCRESOOH
+       DNCRESO2 + HO2 --> NC4MDCO2H + HCOCO2H + OH + NO2
+        DNCRESO2 + NO --> NC4MDCO2H + HCOCO2H + 2 NO2
+       DNCRESO2 + NO3 --> NC4MDCO2H + HCOCO2H + 2 NO2
+             DNCRESO2 --> NC4MDCO2H + HCOCO2H + NO2
+       NCRES1OOH + OH --> NCRES1O2
+      MNNCATCOOH + OH --> MNNCATECO2
+      MNCATECOOH + OH --> MNCATECO2
+         C7CO4DB + OH --> C33CO + CH3CO + 2 CO
+     C6CO2OHCO3 + HO2 --> C5134CO2OH + CO + OH + HO2 + CO2
+     C6CO2OHCO3 + HO2 --> C6COOHCO3H
+      C6CO2OHCO3 + NO --> C5134CO2OH + CO + HO2 + NO2 + CO2
+     C6CO2OHCO3 + NO2 --> C6CO2OHPAN
+     C6CO2OHCO3 + NO3 --> C5134CO2OH + CO + HO2 + NO2 + CO2
+           C6CO2OHCO3 --> C5134CO2OH + CO + HO2 + CO2
+      NDNCRESOOH + OH --> NDNCRESO2
+       DNCRESOOH + OH --> DNCRESO2
+      C6COOHCO3H + OH --> C6CO2OHCO3
+      C6CO2OHPAN + OH --> C5134CO2OH + 2 CO + NO2
+           C6CO2OHPAN --> C6CO2OHCO3 + NO2
+                C85O2 --> C86O2
+          C85O2 + HO2 --> C85OOH
+           C85O2 + NO --> C86O2 + NO2
+          C85OOH + OH --> C85O2
+                C86O2 --> C511O2 + CH3COCH3
+           C86O2 + NO --> C511O2 + CH3COCH3 + NO2
+          C86O2 + HO2 --> C86OOH
+          C86OOH + OH --> C86O2
+               C811O2 --> C812O2
+         C811O2 + HO2 --> 8 LCARBON
+          C811O2 + NO --> C812O2 + NO2
+               C812O2 --> C813O2
+          C812O2 + NO --> C813O2 + NO2
+         C812O2 + HO2 --> C812OOH
+         C812OOH + OH --> C812O2
+               C813O2 --> C512O2 + CH3COCH3
+          C813O2 + NO --> C512O2 + CH3COCH3 + NO2
+         C813O2 + HO2 --> C813OOH
+         C813OOH + OH --> C813O2
+        C721CHO + NO3 --> C721CO3 + HNO3
+         C721CHO + OH --> C721CO3
+        C721CO3 + HO2 --> C721CO3H
+        C721CO3 + HO2 --> C721O2 + OH + CO2
+        C721CO3 + HO2 --> NORPINIC + O3
+         C721CO3 + NO --> C721O2 + NO2 + CO2
+        C721CO3 + NO2 --> C721PAN
+        C721CO3 + NO3 --> C721O2 + NO2 + CO2
+              C721CO3 --> C721O2 + CO2
+              C721CO3 --> NORPINIC
+        C721CO3H + OH --> C721CO3
+        NORPINIC + OH --> C721O2 + CO2
+         C721PAN + OH --> C721OOH + CO + NO2
+              C721PAN --> C721CO3 + NO2
+            C8BC + OH --> C8BCO2
+         C8BCO2 + HO2 --> C8BCOOH
+          C8BCO2 + NO --> C89O2 + NO2
+          C8BCO2 + NO --> C8BCNO3
+               C8BCO2 --> C89O2
+         C8BCOOH + OH --> C8BCCO + OH
+         C8BCNO3 + OH --> C8BCCO + NO2
+          C8BCCO + OH --> C89O2
+          C89O2 + HO2 --> C89OOH
+           C89O2 + NO --> C810O2 + NO2
+           C89O2 + NO --> C89NO3
+          C89O2 + NO3 --> C810O2 + NO2
+                C89O2 --> C810O2
+          C89OOH + OH --> C89O2
+          C89NO3 + OH --> CH3COCH3 + CO13C4CHO + NO2
+         C810O2 + HO2 --> C810OOH
+          C810O2 + NO --> C514O2 + CH3COCH3 + NO2
+          C810O2 + NO --> C810NO3
+         C810O2 + NO3 --> C514O2 + CH3COCH3 + NO2
+               C810O2 --> C514O2 + CH3COCH3
+         C810OOH + OH --> C810O2
+         C810NO3 + OH --> CH3COCH3 + CO13C4CHO + NO2
+            LXYL + OH --> LCARBON + TLEPOXMUC + HO2
+            LXYL + OH --> LCARBON + C6H5CH2O2
+            LXYL + OH --> LCARBON + CRESOL
+            LXYL + OH --> LCARBON + TLBIPERO2 + HO2
+           LXYL + NO3 --> LCARBON + C6H5CH2O2 + HNO3
+           EBENZ + OH --> LCARBON + 0.18 CRESOL + 0.07 C6H5CH2O2 + 0.1 TLEPOXMUC ... etc.
+          EBENZ + NO3 --> LCARBON + C6H5CH2O2 + HNO3
+        STYRENE + NO3 --> NSTYRENO2
+         STYRENE + O3 --> 0.075 PHCOOH + 0.1 BENZENE + 0.545 BENZAL + 0.28 C6H5O2 ... etc.
+         STYRENE + OH --> STYRENO2
+      NSTYRENO2 + HO2 --> NSTYRENOOH
+       NSTYRENO2 + NO --> BENZAL + HCHO + 2 NO2
+      NSTYRENO2 + NO3 --> BENZAL + HCHO + 2 NO2
+            NSTYRENO2 --> BENZAL + HCHO + NO2
+      NSTYRENOOH + OH --> NSTYRENO2
+       STYRENO2 + HO2 --> STYRENOOH
+       STYRENO2 + HO2 --> BENZAL + HCHO + OH + HO2
+        STYRENO2 + NO --> BENZAL + HCHO + HO2 + NO2
+       STYRENO2 + NO3 --> BENZAL + HCHO + HO2 + NO2
+             STYRENO2 --> BENZAL + HCHO + HO2
+       STYRENOOH + OH --> STYRENO2
+                C96O2 --> C97O2
+          C96O2 + HO2 --> C96OOH
+           C96O2 + NO --> C97O2 + NO2
+           C96O2 + NO --> C96NO3
+          C96NO3 + OH --> NORPINAL + NO2
+          C96OOH + OH --> C96O2
+          C96OOH + OH --> NORPINAL + OH
+                C97O2 --> C98O2
+           C97O2 + NO --> C98O2 + NO2
+          C97O2 + HO2 --> C97OOH
+          C97O2 + HO2 --> C98O2 + OH
+          C97OOH + OH --> C97O2
+                C98O2 --> C614O2 + CH3COCH3
+           C98O2 + NO --> C614O2 + CH3COCH3 + NO2
+           C98O2 + NO --> LNITROGEN + 9 LCARBON
+          C98O2 + HO2 --> C98OOH
+          C98OOH + OH --> C98O2
+        NORPINAL + OH --> C85CO3
+       NORPINAL + NO3 --> C85CO3 + HNO3
+               C85CO3 --> C85O2 + CO2
+          C85CO3 + NO --> C85O2 + NO2 + CO2
+         C85CO3 + NO2 --> C9PAN2
+         C85CO3 + HO2 --> C85CO3H
+         C85CO3 + HO2 --> C85O2 + OH + CO2
+               C9PAN2 --> C85CO3 + NO2
+          C9PAN2 + OH --> C85OOH + CO + NO2
+         C85CO3H + OH --> C85CO3
+               C89CO3 --> 0.2 C89O2 + 0.8 C811CO3 + 0.2 CO2
+               C89CO3 --> C89CO2H
+         C89CO3 + HO2 --> C89CO3H
+         C89CO3 + HO2 --> C89CO2H + O3
+         C89CO3 + HO2 --> 0.2 C89O2 + 0.8 C811CO3 + OH + 0.2 CO2
+         C89CO3 + NO2 --> C89PAN
+          C89CO3 + NO --> 0.2 C89O2 + 0.8 C811CO3 + NO2 + 0.2 CO2
+         C89CO2H + OH --> 0.2 C89O2 + 0.8 C811CO3 + 0.2 CO2
+         C89CO3H + OH --> C89CO3
+               C89PAN --> C89CO3 + NO2
+          C89PAN + OH --> CH3COCH3 + CO13C4CHO + CO + NO2
+              C811CO3 --> C811O2 + CO2
+              C811CO3 --> PINIC
+        C811CO3 + HO2 --> C811CO3H
+        C811CO3 + HO2 --> PINIC + O3
+        C811CO3 + HO2 --> C811O2 + OH + CO2
+         C811CO3 + NO --> C811O2 + NO2 + CO2
+        C811CO3 + NO2 --> C811PAN
+           PINIC + OH --> C811O2 + CO2
+        NOPINONE + OH --> NOPINDO2
+       NOPINDO2 + HO2 --> NOPINDOOH
+       NOPINDO2 + HO2 --> C89CO3 + OH
+        NOPINDO2 + NO --> C89CO3 + NO2
+             NOPINDO2 --> C89CO3
+            NOPINDOOH --> NOPINDCO
+        NOPINDCO + OH --> C89CO3
+              NOPINOO --> NOPINONE + H2O2
+         NOPINOO + CO --> NOPINONE + CO2
+         NOPINOO + NO --> NOPINONE + NO2
+        NOPINOO + NO2 --> NOPINONE + NO3
+      NORPINENOL + OH --> C86O2 + HCOOH + OH
+   NORPINENOL + HCOOH --> NORPINAL + HCOOH
+     NORPINAL + HCOOH --> NORPINENOL + HCOOH
+        C811CO3H + OH --> C811CO3
+              C811PAN --> C811CO3 + NO2
+         C811PAN + OH --> C721CHO + CO + NO2
+            LTMB + OH --> 2 LCARBON + TLEPOXMUC + HO2
+            LTMB + OH --> 2 LCARBON + C6H5CH2O2
+            LTMB + OH --> 2 LCARBON + CRESOL
+            LTMB + OH --> 2 LCARBON + TLBIPERO2 + HO2
+           LTMB + NO3 --> 2 LCARBON + C6H5CH2O2 + HNO3
+         APINENE + OH --> 0.15 MENTHEN6ONE + 0.75 LAPINABO2 + 0.1 ROO6R1O2 + 0.15 HO2 ... etc.
+       LAPINABO2 + NO --> PINAL + HO2 + NO2
+       LAPINABO2 + NO --> LAPINABNO3
+      LAPINABO2 + HO2 --> LAPINABOOH
+      LAPINABO2 + HO2 --> PINAL + OH + HO2
+            LAPINABO2 --> PINAL + HO2
+      LAPINABOOH + OH --> 0.35 LAPINABO2 + 0.65 C96CO3
+      LAPINABNO3 + OH --> 0.65 C96CO3 + 0.35 PINAL + NO2
+     MENTHEN6ONE + OH --> OHMENTHEN6ONEO2
+ OHMENTHEN6ONEO2 + NO --> OH2MENTHEN6ONE + HO2 + NO2
+OHMENTHEN6ONEO2 + HO2 --> OH2MENTHEN6ONE
+      OHMENTHEN6ONEO2 --> OH2MENTHEN6ONE + HO2
+  OH2MENTHEN6ONE + OH --> 1 LCARBON
+           PINAL + OH --> 0.228 PINALO2 + 0.772 C96CO3
+          PINAL + NO3 --> C96CO3 + HNO3
+               C96CO3 --> C96O2 + CO2
+               C96CO3 --> PINONIC
+         C96CO3 + HO2 --> PERPINONIC
+         C96CO3 + HO2 --> PINONIC + O3
+         C96CO3 + HO2 --> C96O2 + OH + CO2
+         C96CO3 + NO2 --> C10PAN2
+          C96CO3 + NO --> C96O2 + NO2 + CO2
+         C96CO3 + NO3 --> C96O2 + NO2 + CO2
+              C10PAN2 --> C96CO3 + NO2
+         C10PAN2 + OH --> NORPINAL + CO + NO2
+         PINONIC + OH --> C96O2 + CO2
+      PERPINONIC + OH --> C96CO3
+        PINALO2 + HO2 --> PINALOOH
+         PINALO2 + NO --> C106O2 + NO2
+         PINALO2 + NO --> PINALNO3
+              PINALO2 --> C106O2
+        PINALOOH + OH --> PINALO2
+        PINALNO3 + OH --> CO235C6CHO + CH3COCH3 + NO2
+         C106O2 + HO2 --> C106OOH
+          C106O2 + NO --> C716O2 + CH3COCH3 + NO2
+          C106O2 + NO --> C106NO3
+               C106O2 --> C716O2 + CH3COCH3
+         C106OOH + OH --> C106O2
+         C106NO3 + OH --> CO235C6CHO + CH3COCH3 + NO2
+         APINENE + O3 --> 0.08 PINONIC + 0.44 C109O2 + 0.06 APINAOO + 0.09 APINBOO ... etc.
+              APINAOO --> H2O2 + PINAL
+         APINAOO + CO --> PINAL + CO2
+         APINAOO + NO --> PINAL + NO2
+        APINAOO + NO2 --> PINAL + NO3
+              APINBOO --> PINONIC
+              APINBOO --> H2O2 + PINAL
+         APINBOO + CO --> PINAL + CO2
+         APINBOO + NO --> PINAL + NO2
+        APINBOO + NO2 --> PINAL + NO3
+               C109O2 --> C89CO3 + HCHO
+          C109O2 + NO --> C89CO3 + HCHO + NO2
+         C109O2 + HO2 --> C109OOH
+         C109O2 + HO2 --> C89CO3 + HCHO + OH
+         C109OOH + OH --> C109CO + OH
+          C109CO + OH --> C89CO3 + CO
+        APINENE + NO3 --> LNAPINABO2
+           LNAPINABO2 --> PINAL + NO2
+      LNAPINABO2 + NO --> PINAL + 2 NO2
+     LNAPINABO2 + HO2 --> LNAPINABOOH
+     LNAPINABO2 + NO3 --> PINAL + 2 NO2
+     LNAPINABOOH + OH --> LNAPINABO2
+         BPINENE + OH --> BPINAO2
+         BPINENE + OH --> ROO6R1O2
+        BPINAO2 + HO2 --> BPINAOOH
+        BPINAO2 + HO2 --> NOPINONE + HCHO + OH + HO2
+         BPINAO2 + NO --> NOPINONE + HCHO + HO2 + NO2
+         BPINAO2 + NO --> BPINANO3
+              BPINAO2 --> NOPINONE + HCHO + HO2
+        BPINAOOH + OH --> BPINAO2
+        BPINANO3 + OH --> NOPINONE + HCHO + NO2
+        ROO6R1O2 + NO --> ROO6R3O2 + CH3COCH3 + NO2
+        ROO6R1O2 + NO --> ROO6R1NO3
+       ROO6R1O2 + HO2 --> 1 LCARBON
+             ROO6R1O2 --> ROO6R3O2 + CH3COCH3
+         RO6R1O2 + NO --> RO6R3O2 + NO2
+         RO6R1O2 + NO --> RO6R1NO3
+        RO6R1O2 + HO2 --> 1 LCARBON
+              RO6R1O2 --> RO6R3O2
+         RO6R3O2 + NO --> 9 LCARBON + HCHO + HO2 + NO2
+         RO6R3O2 + NO --> LNITROGEN + 1 LCARBON
+        RO6R3O2 + HO2 --> 1 LCARBON
+              RO6R3O2 --> 9 LCARBON + HCHO + HO2
+         BPINENE + O3 --> NOPINONE + 0.37 CH2OO + 0.63 CO + 0.16 OH + 0.16 HO2 ... etc.
+         BPINENE + O3 --> NOPINOO + CO2
+         BPINENE + O3 --> NOPINDO2 + OH + CO2
+         BPINENE + O3 --> C8BC + 2 CO2
+        BPINENE + NO3 --> LNBPINABO2
+     LNBPINABO2 + HO2 --> LNBPINABOOH
+      LNBPINABO2 + NO --> NOPINONE + HCHO + 2 NO2
+     LNBPINABO2 + NO3 --> NOPINONE + HCHO + 2 NO2
+           LNBPINABO2 --> NOPINONE + HCHO + NO2
+           LNBPINABO2 --> BPINANO3
+     LNBPINABOOH + OH --> LNBPINABO2
+       ROO6R1NO3 + OH --> ROO6R3O2 + CH3COCH3 + NO2
+        RO6R1NO3 + OH --> 9 LCARBON + HCHO + HO2 + NO2
+         PINENOL + OH --> NORPINAL + HCOOH + OH
+      PINENOL + HCOOH --> PINAL + HCOOH
+        PINAL + HCOOH --> PINENOL + HCOOH
+          CARENE + OH --> LAPINABO2
+          CARENE + OH --> MENTHEN6ONE + HO2
+          CARENE + OH --> ROO6R1O2
+          CARENE + O3 --> APINBOO
+          CARENE + O3 --> PINONIC
+          CARENE + O3 --> NORPINAL + CO + OH + HO2
+          CARENE + O3 --> APINAOO
+          CARENE + O3 --> C109O2 + OH
+         CARENE + NO3 --> LNAPINABO2
+        SABINENE + OH --> BPINAO2
+        SABINENE + OH --> ROO6R1O2
+        SABINENE + O3 --> NOPINONE + 0.37 HOCH2OOH + 0.63 CO + 0.16 OH + 0.16 HO2 ... etc.
+        SABINENE + O3 --> NOPINOO + CO2
+        SABINENE + O3 --> NOPINDO2 + OH + CO2
+        SABINENE + O3 --> C8BC + 2 CO2
+       SABINENE + NO3 --> LNBPINABO2
+        CAMPHENE + OH --> BPINAO2
+        CAMPHENE + OH --> ROO6R1O2
+        CAMPHENE + O3 --> NOPINONE + 0.37 HOCH2OOH + 0.63 CO + 0.16 OH + 0.16 HO2 ... etc.
+        CAMPHENE + O3 --> NOPINOO + CO2
+        CAMPHENE + O3 --> NOPINDO2 + OH + CO2
+        CAMPHENE + O3 --> C8BC + 2 CO2
+       CAMPHENE + NO3 --> LNBPINABO2
+          LHAROM + OH --> 4 LCARBON + 0.04 CRESOL + 0.03 C6H5CH2O2 + 0.14 TLEPOXMUC ... etc.
+         LHAROM + NO3 --> 4 LCARBON + C6H5CH2O2 + HNO3
+              O3 + Cl --> ClO + O2
+            ClO + O3P --> Cl + O2
+                2 ClO --> Cl2 + O2
+                2 ClO --> 2 Cl + O2
+                2 ClO --> OClO + Cl
+                2 ClO --> Cl2O2
+                Cl2O2 --> 2 ClO
+              H2 + Cl --> H + HCl
+             Cl + HO2 --> HCl + O2
+             Cl + HO2 --> ClO + OH
+            H2O2 + Cl --> HO2 + HCl
+             ClO + OH --> 0.94 Cl + 0.94 HO2 + 0.06 HCl + 0.06 O2
+            ClO + HO2 --> HOCl + O2
+             OH + HCl --> Cl + H2O
+            HOCl + OH --> ClO + H2O
+             ClO + NO --> Cl + NO2
+            ClO + NO2 --> ClNO3
+                ClNO3 --> ClO + NO2
+          ClNO3 + O3P --> ClO + NO3
+           ClNO3 + Cl --> Cl2 + NO3
+             CH4 + Cl --> CH3 + HCl
+            Cl + HCHO --> CO + HO2 + HCl
+          CH3OOH + Cl --> HCHO + OH + HCl
+          ClO + CH3O2 --> Cl + HCHO + HO2
+           CCl4 + O1D --> LCARBON + ClO + 3 Cl
+          CH3Cl + O1D --> 0.9 LCARBON + 0.09 LCHLORINE + 0.1 CH3Cl + 0.09 H + 0.46 ClO ... etc.
+           CH3Cl + OH --> LCARBON + Cl + H2O
+        CH3CCl3 + O1D --> 2 LCARBON + 3 Cl + OH
+         CH3CCl3 + OH --> 2 LCARBON + 3 Cl + H2O
+            C2H4 + Cl --> HOCH2CH2O2 + HCl
+          CH3CHO + Cl --> CH3CO + HCl
+            C2H2 + Cl --> LCARBON + CH3 + HCl
+            C2H6 + Cl --> C2H5O2 + HCl
+          CH3NO3 + Cl --> HCHO + HCl + NO2
+          CH3ONO + Cl --> NO + HCHO + HCl
+           Cl + CH3O2 --> 0.5 CH3O + 0.5 ClO + 0.5 CH2OO + 0.5 HCl
+           CH3CN + Cl --> NCCH2O2 + HCl
+         CF2Cl2 + O1D --> LCARBON + 2 LFLUORINE + ClO + Cl
+          CFCl3 + O1D --> LCARBON + LFLUORINE + ClO + 2 Cl
+              O3 + Br --> BrO + O2
+            O3P + BrO --> Br + O2
+                2 BrO --> 2 Br + O2
+                2 BrO --> Br2 + O2
+             Br + HO2 --> HBr + O2
+            BrO + HO2 --> HOBr + O2
+             HBr + OH --> Br + H2O
+           HOBr + O3P --> BrO + OH
+             Br2 + OH --> HOBr + Br
+           BrNO3 + Br --> Br2 + NO3
+             NO + BrO --> Br + NO2
+            BrO + NO2 --> BrNO3
+                BrNO3 --> BrO + NO2
+            Br + HCHO --> HBr + CO + HO2
+          CH3OOH + Br --> HBr + CH3O2
+          CH3O2 + BrO --> HOBr + CH2OO
+           CH3Br + OH --> LCARBON + Br + H2O
+            C2H4 + Br --> HOCH2CH2O2 + HBr
+          CH3CHO + Br --> CH3CO + HBr
+            C2H2 + Br --> LCARBON + HBr + CH3O2
+           CHBr3 + OH --> LCARBON + 3 Br + H2O
+          CH2Br2 + OH --> LCARBON + 2 Br + H2O
+            BrCl + Br --> Br2 + Cl
+             Cl2 + Br --> BrCl + Cl
+             Br2 + Cl --> BrCl + Br
+            ClO + BrO --> OClO + Br
+            ClO + BrO --> Cl + Br + O2
+            ClO + BrO --> BrCl + O2
+            BrCl + Cl --> Cl2 + Br
+         CHCl2Br + OH --> LCARBON + 2 LCHLORINE + Br + H2O
+         CHClBr2 + OH --> LCARBON + LCHLORINE + 2 Br + H2O
+         CH2ClBr + OH --> LCARBON + LCHLORINE + Br + H2O
+             SO2 + OH --> H2SO4 + HO2
+             DMS + OH --> CH3SO2 + HCHO
+             DMS + OH --> DMSO + HO2
+            DMS + NO3 --> CH3SO2 + HNO3 + HCHO
+            DMSO + OH --> 0.4 CH3SO3H + 0.6 SO2 + 0.6 CH3 + HCHO + 0.4 HO2
+               CH3SO2 --> SO2 + CH3
+          CH3SO2 + O3 --> CH3SO3
+         CH3SO3 + HO2 --> CH3SO3H
+          SO2 + CH2OO --> H2SO4 + HCHO
+        NOPINOO + SO2 --> H2SO4 + NOPINONE
+        APINAOO + SO2 --> H2SO4 + PINAL
+        APINBOO + SO2 --> H2SO4 + PINAL
+          MBOOO + SO2 --> H2SO4 + IBUTALOH
+             DMS + Cl --> CH3SO2 + HCHO + HCl
+             DMS + Br --> CH3SO2 + HBr + HCHO
+            DMS + BrO --> DMSO + Br
+                   O2 --> 2 O3P
+                   O3 --> O1D + O2
+                   O3 --> O3P + O2
+                  H2O --> H + OH
+                 H2O2 --> 2 OH
+                  N2O --> O1D + N2
+                  NO2 --> O3P + NO
+                   NO --> N + O3P
+                  NO3 --> O3P + NO2
+                  NO3 --> NO + O2
+                 N2O5 --> NO3 + NO2
+                 HONO --> NO + OH
+                 HNO3 --> OH + NO2
+                 HNO4 --> 0.333 NO3 + 0.333 OH + 0.667 HO2 + 0.667 NO2
+               CH3OOH --> CH3O + OH
+                 HCHO --> H2 + CO
+                 HCHO --> H + CO + HO2
+                  CO2 --> CO + O3P
+                  CH4 --> 0.1 LCARBON + 0.6912 H2 + 0.42 H + 0.42 CH3 + 0.1824 CO ... etc.
+               CH3ONO --> CH3O + NO
+               CH3NO3 --> CH3O + NO2
+             CH3O2NO2 --> 0.333 CH3O + 0.667 CH3O2 + 0.333 NO3 + 0.667 NO2
+             HOCH2OOH --> HCOOH + OH + HO2
+                CH3O2 --> HCHO + OH
+                HCOOH --> CO + OH + HO2
+           HOCH2O2NO2 --> 0.667 HOCH2O2 + 0.333 HCOOH + 0.333 NO3 + 0.333 HO2 ... etc.
+              C2H5OOH --> CH3CHO + OH + HO2
+               CH3CHO --> CH3 + CO + HO2
+               CH3CHO --> CH2CHOH
+              CH3CO3H --> CH3 + OH + CO2
+                  PAN --> 0.7 CH3CO + 0.3 CH3 + 0.3 NO3 + 0.7 NO2 + 0.3 CO2
+             HOCH2CHO --> CO + HCHO + 2 HO2
+             HOCH2CHO --> HCOCH2O2 + OH
+             HOCH2CHO --> CH3OH + CO
+            HOCH2CO3H --> HCHO + OH + HO2 + CO2
+                 PHAN --> 0.7 HOCH2CO + 0.3 NO3 + 0.3 HCHO + 0.3 HO2 + 0.7 NO2 ... etc.
+                GLYOX --> 2 CO + 2 HO2
+              HCOCO2H --> CO + 2 HO2 + CO2
+              HCOCO3H --> CO + OH + HO2 + CO2
+             HYETHO2H --> HOCH2CH2O + OH
+             ETHOHNO3 --> 2 HCHO + HO2 + NO2
+           HOOCH2CO3H --> HCHO + 2 OH + CO2
+           HOOCH2CO2H --> HCHO + OH + HO2 + CO2
+                CH2CO --> 0.8 H + 0.1 HCOOH + 1.34 CO + 0.16 O3P + 0.16 HCHO + 0.34 OH ... etc.
+           CH3CHOHOOH --> CH3 + HCOOH + OH
+            NO3CH2CHO --> CO + HCHO + HO2 + NO2
+            HOOCH2CHO --> CO + HCHO + OH + HO2
+              C2H5NO3 --> CH3CHO + HO2 + NO2
+            NO3CH2PAN --> 0.7 NO3CH2CO3 + 0.3 NO3 + 0.3 HCHO + NO2 + 0.3 CO2
+            C2H5O2NO2 --> 0.667 C2H5O2 + 0.333 CH3CHO + 0.333 NO3 + 0.333 HO2 ... etc.
+             IC3H7OOH --> CH3COCH3 + OH + HO2
+             CH3COCH3 --> CH3CO + CH3
+               ACETOL --> 0.5 HOCH2CO + 0.5 CH3CO + 0.5 CH3 + 0.5 HCHO + 0.5 HO2 ... etc.
+               MGLYOX --> CH3CO + CO + HO2
+            HYPERACET --> CH3CO + HCHO + OH
+        HOCH2COCH2OOH --> HOCH2CO + HCHO + OH
+             IC3H7NO3 --> CH3COCH3 + HO2 + NO2
+                  NOA --> CH3CO + HCHO + NO2
+            HYPROPO2H --> CH3CHO + HCHO + OH + HO2
+            PR2O2HNO3 --> NOA + OH + HO2
+           HOCH2COCHO --> HOCH2CO + CO + HO2
+           ALCOCH2OOH --> HCOCO + HCHO + OH
+           ALCOCH2OOH --> HOOCH2CO3 + CO + HO2
+            HCOCH2CHO --> HCOCH2O2 + CO + HO2
+           HCOCH2CO2H --> HCOCH2O2 + HO2 + CO2
+           HOC2H4CO3H --> HOCH2CH2O2 + OH + CO2
+                C33CO --> HCOCO + CO + HO2
+            CH3COCO2H --> 0.07 CH3CO2H + 0.16 CH2CHOH + 0.43 CH3CO + 0.32 CH3CHO ... etc.
+            CH3COCO3H --> CH3CO + OH + CO2
+              CH3CHCO --> C2H4 + CO
+            PROPOLNO3 --> HOCH2CHO + HCHO + HO2 + NO2
+        CH3COCH2O2NO2 --> CH3CO + NO3 + HCHO
+             NC3H7OOH --> C2H5CHO + OH + HO2
+             NC3H7NO3 --> C2H5CHO + HO2 + NO2
+              C2H5CHO --> C2H5O2 + CO + HO2
+              C2H5CHO --> PROPENOL
+                  PPN --> 0.7 C2H5CO3 + 0.3 C2H5O2 + 0.3 NO3 + 0.7 NO2 + 0.3 CO2 ... etc.
+           PERPROACID --> C2H5O2 + OH + CO2
+          HCOCOCH2OOH --> HOOCH2CO3 + CO + HO2
+          HCOCOCH2OOH --> HCOCO + HCHO + OH
+           HCOCH2CO3H --> HCOCH2O2 + OH + CO2
+            C3DIALOOH --> GLYOX + CO + OH + HO2
+            C32OH13CO --> GLYOX + CO + 2 HO2
+           HCOCOHCO3H --> GLYOX + OH + HO2 + CO2
+             LC4H9OOH --> C3H7CHO + OH + HO2
+             LC4H9OOH --> 0.636 MEK + 0.364 C2H5O2 + 0.364 CH3CHO + OH + 0.636 HO2 ... etc.
+                  MVK --> 0.5 C3H6 + 0.5 CH3CO + CO + 0.5 HCHO + 0.5 HO2
+                  MEK --> C2H5O2 + CH3CO
+              LMEKOOH --> 0.38 HOCH2CH2O2 + 0.62 CH3CO + 0.62 CH3CHO + 0.38 HCHO ... etc.
+               BIACET --> 2 CH3CO
+             LC4H9NO3 --> C3H7CHO + HO2 + NO2
+             LC4H9NO3 --> MEK + HO2 + NO2
+                 MPAN --> 0.3 MACO2 + 0.7 MACO3 + 0.3 NO3 + 0.7 NO2
+            CO2H3CO3H --> MGLYOX + OH + HO2 + CO2
+            CO2H3CO3H --> HCOCO3H + CH3CO + HO2
+                 MACR --> 0.5 MACO3 + 0.5 CH3CO + 0.5 CO + 0.5 HCHO + HO2
+              MACROOH --> MACRO + OH
+               MACROH --> ACETOL + CO + 2 HO2
+               MACO3H --> MACO2 + OH
+           LHMVKABOOH --> 0.12 MGLYOX + 0.88 CH3CO + 0.88 HOCH2CHO + 0.12 HCHO ... etc.
+             CO2H3CHO --> MGLYOX + CO + 2 HO2
+            HO12CO3C4 --> CH3CO + HOCH2CHO + HO2
+             BIACETOH --> HOCH2CO + CH3CO
+            HCOCCH3CO --> 0.5 CH3CHCO + 0.5 CH3CHO + 1.5 CO + 0.5 OH
+            CH3COCHCO --> 0.1848 H2O2 + 0.0192 CH3COCO2H + 0.2208 MGLYOX + 0.56 CH3CO ... etc.
+            CH3COCHCO --> CH3CHCO + CO
+            CO23C3CHO --> CH3CO + 2 CO + HO2
+            CO23C3CHO --> HCOCO + CH3CO
+          CH3COCOCO2H --> CH3CO + CO + HO2 + CO2
+            BIACETOOH --> CH3CO + CO + HCHO + OH
+            BIACETOOH --> HCOCO + CH3CO
+               C44OOH --> HCOCH2CHO + OH + HO2 + CO2
+            C413COOOH --> HCOCH2CO3 + HCHO + OH
+             C4CODIAL --> CHOCOCH2O2 + CO + HO2
+             C4CODIAL --> HCOCH2CO3 + CO + HO2
+           C312COCO3H --> CHOCOCH2O2 + OH + CO2
+              LMEKNO3 --> 0.38 HOCH2CH2O2 + 0.62 CH3CO + 0.62 CH3CHO + 0.38 HCHO ... etc.
+               MVKNO3 --> CH3CO + HOCH2CHO + NO2
+              MACRNO3 --> ACETOL + CO + HO2 + NO2
+             TC4H9NO3 --> CH3COCH3 + CH3 + NO2
+             TC4H9OOH --> CH3COCH3 + CH3 + OH
+           IBUTOLBNO3 --> CH3COCH3 + HCHO + HO2 + NO2
+           IBUTOLBOOH --> CH3COCH3 + HCHO + OH + HO2
+           LBUT1ENOOH --> C2H5CHO + HCHO + OH + HO2
+           LBUT1ENNO3 --> C2H5CHO + HCHO + HO2 + NO2
+            BUT2OLOOH --> 2 CH3CHO + OH + HO2
+            BUT2OLNO3 --> 2 CH3CHO + HO2 + NO2
+              BUT2OLO --> HOCH2CO + CH3CO
+              C3H7CHO --> NC3H7O2 + CO + HO2
+              C3H7CHO --> CH2CHOH + C2H4
+               IPRCHO --> IC3H7O2 + CO + HO2
+             IC4H9NO3 --> IPRCHO + NO2
+             IC4H9OOH --> IPRCHO + OH + HO2
+           PERIBUACID --> IC3H7O2 + OH + CO2
+                 PIPN --> 0.3 IC3H7O2 + 0.7 IPRCO3 + 0.3 NO3 + 0.7 NO2 + 0.3 CO2 ... etc.
+                 HVMK --> MGLYOX + CO + 2 OH
+                 HMAC --> HCOCCH3CO + 2 OH
+             CO2C3CHO --> CH3COCH2O2 + CO + HO2
+             CO2C3CHO --> HVMK
+             IBUTDIAL --> CH3CHO + CO + HO2 + H2O + CO2
+             IBUTDIAL --> HMAC
+             IBUTALOH --> CH3COCH3 + CO + 2 HO2
+            IPRHOCO3H --> CH3COCH3 + OH + HO2 + CO2
+           MALDIALOOH --> C32OH13CO + CO + OH + HO2
+           MALDIALOOH --> 2 GLYOX + OH + HO2
+              BZFUOOH --> CO14O3CHO + OH + HO2
+           HOCOC4DIAL --> HCOCOHCO3 + CO + HO2
+             NBZFUOOH --> 0.5 NBZFUONE + 0.5 CO14O3CHO + OH + 0.5 HO2 + 0.5 NO2 ... etc.
+           MALDALCO3H --> HCOCO3H + 2 CO + 2 HO2
+           MALDALCO3H --> 0.6 MALANHY + 0.4 GLYOX + 0.4 CO + OH + HO2 + 0.4 CO2 ... etc.
+            EPXDLCO2H --> C3DIALO2 + HO2 + CO2
+              MALDIAL --> 0.4 BZFUONE + 0.6 MALDIALCO3 + 0.6 HO2
+           MALANHYOOH --> HCOCOHCO3 + OH + CO2
+            EPXDLCO3H --> C3DIALO2 + OH + CO2
+            CO2C4DIAL --> 4 CO + 2 HO2
+           MALDALCO2H --> HCOCO2H + 2 CO + 2 HO2
+            EPXC4DIAL --> C3DIALO2 + CO + HO2
+            CO14O3CHO --> HCOCH2O2 + CO + HO2 + CO2
+           MECOACEOOH --> CH3CO + HCHO + OH + CO2
+           LISOPACOOH --> LISOPACO + OH
+           LISOPACNO3 --> LISOPACO + NO2
+             ISOPBOOH --> MVK + HCHO + OH + HO2
+             ISOPBNO3 --> MVK + HCHO + HO2 + NO2
+             ISOPDOOH --> MACR + HCHO + OH + HO2
+             ISOPDNO3 --> MACR + HCHO + HO2 + NO2
+             NISOPOOH --> NC4CHO + OH + HO2
+               NC4CHO --> LHC4ACCO3 + NO2
+              LNISOOH --> 0.5 HOCHCHO + NOA + 0.5 CO + OH + 0.5 HO2 + 0.5 CO2 ... etc.
+            LHC4ACCHO --> 0.5 LHC4ACCO3 + 0.25 MACRO2 + 0.25 LHMVKABO2 + 0.5 CO ... etc.
+             LC578OOH --> 0.25 HOCHCHO + 0.25 ACETOL + 0.75 MGLYOX + 0.75 HOCH2CHO ... etc.
+           LHC4ACCO3H --> 0.5 MACRO2 + 0.5 LHMVKABO2 + 2 OH + CO2
+           LC5PAN1719 --> 0.7 LHC4ACCO3 + 0.15 MACRO2 + 0.15 LHMVKABO2 + 0.3 NO3 ... etc.
+                HCOC5 --> HOCH2CO + 0.35 CH3COCH2O2 + 0.65 CH3 + 0.65 CO + 0.65 HCHO ... etc.
+               C59OOH --> HOCH2CO + ACETOL + OH
+              C511OOH --> HCOCH2CHO + CH3CO + OH
+            CO23C4CHO --> BIACETO2 + CO + HO2
+            CO23C4CHO --> HCOCH2CO3 + CH3CO
+           CO23C4CO3H --> BIACETO2 + OH + CO2
+              C512OOH --> C513O2 + OH
+            CO13C4CHO --> CHOC3COO2 + CO + HO2
+              C513OOH --> HOC2H4CO3 + GLYOX + OH
+               C513CO --> HOC2H4CO3 + 2 CO + HO2
+              C514OOH --> CO13C4CHO + OH + HO2
+              C514NO3 --> CO13C4CHO + HO2 + NO2
+       LZCODC23DBCOOH --> HVMK + CO + 2 OH
+       LZCODC23DBCOOH --> CH3CO + HOCH2CHO + CO + OH
+       LZCODC23DBCOOH --> HMAC + CO + 2 OH
+       LZCODC23DBCOOH --> ACETOL + 2 CO + OH + HO2
+       LZCO3HC23DBCOD --> 0.38 EZCHOCCH3CHO2 + 0.62 EZCH3CO2CHCHO + OH + CO2
+       C1OOHC2OOHC4OD --> HYPERACET + 2 CO + OH + HO2
+       C1OOHC2OOHC4OD --> 0.5 HOCHCHO + 0.5 HYPERACET + 0.5 CO2H3CHO + 0.5 HCHO ... etc.
+               DB1OOH --> DB1O + OH
+               DB2OOH --> 0.48 ACETOL + 0.52 MGLYOX + 0.48 GLYOX + 0.52 HOCH2CHO ... etc.
+        C1ODC2OOHC4OD --> HOCHCHO + MGLYOX + OH
+        C1ODC2OOHC4OD --> CO2H3CHO + CO + OH + HO2
+              C4MDIAL --> 0.5 CH3COCHCO + 0.5 HCOCCH3CO + CO + OH + HO2
+               DB1NO3 --> DB1O + NO2
+           CHOC3COOOH --> CHOC3COO2 + OH + CO2
+            LMBOABOOH --> CH3COCH3 + HOCH2CHO + OH + HO2
+            LMBOABOOH --> IBUTALOH + HCHO + OH + HO2
+               MBOACO --> IPRHOCO3 + HCHO + HO2
+              MBOCOCO --> IPRHOCO3 + CO + HO2
+           LNMBOABOOH --> NO3CH2CHO + CH3COCH3 + OH + HO2
+           LNMBOABOOH --> IBUTALOH + HCHO + OH + NO2
+            NC4OHCO3H --> IBUTALOH + OH + NO2 + CO2
+                C54CO --> CH3CO + 3 CO + HO2
+           C5134CO2OH --> CO23C3CHO + CO + 2 HO2
+            C5DIALOOH --> MALDIAL + CO + OH + HO2
+             C5CO14OH --> HCOCO2H + CH3CO + CO + HO2
+             C5DICARB --> 0.4 TLFUONE + 0.6 C5CO14O2 + 0.6 HO2
+           MC3ODBCO2H --> CH3COCO2H + 2 CO + 2 HO2
+            ACCOMECHO --> MECOACETO2 + CO + HO2
+           MMALNHYOOH --> CO2H3CO3 + OH + CO2
+           C5DICAROOH --> MGLYOX + GLYOX + OH + HO2
+             NTLFUOOH --> ACCOMECHO + OH + NO2
+            C5CO14OOH --> 0.83 MALANHY + 0.17 MGLYOX + 0.83 CH3 + 0.17 CO + OH ... etc.
+              TLFUOOH --> ACCOMECHO + OH + HO2
+           ACCOMECO3H --> MECOACETO2 + OH + CO2
+             C5DIALCO --> MALDIALCO3 + CO + HO2
+              C614NO3 --> CO23C4CHO + HCHO + HO2 + NO2
+              C614OOH --> CO23C4CHO + HCHO + OH + HO2
+           CO235C5CHO --> CO23C4CO3 + CO + HO2
+           CO235C6OOH --> CO23C4CO3 + HCHO + OH
+              PHENOOH --> 0.29 PBZQONE + 0.71 MALDALCO2H + 0.71 GLYOX + OH + HO2 ... etc.
+              C6CO4DB --> C4CO2DBCO3 + CO + HO2
+           C5CO2DCO3H --> C33CO + CH3CO + OH + CO2
+           NDNPHENOOH --> NC4DCO2H + HNO3 + 2 CO + OH + NO2
+           BZBIPERNO3 --> BZFUONE + GLYOX + HO2 + NO2
+            HOC6H4NO2 --> CPDKETENE + HONO
+            CPDKETENE --> MALDIAL + CO + 2 HO2 + CO2
+           C5COOHCO3H --> HOCOC4DIAL + CO + OH + HO2 + CO2
+            BZEPOXMUC --> 0.5 C5DIALO2 + 0.5 MALDIAL + 1.5 CO + 1.5 HO2
+            NPHEN1OOH --> NPHEN1O + OH
+             BZEMUCCO --> C3DIALO2 + HCOCOHCO3
+           BZEMUCCO2H --> C5DIALO2 + HO2 + CO2
+           NNCATECOOH --> NC4DCO2H + HCOCO2H + OH + NO2
+           C615CO2OOH --> C5DICARB + CO + OH + HO2
+             NPHENOOH --> MALDALCO2H + GLYOX + OH + NO2
+            NCATECOOH --> NC4DCO2H + HCOCO2H + OH + HO2
+              PBZQOOH --> C5CO2OHCO3 + OH
+           BZOBIPEROH --> MALDIALCO3 + GLYOX + HO2
+           BZBIPEROOH --> BZFUONE + GLYOX + OH + HO2
+              NBZQOOH --> C6CO4DB + OH + NO2
+            CATEC1OOH --> CATEC1O + OH
+              C6125CO --> C5CO14O2 + CO + HO2
+            DNPHENOOH --> NC4DCO2H + HCOCO2H + OH + NO2
+           BZEMUCCO3H --> C5DIALO2 + OH + CO2
+              C6H5OOH --> C6H5O + OH
+            BZEMUCOOH --> 0.5 C32OH13CO + 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 GLYOX ... etc.
+            BZEMUCNO3 --> EPXC4DIAL + GLYOX + HO2 + NO2
+               DNPHEN --> NCPDKETENE + HONO
+           NCPDKETENE --> NC4DCO2H + CO + 2 HO2 + CO2
+           CO235C6CHO --> CHOC3COCO3 + CH3CO
+           C235C6CO3H --> CO235C6O2 + OH + CO2
+              C716OOH --> CO13C4CHO + CH3CO + OH
+              C721OOH --> C722O2 + OH
+              C722OOH --> C44O2 + CH3COCH3 + OH
+            TLEPOXMUC --> 0.5 C615CO2O2 + 0.5 EPXC4DIAL + 0.5 CH3CO + CO + HO2 ... etc.
+           C6H5CH2OOH --> BENZAL + OH + HO2
+           C6H5CH2NO3 --> BENZAL + HO2 + NO2
+               BENZAL --> C6H5O2 + CO + HO2
+           TLBIPEROOH --> 0.2 BZFUONE + 0.2 TLFUONE + 0.2 MALDIAL + 0.2 C5DICARB ... etc.
+           TLBIPERNO3 --> 0.2 BZFUONE + 0.2 TLFUONE + 0.2 MALDIAL + 0.2 C5DICARB ... etc.
+           TLOBIPEROH --> C5CO14O2 + GLYOX + HO2
+              CRESOOH --> 0.32 PTLQONE + 0.68 C5CO14OH + 0.68 GLYOX + OH + HO2 ... etc.
+             NCRESOOH --> 0.32 PTLQONE + 0.68 C5CO14OH + 0.68 GLYOX + OH + HO2 ... etc.
+             NCRESOOH --> C5CO14OH + GLYOX + OH + NO2
+            TOL1OHNO2 --> MCPDKETENE + HONO
+           TLEMUCCO2H --> C615CO2O2 + HO2 + CO2
+           TLEMUCCO3H --> C615CO2O2 + OH + CO2
+            TLEMUCOOH --> 0.5 EPXC4DIAL + 0.5 C3DIALO2 + 0.5 MGLYOX + 0.5 CO2H3CHO ... etc.
+            TLEMUCNO3 --> EPXC4DIAL + CH3CO + CO + HO2 + NO2
+             TLEMUCCO --> EPXC4DIAL + CH3CO + CO + HO2
+             C6H5CO3H --> C6H5O2 + OH + CO2
+             OXYL1OOH --> TOL1O + OH
+             MNCATECH --> MCPDKETENE + HONO
+           MCPDKETENE --> C4MDIAL + CO + 2 HO2 + CO2
+               DNCRES --> MNCPDKETENE + HONO
+          MNCPDKETENE --> NC4MDCO2H + CO + 2 HO2 + CO2
+           MCATEC1OOH --> MCATEC1O + OH
+             NPTLQOOH --> C7CO4DB + OH + NO2
+              PTLQOOH --> C6CO2OHCO3 + OH
+            NCRES1OOH --> NCRES1O + OH
+           MNNCATCOOH --> NC4MDCO2H + HCOCO2H + OH + NO2
+           MNCATECOOH --> NC4MDCO2H + HCOCO2H + OH + HO2
+              C7CO4DB --> C5CO2DBCO3 + CO + HO2
+           NDNCRESOOH --> NC4MDCO2H + HNO3 + 2 CO + OH + NO2
+            DNCRESOOH --> NC4MDCO2H + HCOCO2H + OH + NO2
+           C6COOHCO3H --> C5134CO2OH + CO + OH + HO2 + CO2
+               C86OOH --> C511O2 + CH3COCH3 + OH
+              C812OOH --> C813O2 + OH
+              C813OOH --> C512O2 + CH3COCH3 + OH
+              C721CHO --> C721O2 + CO + HO2
+             C721CO3H --> C721O2 + OH + CO2
+              C8BCOOH --> C89O2 + OH
+               C89OOH --> C810O2 + OH
+               C89NO3 --> C810O2 + NO2
+              C810OOH --> C514O2 + CH3COCH3 + OH
+              C810NO3 --> C514O2 + CH3COCH3 + NO2
+              C8BCNO3 --> C89O2 + NO2
+               C85OOH --> C86O2 + OH
+            STYRENOOH --> BENZAL + HCHO + OH + HO2
+               C96OOH --> C97O2 + OH
+               C97OOH --> C98O2 + OH
+               C98OOH --> C614O2 + CH3COCH3 + OH
+             NORPINAL --> C85O2 + CO + HO2
+             NORPINAL --> NORPINENOL
+              C85CO3H --> C85O2 + OH + CO2
+              C89CO2H --> 0.2 C89O2 + 0.8 C811CO3 + HO2 + 0.2 CO2
+              C89CO3H --> 0.2 C89O2 + 0.8 C811CO3 + OH + 0.2 CO2
+             C811CO3H --> C811O2 + OH + CO2
+            NOPINDOOH --> C89CO3 + OH
+           LAPINABOOH --> PINAL + OH + HO2
+          MENTHEN6ONE --> RO6R1O2 + OH
+       OH2MENTHEN6ONE --> 1 LCARBON + OH
+                PINAL --> C96O2 + CO + HO2
+                PINAL --> PINENOL
+           PERPINONIC --> C96O2 + OH + CO2
+             PINALOOH --> C106O2 + OH
+             PINALNO3 --> C106O2 + NO2
+              C106OOH --> C716O2 + CH3COCH3 + OH
+              C106NO3 --> C716O2 + CH3COCH3 + NO2
+              C109OOH --> C89CO3 + HCHO + OH
+               C109CO --> C89CO3 + CO + HO2
+          LNAPINABOOH --> PINAL + OH + NO2
+             BPINAOOH --> NOPINONE + HCHO + OH + HO2
+          LNBPINABOOH --> NOPINONE + HCHO + OH + NO2
+            ROO6R1NO3 --> ROO6R3O2 + CH3COCH3 + NO2
+             RO6R1NO3 --> 9 LCARBON + HCHO + HO2 + NO2
+                  Cl2 --> 2 Cl
+                Cl2O2 --> 2 Cl
+                 OClO --> ClO + O3P
+                  HCl --> H + Cl
+                 HOCl --> Cl + OH
+                ClNO2 --> Cl + NO2
+                ClNO3 --> Cl + NO3
+                ClNO3 --> ClO + NO2
+                CH3Cl --> CH3 + Cl
+                 CCl4 --> LCARBON + 4 Cl
+              CH3CCl3 --> 2 LCARBON + 3 Cl
+                CFCl3 --> LCARBON + LFLUORINE + 2 LCHLORINE + Cl
+               CF2Cl2 --> LCARBON + 2 LFLUORINE + LCHLORINE + Cl
+                  Br2 --> 2 Br
+                  BrO --> O3P + Br
+                 HOBr --> Br + OH
+                BrNO2 --> Br + NO2
+                BrNO3 --> 0.85 Br + 0.15 BrO + 0.85 NO3 + 0.15 NO2
+                CH3Br --> CH3 + Br
+               CH2Br2 --> LCARBON + 2 Br
+                CHBr3 --> LCARBON + 3 Br
+                CF3Br --> LCARBON + 3 LFLUORINE + Br
+                 BrCl --> Cl + Br
+              CF2ClBr --> LCARBON + 2 LFLUORINE + Cl + Br
+              CH2ClBr --> LCARBON + Cl + Br
+              CHCl2Br --> LCARBON + 2 Cl + Br
+              CHClBr2 --> LCARBON + Cl + 2 Br
+           N2O5 + H2O --> 2 HNO3
+                 N2O5 --> 2 NO3m_cs + 2 Hp_cs
+           HOCl + HCl --> Cl2 + H2O
+          ClNO3 + HCl --> Cl2 + HNO3
+          ClNO3 + H2O --> HOCl + HNO3
+           N2O5 + HCl --> ClNO2 + HNO3
+           HOBr + HBr --> Br2 + H2O
+          BrNO3 + H2O --> HOBr + HNO3
+          ClNO3 + HBr --> BrCl + HNO3
+          BrNO3 + HCl --> BrCl + HNO3
+           HOCl + HBr --> BrCl + H2O
+           HOBr + HCl --> BrCl + H2O

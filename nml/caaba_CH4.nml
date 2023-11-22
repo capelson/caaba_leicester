@@ -1,0 +1,15 @@
+! -*- f90 -*- Time-stamp: <2020-09-20 14:57:16 sander>
+
+&CAABA
+
+USE_MECCA   = T
+USE_JVAL    = T
+USE_SEMIDEP = T
+
+init_scenario = 'MBL'
+
+photrat_channel = 'jval'
+
+runtime_str = '5 days'
+
+/

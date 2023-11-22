@@ -1,0 +1,46 @@
+\def\myfiledate{2020-09-24}
+\documentclass[a4paper]{article}
+
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{chem}
+\oddsidemargin-15mm
+\evensidemargin-10mm
+\topmargin-20mm
+\textheight240mm
+\textwidth180mm
+\raggedbottom
+\parindent0mm
+\parskip1.0ex plus0.5ex minus0.5ex
+
+\newcommand{\kpp}[1]{#1}%qqq
+\newwrite\henrynotefile \immediate\openout\henrynotefile = chemprop_henrynote.tex
+\newwrite\alphanotefile \immediate\openout\alphanotefile = chemprop_alphanote.tex
+\newwrite\acidnotefile  \immediate\openout\acidnotefile  = chemprop_acidnote.tex
+\newcommand{\henrynote}[2]{\protect\write\henrynotefile{\protect\item{\bf #1:} #2}}
+\newcommand{\alphanote}[2]{\protect\write\alphanotefile{\protect\item{\bf #1:} #2}}
+\newcommand{\acidnote}[2]{\protect\write\acidnotefile{\protect\item{\bf #1:} #2}}
+\makeatletter
+\def\donotedit{\@percentchar\space Created automatically. Edit notes in chemprop.tbl, not here!}
+\makeatother
+\immediate\write\henrynotefile{\donotedit}
+\immediate\write\alphanotefile{\donotedit}
+\immediate\write\acidnotefile{\donotedit}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+
+  \vspace*{30mm}
+  {\Huge\bf CHEMPROP Data}\\[15mm]
+  {\LARGE A list of chemical properties for MECCA from \verb|chemprop.tbl|}\\[3mm]
+
+  \vfill
+
+  {\Large Date: \myfiledate}
+
+\end{center}
+
+\clearpage
+

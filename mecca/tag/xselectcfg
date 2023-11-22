@@ -1,0 +1,69 @@
+#! /bin/tcsh -f
+
+# --------------------------------------------------------------------------
+# SELECTION OF DESIRED CONFIGURATION(S)
+# --------------------------------------------------------------------------
+
+#set nonomatch
+set letters = (a b d e f g h i j k l m n p r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9)
+
+if ( "$1" == "" ) then
+  set crit = \*.cfg
+else
+  set crit = $1
+endif
+
+echo "please, choose the set of tagging configurations from:"
+echo ""
+# listing configurations found in the current directory
+set cn = "0"
+set cfgfiles = (${crit})
+set cfgletters = ""
+foreach i (${cfgfiles})
+  @ cn=$cn + 1
+  set desc = `grep "#N#" ${cfgfiles[$cn]} | sed 's|#N#||g' | sed 's|;||g'`
+  set ltmp = `grep "#K#" ${cfgfiles[$cn]} | sed 's|#K#||g' | sed 's|;||g'`
+  if ("${desc}" == "") set desc = "<no description found>"
+  if ("${ltmp}" == "") set ltmp = ${letters[$cn]}
+  set cfgletters = (${cfgletters} ${ltmp})
+  echo "${cfgletters[$cn]}^${cfgfiles[$cn]}^${desc}" | gawk -F^ '{ printf "%2s) %32s | %-10s\n", $1, $2, $3 }'
+end
+echo ""
+echo -n "[one or more letters (no spaces!), quit=q]: "
+
+# inputting selection
+if (! ${?batch}) then
+  set inputstring = "$<"
+else
+  echo "${tagcfg} (selected from batch)"
+  echo ""
+  set inputstring = ${tagcfg}
+endif
+
+# masking empty input non-letter
+if ( "${inputstring}" == "" ) set inputstring = "&"
+
+# desired quit
+if ( "${inputstring}" == "q" ) exit 1
+
+# parsing configurations selection
+set cfglist = ""
+set cln = "0"
+foreach i (${cfgletters})
+  @ cln=$cln + 1
+  set instr = `echo ${inputstring} ${cfgletters[$cln]} | awk '{print index($1,$2)}'`
+  if ("${instr}" != "0") then
+  # adding configuration
+    set cfglist = (${cfglist} ${cfgfiles[$cln]})
+  endif
+end
+
+# final choice
+if ("${cfglist}" == "") then
+  echo "ambiguous input; no configurations selected. exiting."
+  echo ""
+  exit 1
+endif
+
+echo "[ selected configuration(s): ${cfglist} ]"
+echo ""

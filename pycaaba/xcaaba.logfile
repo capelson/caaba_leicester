@@ -1,0 +1,9 @@
+xcaaba was started on 2023-09-20 at 13:16:08 by user taras on machine taras
+Contents of config file /home/taras/Work/EMAC/caaba_leicester/ini/example.ini:
+meccainifile    = example
+compile         = c
+nmlfile         = caaba_example.nml
+l_montecarlo    = False
+runcaaba        = y
+outputdir       = UK_full_Cl
+l_caabaplot     = True

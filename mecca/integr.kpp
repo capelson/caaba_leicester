@@ -1,0 +1,14 @@
+// created automatically by xmecca, DO NOT EDIT!
+#INTEGRATOR rosenbrock_posdef
+#INLINE F90_GLOBAL
+  ! KPP info from xmecca (via integr.kpp):
+  CHARACTER(LEN=*), PUBLIC, PARAMETER :: &
+    mecca_spc_file     = '-rw-rw-r-- 1 pcdt pcdt 140285 Mar 22 10:44 mecca.spc', &
+    mecca_eqn_file     = '-rw-rw-r-- 1 pcdt pcdt 537909 Mar 22 10:44 mecca.eqn', &
+    mecca_spc_file_sum = '65208   137', &
+    mecca_eqn_file_sum = '19849   526', &
+    kppoption          = 'k', &
+    KPP_HOME           = '/home/pcdt/Documents/Delhi-CAABA-MECCA/caaba-mecca-delhi/caaba/mecca/kpp', &
+    KPP_version        = '2.2.3_rs3', &
+    integr             = 'rosenbrock_posdef'
+#ENDINLINE {above lines go to messy_mecca_kpp_global}

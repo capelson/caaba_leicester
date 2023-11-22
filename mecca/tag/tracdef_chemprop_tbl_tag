@@ -1,0 +1,42 @@
+#!/bin/tcsh -f
+
+set self = `basename $0`
+set tbl = $1
+set colname = "(<CHEMPROP>)|(basename)"
+
+set prop = `cat ${tbl} | grep -E "${colname}" | head -n 1 | sed 's/[|#]//g'`
+set qprop = `echo ${prop} | wc -w`
+@ pn = 0
+@ cpn = 0
+foreach p ( $prop )
+  @ pn++
+  set chk = `echo "$prop[$pn]" | grep -E "${colname}"`
+  if ( "${chk}" != "" ) @ cpn = $pn
+end
+
+if ( "$cpn" == "0" ) then
+  echo "${self}":" error: could not determine name column / $colname / in $1. exit."
+  exit 1
+endif
+
+rm -f ${self}.tmp
+cat ${tbl} | grep -v '#' | sed 's/^|//' > ${self}.tmp
+
+echo "! -*- f90 -*- this file was created by xmecca/xtag/${self} by ${USER}@`hostname -f` on `date`"
+echo "! please, do not edit - this file contains additional properties for tagged species/tracers"
+
+@ pn = 0
+foreach p ( $prop )
+  @ pn++
+  if ( "${pn}" != "${cpn}" ) then
+    cat ${self}.tmp | awk -v pn=$pn -v prop=$prop[$pn] -v cpn=$cpn \
+      '{ n=split($0,val,"|"); \
+         gsub(/ /,"",val[cpn]); gsub(/ /,"",val[pn]); \
+         if ( (val[pn])!="" ) { \
+           print "  call set_tracer(status, setname, idt_"val[cpn]", "prop", "val[pn]")"; \
+           print "  call tracer_halt(substr, status)"; \
+         } }'
+  endif
+end
+
+rm -f ${self}.tmp

@@ -1,0 +1,4765 @@
+
+line: {created automatically by xmecca, DO NOT EDIT!}
+no eqntag found
+
+line: #SETFIX "O2; N2; NO; NO2;"
+no eqntag found
+
+line: {fixed species from setfixlist in inifile}
+no eqntag found
+
+line: {SETFIX of liquid H2O_a* is done in mecca.spc via xmecca}
+no eqntag found
+
+line: #INLINE F90_GLOBAL
+no eqntag found
+
+line:   ! MECCA info from xmecca:
+no eqntag found
+
+line:   CHARACTER(LEN=*), PUBLIC, PARAMETER :: &
+no eqntag found
+
+line:     timestamp            = 'xmecca was run on 2023-10-11 at 14:27:58 by user taras on machine taras', &
+no eqntag found
+
+line:     inifile              = 'delhi.ini', &
+no eqntag found
+
+line:     gas_spc_file         = '-rw-rw-r-- 1 taras taras 91611 Mar 22  2023 gas.spc', &
+no eqntag found
+
+line:     aqueous_spc_file     = '-rw-rw-r-- 1 taras taras 40714 Sep 28  2022 aqueous.spc', &
+no eqntag found
+
+line:     gas_eqn_file         = '-rw-rw-r-- 1 taras taras 327510 Mar 22  2023 gas.eqn', &
+no eqntag found
+
+line:     aqueous_eqn_file     = '-rw-rw-r-- 1 taras taras 201634 Mar 22  2023 aqueous.eqn', &
+no eqntag found
+
+line:     gas_spc_file_sum     = '45130    90', &
+no eqntag found
+
+line:     aqueous_spc_file_sum = '07476    40', &
+no eqntag found
+
+line:     gas_eqn_file_sum     = '00940   320', &
+no eqntag found
+
+line:     aqueous_eqn_file_sum = '28358   197', &
+no eqntag found
+
+line:     rplfile              = '', &
+no eqntag found
+
+line:     wanted               = 'Tr and (G or (Aa or Mbl)) and not I and not Hg', &
+no eqntag found
+
+line:     diagtracfile         = '', &
+no eqntag found
+
+line:     rxnrates             = 'n', &
+no eqntag found
+
+line:     tag                  = 'n'
+no eqntag found
+
+line:   LOGICAL, PARAMETER :: REQ_MCFCT = .FALSE.
+no eqntag found
+
+line: #ENDINLINE {above lines go to messy_mecca_kpp_global}
+no eqntag found
+
+line: #INLINE F90_GLOBAL
+no eqntag found
+
+line:   ! from xmecca for aerosol:
+no eqntag found
+
+line:   INTEGER, PARAMETER, PUBLIC :: APN = 1
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_O2_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_O3_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HO3_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HO4_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_OH_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HO2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_H2O_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_H2O2_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NH3_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO3_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_N2O5_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HONO_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HNO3_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HNO4_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3OH_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOOH_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCHO_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3O2_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2OH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2OOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3ONO2_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3NO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOOOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2O2_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOHO2_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCO3_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CO2H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PAN_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CHO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MG2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HMF_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C2H5OH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CH2O2_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HYETHO2H_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ETHGLY_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CHOHOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COHOHO2_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CHOHO2_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CHO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHO2CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHO2CHOHOH_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2COHOHO2_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CHOHOH_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_GLYOX_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOCHOHOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOHCHOHOH_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOCO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOCOHOHO2_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOHCOHOHO2_a   = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOHCOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CO3H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CO3H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2OOCOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C2H5OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C2H5O2_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOOCH2CO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOOCOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOOCCOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOOHOOCOOH_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCO2H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_COOHCO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_COOHCOHOHO2_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOOCH2CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOOCH2CHOHOH_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2CHOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C2H5NO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CN_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2CO_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CHOHOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCO3H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOOCH2CO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ETHOHNO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PHAN_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCH3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MG3_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HM2F_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MGLYOX_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCHOHOH_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCH2O2_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ACETOL_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCHOHO2_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IPROPOL_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HYPERACET_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IC3H7OOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IC3H7O2_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ALCOCH2OOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C33CO_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CHCO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCO3H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCH2CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCH2CO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCH2CO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCOCH2OOH_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOC2H4CO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOC2H4CO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2COCH2OOH_a   = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2COCHO_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HYPROPO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C32OH13CO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C3DIALOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCOHCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_METACETHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C3PAN1_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C3PAN2_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCH2O2NO2_a   = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NOA_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PR2O2HNO3_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PROPOLNO3_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCOHPAN_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_GOLIG1_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_GOLIG2_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_GOLIG3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HGO1_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HGO2_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HGO3_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MACR_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2OHCO2CH3CHO_a  = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MVK_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCHO2CH2OH_a  = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCOCH2OH_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2OHCHOHCOCH3_a  = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BIACETO2_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BIACETOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BIACETOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BUT2OLO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BUT2OLOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C312COCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C413COOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C44OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4CODIAL_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCHCO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCOCO2H_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COOHCHCHO_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOC3COO2_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO23C3CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2C3CHO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2H3CHO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2H3CO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2H3CO3H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCCH3CHOOH_a    = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOCCH3CO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HMAC_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HO12CO3C4_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HVMK_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IBUTALOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IBUTDIAL_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IBUTOLBOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IPRHOCO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IPRHOCO3H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MACO2H_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MACO3H_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MACROH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MACROOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZFUCO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZFUOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO14O3CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO14O3CO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2C4DIAL_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_EPXC4DIAL_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_EPXDLCO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_EPXDLCO3H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCOC4DIAL_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MALANHYOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MALDALCO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MALDALCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MALDIAL_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MALDIALOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MALNHYOHCO_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MECOACEOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C312COPAN_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4PAN5_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MVKNO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NBZFUOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NC4DCO2H_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LBUT1ENOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LHMVKABOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LMEKOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5H8_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C1ODC2O2C4OOH_a   = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C1ODC2OOHC4OD_a   = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C1ODC3O2C4OOH_a   = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C1OOHC2OOHC4OD_a  = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4MDIAL_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C511OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C512OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C513CO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C513OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C514OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C59OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOC3COOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO13C4CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO23C4CHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO23C4CO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DB1OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DB2OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPAOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPBOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPBOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPDOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPDOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MBO_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MBOACO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MBOCOCO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ME3FURAN_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ACCOMECHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ACCOMECO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C24O3CCO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4CO2DBCO3_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4CO2DCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5134CO2OH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C54CO_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5CO14OH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5CO14OOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5DIALCO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5DIALOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5DICARB_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5DICAROOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MC3ODBCO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MMALNHYOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLFUOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4MCONO3OH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C514NO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5PAN9_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOC3COPAN_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DB1NO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPBNO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ISOPDNO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NC4OHCO3H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NC4OHCPAN_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NISOPOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NMBOBCO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C4CO2DBPAN_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NC4MDCO2H_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NTLFUOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LC578OOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LHC4ACCHO_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LHC4ACCO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LHC4ACCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LIEPOX_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LISOPACOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LMBOABOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LZCO3HC23DBCOD_a  = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LC5PAN1719_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LISOPACNO3_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LMBOABNO3_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LNMBOABOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MGLYOXDA_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MGLYOXDB_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MGLYFA_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MGLYFB_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C614CO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C614OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO235C5CHO_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO235C6OOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZBIPEROOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZEMUCCO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZEMUCCO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZEMUCCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZEMUCOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZEPOXMUC_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZOBIPEROH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5CO2DCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5COOHCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6125CO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C615CO2OOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6CO4DB_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6H5O_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6H5OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CATEC1O_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CATEC1OOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CATECHOL_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PBZQCO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PBZQOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PHENOL_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PHENOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOC6H4NO2_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C614NO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZBIPERNO3_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BZEMUCNO3_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5CO2DBPAN_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C5CO2OHPAN_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DNPHEN_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DNPHENOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NBZQOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NCATECHOL_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NCATECOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NDNPHENOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NNCATECOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NPHENOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C235C6CO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C716OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C721OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C722OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO235C6CHO_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6COOHCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6H5CH2OOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6H5CO3H_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C7CO4DB_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CRESOL_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CRESOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MCATEC1O_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MCATEC1OOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MCATECHOL_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_OXYL1OOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PHCOOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLBIPEROOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLEMUCCO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLEMUCCO2H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLEMUCCO3H_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLEMUCOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLOBIPEROH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TOL1O_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C7PAN3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C6CO2OHPAN_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DNCRES_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DNCRESOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MNCATECH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MNCATECOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MNNCATCOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NCRESOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NDNCRESOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_TLEMUCNO3_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C721CHO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C721CO3H_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C810OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C812OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C813OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C85OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C86OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C89OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C8BC_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C8BCCO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C8BCOOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NORPINIC_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_STYRENOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C721PAN_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C810NO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C89NO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C8BCNO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C811CO3H_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C85CO3H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C89CO2H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C89CO3H_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C96OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C97OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C98OOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NOPINDCO_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NOPINDOOH_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NOPINONE_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NOPINOO_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NORPINAL_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NORPINENOL_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PINIC_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C811PAN_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C89PAN_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C96NO3_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C9PAN2_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BPINAOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C106OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C109CO_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C109OOH_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_MENTHEN6ONE_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_OH2MENTHEN6ONE_a  = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PERPINONIC_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PINAL_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PINALOOH_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PINENOL_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PINONIC_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BPINANO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C106NO3_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C10PAN2_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_PINALNO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_RO6R1NO3_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ROO6R1NO3_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LAPINABNO3_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LAPINABOOH_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LNAPINABOOH_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_LNBPINABOOH_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Cl_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Cl2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCl_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCl_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ClNO_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ClNO2_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Br_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Br2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HBr_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOBr_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BrCl_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_I2_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IO_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOI_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ICl_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IBr_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_SO2_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_H2SO4_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DMS_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_DMSO_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Hg_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgO_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgOHOH_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgOHCl_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgCl2_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgBr2_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgSO3_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ClHgBr_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BrHgOBr_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ClHgOBr_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOH3_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeCl3_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeF3_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_O2m_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_OHm_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HO2m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_O2mm_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_O3m_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Hp_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NH4p_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO2m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO2p_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO3m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_NO4m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO3m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCOOm_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HCO3m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COOm_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3CO3m_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CO3m_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2OOCO2m_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2OOHCO2m_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOCH2CO2m_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOOCO2m_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOCO2m_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HOOCCO2m_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_C2O4m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOOHOOCO2m_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CHOHOHCO2m_a      = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2CO2mm_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2CO3m_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CO2COHOHO2m_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3COCO2m_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Clm_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Cl2m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ClOm_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ClOHm_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Brm_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Br2m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BrOm_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BrOHm_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_BrCl2m_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Br2Clm_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Im_a              = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IO2m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IO3m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_ICl2m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_IBr2m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_SO3m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_SO3mm_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_SO4m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_SO4mm_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_SO5m_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HSO3m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HSO4m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HSO5m_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH3SO3m_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_CH2OHSO3m_a       = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Hgp_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Hgpp_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgOHp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgClp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgBrp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_HgSO32mm_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Fepp_a            = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOpp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOHp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOH2p_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeClp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Feppp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeHOpp_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeHO2pp_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOHpp_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOH4m_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOHHO2p_a        = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeClpp_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeCl2p_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeBrpp_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeBr2p_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeFpp_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeF2p_a           = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeSO3p_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeSO4p_a          = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeSO42m_a         = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_FeOH2Fepppp_a     = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_D1O_a             = 0
+no eqntag found
+
+line:   INTEGER, PUBLIC, DIMENSION(APN) :: ind_Nap_a             = 0
+no eqntag found
+
+line: #ENDINLINE {above lines go to messy_mecca_kpp_global}
+no eqntag found
+
+line: #INLINE F90_UTIL
+no eqntag found
+
+line: ! from xmecca:
+no eqntag found
+
+line: SUBROUTINE initialize_indexarrays
+no eqntag found
+
+line:   USE messy_mecca_kpp_global     ! ind_XYZ_a(:) arrays
+no eqntag found
+
+line:   USE messy_mecca_kpp_parameters ! ind_XYZ_a## scalars
+no eqntag found
+
+line:   IMPLICIT NONE
+no eqntag found
+
+line:   ind_O2_a(01)              = ind_O2_a01
+no eqntag found
+
+line:   ind_O3_a(01)              = ind_O3_a01
+no eqntag found
+
+line:   ind_HO3_a(01)             = ind_HO3_a01
+no eqntag found
+
+line:   ind_HO4_a(01)             = ind_HO4_a01
+no eqntag found
+
+line:   ind_OH_a(01)              = ind_OH_a01
+no eqntag found
+
+line:   ind_HO2_a(01)             = ind_HO2_a01
+no eqntag found
+
+line:   ind_H2O_a(01)             = ind_H2O_a01
+no eqntag found
+
+line:   ind_H2O2_a(01)            = ind_H2O2_a01
+no eqntag found
+
+line:   ind_NH3_a(01)             = ind_NH3_a01
+no eqntag found
+
+line:   ind_NO_a(01)              = ind_NO_a01
+no eqntag found
+
+line:   ind_NO2_a(01)             = ind_NO2_a01
+no eqntag found
+
+line:   ind_NO3_a(01)             = ind_NO3_a01
+no eqntag found
+
+line:   ind_N2O5_a(01)            = ind_N2O5_a01
+no eqntag found
+
+line:   ind_HONO_a(01)            = ind_HONO_a01
+no eqntag found
+
+line:   ind_HNO3_a(01)            = ind_HNO3_a01
+no eqntag found
+
+line:   ind_HNO4_a(01)            = ind_HNO4_a01
+no eqntag found
+
+line:   ind_CO_a(01)              = ind_CO_a01
+no eqntag found
+
+line:   ind_CH3OH_a(01)           = ind_CH3OH_a01
+no eqntag found
+
+line:   ind_HCOOH_a(01)           = ind_HCOOH_a01
+no eqntag found
+
+line:   ind_HCHO_a(01)            = ind_HCHO_a01
+no eqntag found
+
+line:   ind_CH3O2_a(01)           = ind_CH3O2_a01
+no eqntag found
+
+line:   ind_CH3OOH_a(01)          = ind_CH3OOH_a01
+no eqntag found
+
+line:   ind_CO2_a(01)             = ind_CO2_a01
+no eqntag found
+
+line:   ind_HOCH2OH_a(01)         = ind_HOCH2OH_a01
+no eqntag found
+
+line:   ind_HOCH2OOH_a(01)        = ind_HOCH2OOH_a01
+no eqntag found
+
+line:   ind_CH3ONO2_a(01)         = ind_CH3ONO2_a01
+no eqntag found
+
+line:   ind_CH3NO3_a(01)          = ind_CH3NO3_a01
+no eqntag found
+
+line:   ind_CHOOOH_a(01)          = ind_CHOOOH_a01
+no eqntag found
+
+line:   ind_HOCH2O2_a(01)         = ind_HOCH2O2_a01
+no eqntag found
+
+line:   ind_CHOHOHO2_a(01)        = ind_CHOHOHO2_a01
+no eqntag found
+
+line:   ind_HCO3_a(01)            = ind_HCO3_a01
+no eqntag found
+
+line:   ind_CH3CO2H_a(01)         = ind_CH3CO2H_a01
+no eqntag found
+
+line:   ind_PAN_a(01)             = ind_PAN_a01
+no eqntag found
+
+line:   ind_CH3CHO_a(01)          = ind_CH3CHO_a01
+no eqntag found
+
+line:   ind_MG2_a(01)             = ind_MG2_a01
+no eqntag found
+
+line:   ind_HMF_a(01)             = ind_HMF_a01
+no eqntag found
+
+line:   ind_C2H5OH_a(01)          = ind_C2H5OH_a01
+no eqntag found
+
+line:   ind_HOCH2CH2O2_a(01)      = ind_HOCH2CH2O2_a01
+no eqntag found
+
+line:   ind_HYETHO2H_a(01)        = ind_HYETHO2H_a01
+no eqntag found
+
+line:   ind_ETHGLY_a(01)          = ind_ETHGLY_a01
+no eqntag found
+
+line:   ind_CH3CO3_a(01)          = ind_CH3CO3_a01
+no eqntag found
+
+line:   ind_CH3CHOHOH_a(01)       = ind_CH3CHOHOH_a01
+no eqntag found
+
+line:   ind_CH3COHOHO2_a(01)      = ind_CH3COHOHO2_a01
+no eqntag found
+
+line:   ind_CH3CHOHO2_a(01)       = ind_CH3CHOHO2_a01
+no eqntag found
+
+line:   ind_HOCH2CHO_a(01)        = ind_HOCH2CHO_a01
+no eqntag found
+
+line:   ind_HOCH2CO3_a(01)        = ind_HOCH2CO3_a01
+no eqntag found
+
+line:   ind_CHOHO2CHO_a(01)       = ind_CHOHO2CHO_a01
+no eqntag found
+
+line:   ind_CHOHO2CHOHOH_a(01)    = ind_CHOHO2CHOHOH_a01
+no eqntag found
+
+line:   ind_HOCH2COHOHO2_a(01)    = ind_HOCH2COHOHO2_a01
+no eqntag found
+
+line:   ind_HOCH2CHOHOH_a(01)     = ind_HOCH2CHOHOH_a01
+no eqntag found
+
+line:   ind_GLYOX_a(01)           = ind_GLYOX_a01
+no eqntag found
+
+line:   ind_CHOCHOHOH_a(01)       = ind_CHOCHOHOH_a01
+no eqntag found
+
+line:   ind_CHOHOHCHOHOH_a(01)    = ind_CHOHOHCHOHOH_a01
+no eqntag found
+
+line:   ind_CHOCO3_a(01)          = ind_CHOCO3_a01
+no eqntag found
+
+line:   ind_CHOCOHOHO2_a(01)      = ind_CHOCOHOHO2_a01
+no eqntag found
+
+line:   ind_CHOHOHCOHOHO2_a(01)   = ind_CHOHOHCOHOHO2_a01
+no eqntag found
+
+line:   ind_CHOHOHCOOH_a(01)      = ind_CHOHOHCOOH_a01
+no eqntag found
+
+line:   ind_CH3CO3H_a(01)         = ind_CH3CO3H_a01
+no eqntag found
+
+line:   ind_HOCH2CO3H_a(01)       = ind_HOCH2CO3H_a01
+no eqntag found
+
+line:   ind_CH2OOCOOH_a(01)       = ind_CH2OOCOOH_a01
+no eqntag found
+
+line:   ind_C2H5OOH_a(01)         = ind_C2H5OOH_a01
+no eqntag found
+
+line:   ind_C2H5O2_a(01)          = ind_C2H5O2_a01
+no eqntag found
+
+line:   ind_HOOCH2CO2H_a(01)      = ind_HOOCH2CO2H_a01
+no eqntag found
+
+line:   ind_HOCH2CO2H_a(01)       = ind_HOCH2CO2H_a01
+no eqntag found
+
+line:   ind_CHOHOOCOOH_a(01)      = ind_CHOHOOCOOH_a01
+no eqntag found
+
+line:   ind_HOOCCOOH_a(01)        = ind_HOOCCOOH_a01
+no eqntag found
+
+line:   ind_CHOOHOOCOOH_a(01)     = ind_CHOOHOOCOOH_a01
+no eqntag found
+
+line:   ind_HCOCO2H_a(01)         = ind_HCOCO2H_a01
+no eqntag found
+
+line:   ind_COOHCO3_a(01)         = ind_COOHCO3_a01
+no eqntag found
+
+line:   ind_COOHCOHOHO2_a(01)     = ind_COOHCOHOHO2_a01
+no eqntag found
+
+line:   ind_HOOCH2CHO_a(01)       = ind_HOOCH2CHO_a01
+no eqntag found
+
+line:   ind_HOOCH2CHOHOH_a(01)    = ind_HOOCH2CHOHOH_a01
+no eqntag found
+
+line:   ind_CH2CHOH_a(01)         = ind_CH2CHOH_a01
+no eqntag found
+
+line:   ind_C2H5NO3_a(01)         = ind_C2H5NO3_a01
+no eqntag found
+
+line:   ind_CH3CN_a(01)           = ind_CH3CN_a01
+no eqntag found
+
+line:   ind_CH2CO_a(01)           = ind_CH2CO_a01
+no eqntag found
+
+line:   ind_CH3CHOHOOH_a(01)      = ind_CH3CHOHOOH_a01
+no eqntag found
+
+line:   ind_HCOCO3H_a(01)         = ind_HCOCO3H_a01
+no eqntag found
+
+line:   ind_HOOCH2CO3H_a(01)      = ind_HOOCH2CO3H_a01
+no eqntag found
+
+line:   ind_ETHOHNO3_a(01)        = ind_ETHOHNO3_a01
+no eqntag found
+
+line:   ind_PHAN_a(01)            = ind_PHAN_a01
+no eqntag found
+
+line:   ind_CH3COCH3_a(01)        = ind_CH3COCH3_a01
+no eqntag found
+
+line:   ind_MG3_a(01)             = ind_MG3_a01
+no eqntag found
+
+line:   ind_HM2F_a(01)            = ind_HM2F_a01
+no eqntag found
+
+line:   ind_MGLYOX_a(01)          = ind_MGLYOX_a01
+no eqntag found
+
+line:   ind_CH3COCHOHOH_a(01)     = ind_CH3COCHOHOH_a01
+no eqntag found
+
+line:   ind_CH3COCO2H_a(01)       = ind_CH3COCO2H_a01
+no eqntag found
+
+line:   ind_CH3COCH2O2_a(01)      = ind_CH3COCH2O2_a01
+no eqntag found
+
+line:   ind_ACETOL_a(01)          = ind_ACETOL_a01
+no eqntag found
+
+line:   ind_CH3COCHOHO2_a(01)     = ind_CH3COCHOHO2_a01
+no eqntag found
+
+line:   ind_IPROPOL_a(01)         = ind_IPROPOL_a01
+no eqntag found
+
+line:   ind_HYPERACET_a(01)       = ind_HYPERACET_a01
+no eqntag found
+
+line:   ind_IC3H7OOH_a(01)        = ind_IC3H7OOH_a01
+no eqntag found
+
+line:   ind_IC3H7O2_a(01)         = ind_IC3H7O2_a01
+no eqntag found
+
+line:   ind_ALCOCH2OOH_a(01)      = ind_ALCOCH2OOH_a01
+no eqntag found
+
+line:   ind_C33CO_a(01)           = ind_C33CO_a01
+no eqntag found
+
+line:   ind_CH3CHCO_a(01)         = ind_CH3CHCO_a01
+no eqntag found
+
+line:   ind_CH3COCO3H_a(01)       = ind_CH3COCO3H_a01
+no eqntag found
+
+line:   ind_HCOCH2CHO_a(01)       = ind_HCOCH2CHO_a01
+no eqntag found
+
+line:   ind_HCOCH2CO2H_a(01)      = ind_HCOCH2CO2H_a01
+no eqntag found
+
+line:   ind_HCOCH2CO3H_a(01)      = ind_HCOCH2CO3H_a01
+no eqntag found
+
+line:   ind_HCOCOCH2OOH_a(01)     = ind_HCOCOCH2OOH_a01
+no eqntag found
+
+line:   ind_HOC2H4CO2H_a(01)      = ind_HOC2H4CO2H_a01
+no eqntag found
+
+line:   ind_HOC2H4CO3H_a(01)      = ind_HOC2H4CO3H_a01
+no eqntag found
+
+line:   ind_HOCH2COCH2OOH_a(01)   = ind_HOCH2COCH2OOH_a01
+no eqntag found
+
+line:   ind_HOCH2COCHO_a(01)      = ind_HOCH2COCHO_a01
+no eqntag found
+
+line:   ind_HYPROPO2H_a(01)       = ind_HYPROPO2H_a01
+no eqntag found
+
+line:   ind_C32OH13CO_a(01)       = ind_C32OH13CO_a01
+no eqntag found
+
+line:   ind_C3DIALOOH_a(01)       = ind_C3DIALOOH_a01
+no eqntag found
+
+line:   ind_HCOCOHCO3H_a(01)      = ind_HCOCOHCO3H_a01
+no eqntag found
+
+line:   ind_METACETHO_a(01)       = ind_METACETHO_a01
+no eqntag found
+
+line:   ind_C3PAN1_a(01)          = ind_C3PAN1_a01
+no eqntag found
+
+line:   ind_C3PAN2_a(01)          = ind_C3PAN2_a01
+no eqntag found
+
+line:   ind_CH3COCH2O2NO2_a(01)   = ind_CH3COCH2O2NO2_a01
+no eqntag found
+
+line:   ind_NOA_a(01)             = ind_NOA_a01
+no eqntag found
+
+line:   ind_PR2O2HNO3_a(01)       = ind_PR2O2HNO3_a01
+no eqntag found
+
+line:   ind_PROPOLNO3_a(01)       = ind_PROPOLNO3_a01
+no eqntag found
+
+line:   ind_HCOCOHPAN_a(01)       = ind_HCOCOHPAN_a01
+no eqntag found
+
+line:   ind_GOLIG1_a(01)          = ind_GOLIG1_a01
+no eqntag found
+
+line:   ind_GOLIG2_a(01)          = ind_GOLIG2_a01
+no eqntag found
+
+line:   ind_GOLIG3_a(01)          = ind_GOLIG3_a01
+no eqntag found
+
+line:   ind_HGO1_a(01)            = ind_HGO1_a01
+no eqntag found
+
+line:   ind_HGO2_a(01)            = ind_HGO2_a01
+no eqntag found
+
+line:   ind_HGO3_a(01)            = ind_HGO3_a01
+no eqntag found
+
+line:   ind_MACR_a(01)            = ind_MACR_a01
+no eqntag found
+
+line:   ind_CH2OHCO2CH3CHO_a(01)  = ind_CH2OHCO2CH3CHO_a01
+no eqntag found
+
+line:   ind_MVK_a(01)             = ind_MVK_a01
+no eqntag found
+
+line:   ind_CH3COCHO2CH2OH_a(01)  = ind_CH3COCHO2CH2OH_a01
+no eqntag found
+
+line:   ind_CH3COCOCH2OH_a(01)    = ind_CH3COCOCH2OH_a01
+no eqntag found
+
+line:   ind_CH2OHCHOHCOCH3_a(01)  = ind_CH2OHCHOHCOCH3_a01
+no eqntag found
+
+line:   ind_BIACETO2_a(01)        = ind_BIACETO2_a01
+no eqntag found
+
+line:   ind_BIACETOH_a(01)        = ind_BIACETOH_a01
+no eqntag found
+
+line:   ind_BIACETOOH_a(01)       = ind_BIACETOOH_a01
+no eqntag found
+
+line:   ind_BUT2OLO_a(01)         = ind_BUT2OLO_a01
+no eqntag found
+
+line:   ind_BUT2OLOOH_a(01)       = ind_BUT2OLOOH_a01
+no eqntag found
+
+line:   ind_C312COCO3H_a(01)      = ind_C312COCO3H_a01
+no eqntag found
+
+line:   ind_C413COOOH_a(01)       = ind_C413COOOH_a01
+no eqntag found
+
+line:   ind_C44OOH_a(01)          = ind_C44OOH_a01
+no eqntag found
+
+line:   ind_C4CODIAL_a(01)        = ind_C4CODIAL_a01
+no eqntag found
+
+line:   ind_CH3COCHCO_a(01)       = ind_CH3COCHCO_a01
+no eqntag found
+
+line:   ind_CH3COCOCO2H_a(01)     = ind_CH3COCOCO2H_a01
+no eqntag found
+
+line:   ind_CH3COOHCHCHO_a(01)    = ind_CH3COOHCHCHO_a01
+no eqntag found
+
+line:   ind_CHOC3COO2_a(01)       = ind_CHOC3COO2_a01
+no eqntag found
+
+line:   ind_CO23C3CHO_a(01)       = ind_CO23C3CHO_a01
+no eqntag found
+
+line:   ind_CO2C3CHO_a(01)        = ind_CO2C3CHO_a01
+no eqntag found
+
+line:   ind_CO2H3CHO_a(01)        = ind_CO2H3CHO_a01
+no eqntag found
+
+line:   ind_CO2H3CO2H_a(01)       = ind_CO2H3CO2H_a01
+no eqntag found
+
+line:   ind_CO2H3CO3H_a(01)       = ind_CO2H3CO3H_a01
+no eqntag found
+
+line:   ind_HCOCCH3CHOOH_a(01)    = ind_HCOCCH3CHOOH_a01
+no eqntag found
+
+line:   ind_HCOCCH3CO_a(01)       = ind_HCOCCH3CO_a01
+no eqntag found
+
+line:   ind_HMAC_a(01)            = ind_HMAC_a01
+no eqntag found
+
+line:   ind_HO12CO3C4_a(01)       = ind_HO12CO3C4_a01
+no eqntag found
+
+line:   ind_HVMK_a(01)            = ind_HVMK_a01
+no eqntag found
+
+line:   ind_IBUTALOH_a(01)        = ind_IBUTALOH_a01
+no eqntag found
+
+line:   ind_IBUTDIAL_a(01)        = ind_IBUTDIAL_a01
+no eqntag found
+
+line:   ind_IBUTOLBOOH_a(01)      = ind_IBUTOLBOOH_a01
+no eqntag found
+
+line:   ind_IPRHOCO2H_a(01)       = ind_IPRHOCO2H_a01
+no eqntag found
+
+line:   ind_IPRHOCO3H_a(01)       = ind_IPRHOCO3H_a01
+no eqntag found
+
+line:   ind_MACO2H_a(01)          = ind_MACO2H_a01
+no eqntag found
+
+line:   ind_MACO3H_a(01)          = ind_MACO3H_a01
+no eqntag found
+
+line:   ind_MACROH_a(01)          = ind_MACROH_a01
+no eqntag found
+
+line:   ind_MACROOH_a(01)         = ind_MACROOH_a01
+no eqntag found
+
+line:   ind_BZFUCO_a(01)          = ind_BZFUCO_a01
+no eqntag found
+
+line:   ind_BZFUOOH_a(01)         = ind_BZFUOOH_a01
+no eqntag found
+
+line:   ind_CO14O3CHO_a(01)       = ind_CO14O3CHO_a01
+no eqntag found
+
+line:   ind_CO14O3CO2H_a(01)      = ind_CO14O3CO2H_a01
+no eqntag found
+
+line:   ind_CO2C4DIAL_a(01)       = ind_CO2C4DIAL_a01
+no eqntag found
+
+line:   ind_EPXC4DIAL_a(01)       = ind_EPXC4DIAL_a01
+no eqntag found
+
+line:   ind_EPXDLCO2H_a(01)       = ind_EPXDLCO2H_a01
+no eqntag found
+
+line:   ind_EPXDLCO3H_a(01)       = ind_EPXDLCO3H_a01
+no eqntag found
+
+line:   ind_HOCOC4DIAL_a(01)      = ind_HOCOC4DIAL_a01
+no eqntag found
+
+line:   ind_MALANHYOOH_a(01)      = ind_MALANHYOOH_a01
+no eqntag found
+
+line:   ind_MALDALCO2H_a(01)      = ind_MALDALCO2H_a01
+no eqntag found
+
+line:   ind_MALDALCO3H_a(01)      = ind_MALDALCO3H_a01
+no eqntag found
+
+line:   ind_MALDIAL_a(01)         = ind_MALDIAL_a01
+no eqntag found
+
+line:   ind_MALDIALOOH_a(01)      = ind_MALDIALOOH_a01
+no eqntag found
+
+line:   ind_MALNHYOHCO_a(01)      = ind_MALNHYOHCO_a01
+no eqntag found
+
+line:   ind_MECOACEOOH_a(01)      = ind_MECOACEOOH_a01
+no eqntag found
+
+line:   ind_C312COPAN_a(01)       = ind_C312COPAN_a01
+no eqntag found
+
+line:   ind_C4PAN5_a(01)          = ind_C4PAN5_a01
+no eqntag found
+
+line:   ind_MVKNO3_a(01)          = ind_MVKNO3_a01
+no eqntag found
+
+line:   ind_NBZFUOOH_a(01)        = ind_NBZFUOOH_a01
+no eqntag found
+
+line:   ind_NC4DCO2H_a(01)        = ind_NC4DCO2H_a01
+no eqntag found
+
+line:   ind_LBUT1ENOOH_a(01)      = ind_LBUT1ENOOH_a01
+no eqntag found
+
+line:   ind_LHMVKABOOH_a(01)      = ind_LHMVKABOOH_a01
+no eqntag found
+
+line:   ind_LMEKOOH_a(01)         = ind_LMEKOOH_a01
+no eqntag found
+
+line:   ind_C5H8_a(01)            = ind_C5H8_a01
+no eqntag found
+
+line:   ind_C1ODC2O2C4OOH_a(01)   = ind_C1ODC2O2C4OOH_a01
+no eqntag found
+
+line:   ind_C1ODC2OOHC4OD_a(01)   = ind_C1ODC2OOHC4OD_a01
+no eqntag found
+
+line:   ind_C1ODC3O2C4OOH_a(01)   = ind_C1ODC3O2C4OOH_a01
+no eqntag found
+
+line:   ind_C1OOHC2OOHC4OD_a(01)  = ind_C1OOHC2OOHC4OD_a01
+no eqntag found
+
+line:   ind_C4MDIAL_a(01)         = ind_C4MDIAL_a01
+no eqntag found
+
+line:   ind_C511OOH_a(01)         = ind_C511OOH_a01
+no eqntag found
+
+line:   ind_C512OOH_a(01)         = ind_C512OOH_a01
+no eqntag found
+
+line:   ind_C513CO_a(01)          = ind_C513CO_a01
+no eqntag found
+
+line:   ind_C513OOH_a(01)         = ind_C513OOH_a01
+no eqntag found
+
+line:   ind_C514OOH_a(01)         = ind_C514OOH_a01
+no eqntag found
+
+line:   ind_C59OOH_a(01)          = ind_C59OOH_a01
+no eqntag found
+
+line:   ind_CHOC3COOOH_a(01)      = ind_CHOC3COOOH_a01
+no eqntag found
+
+line:   ind_CO13C4CHO_a(01)       = ind_CO13C4CHO_a01
+no eqntag found
+
+line:   ind_CO23C4CHO_a(01)       = ind_CO23C4CHO_a01
+no eqntag found
+
+line:   ind_CO23C4CO3H_a(01)      = ind_CO23C4CO3H_a01
+no eqntag found
+
+line:   ind_DB1OOH_a(01)          = ind_DB1OOH_a01
+no eqntag found
+
+line:   ind_DB2OOH_a(01)          = ind_DB2OOH_a01
+no eqntag found
+
+line:   ind_ISOPAOH_a(01)         = ind_ISOPAOH_a01
+no eqntag found
+
+line:   ind_ISOPBOH_a(01)         = ind_ISOPBOH_a01
+no eqntag found
+
+line:   ind_ISOPBOOH_a(01)        = ind_ISOPBOOH_a01
+no eqntag found
+
+line:   ind_ISOPDOH_a(01)         = ind_ISOPDOH_a01
+no eqntag found
+
+line:   ind_ISOPDOOH_a(01)        = ind_ISOPDOOH_a01
+no eqntag found
+
+line:   ind_MBO_a(01)             = ind_MBO_a01
+no eqntag found
+
+line:   ind_MBOACO_a(01)          = ind_MBOACO_a01
+no eqntag found
+
+line:   ind_MBOCOCO_a(01)         = ind_MBOCOCO_a01
+no eqntag found
+
+line:   ind_ME3FURAN_a(01)        = ind_ME3FURAN_a01
+no eqntag found
+
+line:   ind_ACCOMECHO_a(01)       = ind_ACCOMECHO_a01
+no eqntag found
+
+line:   ind_ACCOMECO3H_a(01)      = ind_ACCOMECO3H_a01
+no eqntag found
+
+line:   ind_C24O3CCO2H_a(01)      = ind_C24O3CCO2H_a01
+no eqntag found
+
+line:   ind_C4CO2DBCO3_a(01)      = ind_C4CO2DBCO3_a01
+no eqntag found
+
+line:   ind_C4CO2DCO3H_a(01)      = ind_C4CO2DCO3H_a01
+no eqntag found
+
+line:   ind_C5134CO2OH_a(01)      = ind_C5134CO2OH_a01
+no eqntag found
+
+line:   ind_C54CO_a(01)           = ind_C54CO_a01
+no eqntag found
+
+line:   ind_C5CO14OH_a(01)        = ind_C5CO14OH_a01
+no eqntag found
+
+line:   ind_C5CO14OOH_a(01)       = ind_C5CO14OOH_a01
+no eqntag found
+
+line:   ind_C5DIALCO_a(01)        = ind_C5DIALCO_a01
+no eqntag found
+
+line:   ind_C5DIALOOH_a(01)       = ind_C5DIALOOH_a01
+no eqntag found
+
+line:   ind_C5DICARB_a(01)        = ind_C5DICARB_a01
+no eqntag found
+
+line:   ind_C5DICAROOH_a(01)      = ind_C5DICAROOH_a01
+no eqntag found
+
+line:   ind_MC3ODBCO2H_a(01)      = ind_MC3ODBCO2H_a01
+no eqntag found
+
+line:   ind_MMALNHYOOH_a(01)      = ind_MMALNHYOOH_a01
+no eqntag found
+
+line:   ind_TLFUOOH_a(01)         = ind_TLFUOOH_a01
+no eqntag found
+
+line:   ind_C4MCONO3OH_a(01)      = ind_C4MCONO3OH_a01
+no eqntag found
+
+line:   ind_C514NO3_a(01)         = ind_C514NO3_a01
+no eqntag found
+
+line:   ind_C5PAN9_a(01)          = ind_C5PAN9_a01
+no eqntag found
+
+line:   ind_CHOC3COPAN_a(01)      = ind_CHOC3COPAN_a01
+no eqntag found
+
+line:   ind_DB1NO3_a(01)          = ind_DB1NO3_a01
+no eqntag found
+
+line:   ind_ISOPBNO3_a(01)        = ind_ISOPBNO3_a01
+no eqntag found
+
+line:   ind_ISOPDNO3_a(01)        = ind_ISOPDNO3_a01
+no eqntag found
+
+line:   ind_NC4OHCO3H_a(01)       = ind_NC4OHCO3H_a01
+no eqntag found
+
+line:   ind_NC4OHCPAN_a(01)       = ind_NC4OHCPAN_a01
+no eqntag found
+
+line:   ind_NISOPOOH_a(01)        = ind_NISOPOOH_a01
+no eqntag found
+
+line:   ind_NMBOBCO_a(01)         = ind_NMBOBCO_a01
+no eqntag found
+
+line:   ind_C4CO2DBPAN_a(01)      = ind_C4CO2DBPAN_a01
+no eqntag found
+
+line:   ind_NC4MDCO2H_a(01)       = ind_NC4MDCO2H_a01
+no eqntag found
+
+line:   ind_NTLFUOOH_a(01)        = ind_NTLFUOOH_a01
+no eqntag found
+
+line:   ind_LC578OOH_a(01)        = ind_LC578OOH_a01
+no eqntag found
+
+line:   ind_LHC4ACCHO_a(01)       = ind_LHC4ACCHO_a01
+no eqntag found
+
+line:   ind_LHC4ACCO2H_a(01)      = ind_LHC4ACCO2H_a01
+no eqntag found
+
+line:   ind_LHC4ACCO3H_a(01)      = ind_LHC4ACCO3H_a01
+no eqntag found
+
+line:   ind_LIEPOX_a(01)          = ind_LIEPOX_a01
+no eqntag found
+
+line:   ind_LISOPACOOH_a(01)      = ind_LISOPACOOH_a01
+no eqntag found
+
+line:   ind_LMBOABOOH_a(01)       = ind_LMBOABOOH_a01
+no eqntag found
+
+line:   ind_LZCO3HC23DBCOD_a(01)  = ind_LZCO3HC23DBCOD_a01
+no eqntag found
+
+line:   ind_LC5PAN1719_a(01)      = ind_LC5PAN1719_a01
+no eqntag found
+
+line:   ind_LISOPACNO3_a(01)      = ind_LISOPACNO3_a01
+no eqntag found
+
+line:   ind_LMBOABNO3_a(01)       = ind_LMBOABNO3_a01
+no eqntag found
+
+line:   ind_LNMBOABOOH_a(01)      = ind_LNMBOABOOH_a01
+no eqntag found
+
+line:   ind_MGLYOXDA_a(01)        = ind_MGLYOXDA_a01
+no eqntag found
+
+line:   ind_MGLYOXDB_a(01)        = ind_MGLYOXDB_a01
+no eqntag found
+
+line:   ind_MGLYFA_a(01)          = ind_MGLYFA_a01
+no eqntag found
+
+line:   ind_MGLYFB_a(01)          = ind_MGLYFB_a01
+no eqntag found
+
+line:   ind_C614CO_a(01)          = ind_C614CO_a01
+no eqntag found
+
+line:   ind_C614OOH_a(01)         = ind_C614OOH_a01
+no eqntag found
+
+line:   ind_CO235C5CHO_a(01)      = ind_CO235C5CHO_a01
+no eqntag found
+
+line:   ind_CO235C6OOH_a(01)      = ind_CO235C6OOH_a01
+no eqntag found
+
+line:   ind_BZBIPEROOH_a(01)      = ind_BZBIPEROOH_a01
+no eqntag found
+
+line:   ind_BZEMUCCO_a(01)        = ind_BZEMUCCO_a01
+no eqntag found
+
+line:   ind_BZEMUCCO2H_a(01)      = ind_BZEMUCCO2H_a01
+no eqntag found
+
+line:   ind_BZEMUCCO3H_a(01)      = ind_BZEMUCCO3H_a01
+no eqntag found
+
+line:   ind_BZEMUCOOH_a(01)       = ind_BZEMUCOOH_a01
+no eqntag found
+
+line:   ind_BZEPOXMUC_a(01)       = ind_BZEPOXMUC_a01
+no eqntag found
+
+line:   ind_BZOBIPEROH_a(01)      = ind_BZOBIPEROH_a01
+no eqntag found
+
+line:   ind_C5CO2DCO3H_a(01)      = ind_C5CO2DCO3H_a01
+no eqntag found
+
+line:   ind_C5COOHCO3H_a(01)      = ind_C5COOHCO3H_a01
+no eqntag found
+
+line:   ind_C6125CO_a(01)         = ind_C6125CO_a01
+no eqntag found
+
+line:   ind_C615CO2OOH_a(01)      = ind_C615CO2OOH_a01
+no eqntag found
+
+line:   ind_C6CO4DB_a(01)         = ind_C6CO4DB_a01
+no eqntag found
+
+line:   ind_C6H5O_a(01)           = ind_C6H5O_a01
+no eqntag found
+
+line:   ind_C6H5OOH_a(01)         = ind_C6H5OOH_a01
+no eqntag found
+
+line:   ind_CATEC1O_a(01)         = ind_CATEC1O_a01
+no eqntag found
+
+line:   ind_CATEC1OOH_a(01)       = ind_CATEC1OOH_a01
+no eqntag found
+
+line:   ind_CATECHOL_a(01)        = ind_CATECHOL_a01
+no eqntag found
+
+line:   ind_PBZQCO_a(01)          = ind_PBZQCO_a01
+no eqntag found
+
+line:   ind_PBZQOOH_a(01)         = ind_PBZQOOH_a01
+no eqntag found
+
+line:   ind_PHENOL_a(01)          = ind_PHENOL_a01
+no eqntag found
+
+line:   ind_PHENOOH_a(01)         = ind_PHENOOH_a01
+no eqntag found
+
+line:   ind_HOC6H4NO2_a(01)       = ind_HOC6H4NO2_a01
+no eqntag found
+
+line:   ind_C614NO3_a(01)         = ind_C614NO3_a01
+no eqntag found
+
+line:   ind_BZBIPERNO3_a(01)      = ind_BZBIPERNO3_a01
+no eqntag found
+
+line:   ind_BZEMUCNO3_a(01)       = ind_BZEMUCNO3_a01
+no eqntag found
+
+line:   ind_C5CO2DBPAN_a(01)      = ind_C5CO2DBPAN_a01
+no eqntag found
+
+line:   ind_C5CO2OHPAN_a(01)      = ind_C5CO2OHPAN_a01
+no eqntag found
+
+line:   ind_DNPHEN_a(01)          = ind_DNPHEN_a01
+no eqntag found
+
+line:   ind_DNPHENOOH_a(01)       = ind_DNPHENOOH_a01
+no eqntag found
+
+line:   ind_NBZQOOH_a(01)         = ind_NBZQOOH_a01
+no eqntag found
+
+line:   ind_NCATECHOL_a(01)       = ind_NCATECHOL_a01
+no eqntag found
+
+line:   ind_NCATECOOH_a(01)       = ind_NCATECOOH_a01
+no eqntag found
+
+line:   ind_NDNPHENOOH_a(01)      = ind_NDNPHENOOH_a01
+no eqntag found
+
+line:   ind_NNCATECOOH_a(01)      = ind_NNCATECOOH_a01
+no eqntag found
+
+line:   ind_NPHENOOH_a(01)        = ind_NPHENOOH_a01
+no eqntag found
+
+line:   ind_C235C6CO3H_a(01)      = ind_C235C6CO3H_a01
+no eqntag found
+
+line:   ind_C716OOH_a(01)         = ind_C716OOH_a01
+no eqntag found
+
+line:   ind_C721OOH_a(01)         = ind_C721OOH_a01
+no eqntag found
+
+line:   ind_C722OOH_a(01)         = ind_C722OOH_a01
+no eqntag found
+
+line:   ind_CO235C6CHO_a(01)      = ind_CO235C6CHO_a01
+no eqntag found
+
+line:   ind_C6COOHCO3H_a(01)      = ind_C6COOHCO3H_a01
+no eqntag found
+
+line:   ind_C6H5CH2OOH_a(01)      = ind_C6H5CH2OOH_a01
+no eqntag found
+
+line:   ind_C6H5CO3H_a(01)        = ind_C6H5CO3H_a01
+no eqntag found
+
+line:   ind_C7CO4DB_a(01)         = ind_C7CO4DB_a01
+no eqntag found
+
+line:   ind_CRESOL_a(01)          = ind_CRESOL_a01
+no eqntag found
+
+line:   ind_CRESOOH_a(01)         = ind_CRESOOH_a01
+no eqntag found
+
+line:   ind_MCATEC1O_a(01)        = ind_MCATEC1O_a01
+no eqntag found
+
+line:   ind_MCATEC1OOH_a(01)      = ind_MCATEC1OOH_a01
+no eqntag found
+
+line:   ind_MCATECHOL_a(01)       = ind_MCATECHOL_a01
+no eqntag found
+
+line:   ind_OXYL1OOH_a(01)        = ind_OXYL1OOH_a01
+no eqntag found
+
+line:   ind_PHCOOH_a(01)          = ind_PHCOOH_a01
+no eqntag found
+
+line:   ind_TLBIPEROOH_a(01)      = ind_TLBIPEROOH_a01
+no eqntag found
+
+line:   ind_TLEMUCCO_a(01)        = ind_TLEMUCCO_a01
+no eqntag found
+
+line:   ind_TLEMUCCO2H_a(01)      = ind_TLEMUCCO2H_a01
+no eqntag found
+
+line:   ind_TLEMUCCO3H_a(01)      = ind_TLEMUCCO3H_a01
+no eqntag found
+
+line:   ind_TLEMUCOOH_a(01)       = ind_TLEMUCOOH_a01
+no eqntag found
+
+line:   ind_TLOBIPEROH_a(01)      = ind_TLOBIPEROH_a01
+no eqntag found
+
+line:   ind_TOL1O_a(01)           = ind_TOL1O_a01
+no eqntag found
+
+line:   ind_C7PAN3_a(01)          = ind_C7PAN3_a01
+no eqntag found
+
+line:   ind_C6CO2OHPAN_a(01)      = ind_C6CO2OHPAN_a01
+no eqntag found
+
+line:   ind_DNCRES_a(01)          = ind_DNCRES_a01
+no eqntag found
+
+line:   ind_DNCRESOOH_a(01)       = ind_DNCRESOOH_a01
+no eqntag found
+
+line:   ind_MNCATECH_a(01)        = ind_MNCATECH_a01
+no eqntag found
+
+line:   ind_MNCATECOOH_a(01)      = ind_MNCATECOOH_a01
+no eqntag found
+
+line:   ind_MNNCATCOOH_a(01)      = ind_MNNCATCOOH_a01
+no eqntag found
+
+line:   ind_NCRESOOH_a(01)        = ind_NCRESOOH_a01
+no eqntag found
+
+line:   ind_NDNCRESOOH_a(01)      = ind_NDNCRESOOH_a01
+no eqntag found
+
+line:   ind_TLEMUCNO3_a(01)       = ind_TLEMUCNO3_a01
+no eqntag found
+
+line:   ind_C721CHO_a(01)         = ind_C721CHO_a01
+no eqntag found
+
+line:   ind_C721CO3H_a(01)        = ind_C721CO3H_a01
+no eqntag found
+
+line:   ind_C810OOH_a(01)         = ind_C810OOH_a01
+no eqntag found
+
+line:   ind_C812OOH_a(01)         = ind_C812OOH_a01
+no eqntag found
+
+line:   ind_C813OOH_a(01)         = ind_C813OOH_a01
+no eqntag found
+
+line:   ind_C85OOH_a(01)          = ind_C85OOH_a01
+no eqntag found
+
+line:   ind_C86OOH_a(01)          = ind_C86OOH_a01
+no eqntag found
+
+line:   ind_C89OOH_a(01)          = ind_C89OOH_a01
+no eqntag found
+
+line:   ind_C8BC_a(01)            = ind_C8BC_a01
+no eqntag found
+
+line:   ind_C8BCCO_a(01)          = ind_C8BCCO_a01
+no eqntag found
+
+line:   ind_C8BCOOH_a(01)         = ind_C8BCOOH_a01
+no eqntag found
+
+line:   ind_NORPINIC_a(01)        = ind_NORPINIC_a01
+no eqntag found
+
+line:   ind_STYRENOOH_a(01)       = ind_STYRENOOH_a01
+no eqntag found
+
+line:   ind_C721PAN_a(01)         = ind_C721PAN_a01
+no eqntag found
+
+line:   ind_C810NO3_a(01)         = ind_C810NO3_a01
+no eqntag found
+
+line:   ind_C89NO3_a(01)          = ind_C89NO3_a01
+no eqntag found
+
+line:   ind_C8BCNO3_a(01)         = ind_C8BCNO3_a01
+no eqntag found
+
+line:   ind_C811CO3H_a(01)        = ind_C811CO3H_a01
+no eqntag found
+
+line:   ind_C85CO3H_a(01)         = ind_C85CO3H_a01
+no eqntag found
+
+line:   ind_C89CO2H_a(01)         = ind_C89CO2H_a01
+no eqntag found
+
+line:   ind_C89CO3H_a(01)         = ind_C89CO3H_a01
+no eqntag found
+
+line:   ind_C96OOH_a(01)          = ind_C96OOH_a01
+no eqntag found
+
+line:   ind_C97OOH_a(01)          = ind_C97OOH_a01
+no eqntag found
+
+line:   ind_C98OOH_a(01)          = ind_C98OOH_a01
+no eqntag found
+
+line:   ind_NOPINDCO_a(01)        = ind_NOPINDCO_a01
+no eqntag found
+
+line:   ind_NOPINDOOH_a(01)       = ind_NOPINDOOH_a01
+no eqntag found
+
+line:   ind_NOPINONE_a(01)        = ind_NOPINONE_a01
+no eqntag found
+
+line:   ind_NOPINOO_a(01)         = ind_NOPINOO_a01
+no eqntag found
+
+line:   ind_NORPINAL_a(01)        = ind_NORPINAL_a01
+no eqntag found
+
+line:   ind_NORPINENOL_a(01)      = ind_NORPINENOL_a01
+no eqntag found
+
+line:   ind_PINIC_a(01)           = ind_PINIC_a01
+no eqntag found
+
+line:   ind_C811PAN_a(01)         = ind_C811PAN_a01
+no eqntag found
+
+line:   ind_C89PAN_a(01)          = ind_C89PAN_a01
+no eqntag found
+
+line:   ind_C96NO3_a(01)          = ind_C96NO3_a01
+no eqntag found
+
+line:   ind_C9PAN2_a(01)          = ind_C9PAN2_a01
+no eqntag found
+
+line:   ind_BPINAOOH_a(01)        = ind_BPINAOOH_a01
+no eqntag found
+
+line:   ind_C106OOH_a(01)         = ind_C106OOH_a01
+no eqntag found
+
+line:   ind_C109CO_a(01)          = ind_C109CO_a01
+no eqntag found
+
+line:   ind_C109OOH_a(01)         = ind_C109OOH_a01
+no eqntag found
+
+line:   ind_MENTHEN6ONE_a(01)     = ind_MENTHEN6ONE_a01
+no eqntag found
+
+line:   ind_OH2MENTHEN6ONE_a(01)  = ind_OH2MENTHEN6ONE_a01
+no eqntag found
+
+line:   ind_PERPINONIC_a(01)      = ind_PERPINONIC_a01
+no eqntag found
+
+line:   ind_PINAL_a(01)           = ind_PINAL_a01
+no eqntag found
+
+line:   ind_PINALOOH_a(01)        = ind_PINALOOH_a01
+no eqntag found
+
+line:   ind_PINENOL_a(01)         = ind_PINENOL_a01
+no eqntag found
+
+line:   ind_PINONIC_a(01)         = ind_PINONIC_a01
+no eqntag found
+
+line:   ind_BPINANO3_a(01)        = ind_BPINANO3_a01
+no eqntag found
+
+line:   ind_C106NO3_a(01)         = ind_C106NO3_a01
+no eqntag found
+
+line:   ind_C10PAN2_a(01)         = ind_C10PAN2_a01
+no eqntag found
+
+line:   ind_PINALNO3_a(01)        = ind_PINALNO3_a01
+no eqntag found
+
+line:   ind_RO6R1NO3_a(01)        = ind_RO6R1NO3_a01
+no eqntag found
+
+line:   ind_ROO6R1NO3_a(01)       = ind_ROO6R1NO3_a01
+no eqntag found
+
+line:   ind_LAPINABNO3_a(01)      = ind_LAPINABNO3_a01
+no eqntag found
+
+line:   ind_LAPINABOOH_a(01)      = ind_LAPINABOOH_a01
+no eqntag found
+
+line:   ind_LNAPINABOOH_a(01)     = ind_LNAPINABOOH_a01
+no eqntag found
+
+line:   ind_LNBPINABOOH_a(01)     = ind_LNBPINABOOH_a01
+no eqntag found
+
+line:   ind_Cl_a(01)              = ind_Cl_a01
+no eqntag found
+
+line:   ind_Cl2_a(01)             = ind_Cl2_a01
+no eqntag found
+
+line:   ind_HCl_a(01)             = ind_HCl_a01
+no eqntag found
+
+line:   ind_HOCl_a(01)            = ind_HOCl_a01
+no eqntag found
+
+line:   ind_ClNO_a(01)            = ind_ClNO_a01
+no eqntag found
+
+line:   ind_ClNO2_a(01)           = ind_ClNO2_a01
+no eqntag found
+
+line:   ind_Br_a(01)              = ind_Br_a01
+no eqntag found
+
+line:   ind_Br2_a(01)             = ind_Br2_a01
+no eqntag found
+
+line:   ind_HBr_a(01)             = ind_HBr_a01
+no eqntag found
+
+line:   ind_HOBr_a(01)            = ind_HOBr_a01
+no eqntag found
+
+line:   ind_BrCl_a(01)            = ind_BrCl_a01
+no eqntag found
+
+line:   ind_I2_a(01)              = ind_I2_a01
+no eqntag found
+
+line:   ind_IO_a(01)              = ind_IO_a01
+no eqntag found
+
+line:   ind_HOI_a(01)             = ind_HOI_a01
+no eqntag found
+
+line:   ind_ICl_a(01)             = ind_ICl_a01
+no eqntag found
+
+line:   ind_IBr_a(01)             = ind_IBr_a01
+no eqntag found
+
+line:   ind_SO2_a(01)             = ind_SO2_a01
+no eqntag found
+
+line:   ind_H2SO4_a(01)           = ind_H2SO4_a01
+no eqntag found
+
+line:   ind_DMS_a(01)             = ind_DMS_a01
+no eqntag found
+
+line:   ind_DMSO_a(01)            = ind_DMSO_a01
+no eqntag found
+
+line:   ind_Hg_a(01)              = ind_Hg_a01
+no eqntag found
+
+line:   ind_HgO_a(01)             = ind_HgO_a01
+no eqntag found
+
+line:   ind_HgOHOH_a(01)          = ind_HgOHOH_a01
+no eqntag found
+
+line:   ind_HgOHCl_a(01)          = ind_HgOHCl_a01
+no eqntag found
+
+line:   ind_HgCl2_a(01)           = ind_HgCl2_a01
+no eqntag found
+
+line:   ind_HgBr2_a(01)           = ind_HgBr2_a01
+no eqntag found
+
+line:   ind_HgSO3_a(01)           = ind_HgSO3_a01
+no eqntag found
+
+line:   ind_ClHgBr_a(01)          = ind_ClHgBr_a01
+no eqntag found
+
+line:   ind_BrHgOBr_a(01)         = ind_BrHgOBr_a01
+no eqntag found
+
+line:   ind_ClHgOBr_a(01)         = ind_ClHgOBr_a01
+no eqntag found
+
+line:   ind_FeOH3_a(01)           = ind_FeOH3_a01
+no eqntag found
+
+line:   ind_FeCl3_a(01)           = ind_FeCl3_a01
+no eqntag found
+
+line:   ind_FeF3_a(01)            = ind_FeF3_a01
+no eqntag found
+
+line:   ind_O2m_a(01)             = ind_O2m_a01
+no eqntag found
+
+line:   ind_OHm_a(01)             = ind_OHm_a01
+no eqntag found
+
+line:   ind_HO2m_a(01)            = ind_HO2m_a01
+no eqntag found
+
+line:   ind_O2mm_a(01)            = ind_O2mm_a01
+no eqntag found
+
+line:   ind_O3m_a(01)             = ind_O3m_a01
+no eqntag found
+
+line:   ind_Hp_a(01)              = ind_Hp_a01
+no eqntag found
+
+line:   ind_NH4p_a(01)            = ind_NH4p_a01
+no eqntag found
+
+line:   ind_NO2m_a(01)            = ind_NO2m_a01
+no eqntag found
+
+line:   ind_NO2p_a(01)            = ind_NO2p_a01
+no eqntag found
+
+line:   ind_NO3m_a(01)            = ind_NO3m_a01
+no eqntag found
+
+line:   ind_NO4m_a(01)            = ind_NO4m_a01
+no eqntag found
+
+line:   ind_CO3m_a(01)            = ind_CO3m_a01
+no eqntag found
+
+line:   ind_HCOOm_a(01)           = ind_HCOOm_a01
+no eqntag found
+
+line:   ind_HCO3m_a(01)           = ind_HCO3m_a01
+no eqntag found
+
+line:   ind_CH3COOm_a(01)         = ind_CH3COOm_a01
+no eqntag found
+
+line:   ind_CH3CO3m_a(01)         = ind_CH3CO3m_a01
+no eqntag found
+
+line:   ind_HOCH2CO3m_a(01)       = ind_HOCH2CO3m_a01
+no eqntag found
+
+line:   ind_CH2OOCO2m_a(01)       = ind_CH2OOCO2m_a01
+no eqntag found
+
+line:   ind_CH2OOHCO2m_a(01)      = ind_CH2OOHCO2m_a01
+no eqntag found
+
+line:   ind_HOCH2CO2m_a(01)       = ind_HOCH2CO2m_a01
+no eqntag found
+
+line:   ind_CHOHOOCO2m_a(01)      = ind_CHOHOOCO2m_a01
+no eqntag found
+
+line:   ind_CHOCO2m_a(01)         = ind_CHOCO2m_a01
+no eqntag found
+
+line:   ind_HOOCCO2m_a(01)        = ind_HOOCCO2m_a01
+no eqntag found
+
+line:   ind_C2O4m_a(01)           = ind_C2O4m_a01
+no eqntag found
+
+line:   ind_CHOOHOOCO2m_a(01)     = ind_CHOOHOOCO2m_a01
+no eqntag found
+
+line:   ind_CHOHOHCO2m_a(01)      = ind_CHOHOHCO2m_a01
+no eqntag found
+
+line:   ind_CO2CO2mm_a(01)        = ind_CO2CO2mm_a01
+no eqntag found
+
+line:   ind_CO2CO3m_a(01)         = ind_CO2CO3m_a01
+no eqntag found
+
+line:   ind_CO2COHOHO2m_a(01)     = ind_CO2COHOHO2m_a01
+no eqntag found
+
+line:   ind_CH3COCO2m_a(01)       = ind_CH3COCO2m_a01
+no eqntag found
+
+line:   ind_Clm_a(01)             = ind_Clm_a01
+no eqntag found
+
+line:   ind_Cl2m_a(01)            = ind_Cl2m_a01
+no eqntag found
+
+line:   ind_ClOm_a(01)            = ind_ClOm_a01
+no eqntag found
+
+line:   ind_ClOHm_a(01)           = ind_ClOHm_a01
+no eqntag found
+
+line:   ind_Brm_a(01)             = ind_Brm_a01
+no eqntag found
+
+line:   ind_Br2m_a(01)            = ind_Br2m_a01
+no eqntag found
+
+line:   ind_BrOm_a(01)            = ind_BrOm_a01
+no eqntag found
+
+line:   ind_BrOHm_a(01)           = ind_BrOHm_a01
+no eqntag found
+
+line:   ind_BrCl2m_a(01)          = ind_BrCl2m_a01
+no eqntag found
+
+line:   ind_Br2Clm_a(01)          = ind_Br2Clm_a01
+no eqntag found
+
+line:   ind_Im_a(01)              = ind_Im_a01
+no eqntag found
+
+line:   ind_IO2m_a(01)            = ind_IO2m_a01
+no eqntag found
+
+line:   ind_IO3m_a(01)            = ind_IO3m_a01
+no eqntag found
+
+line:   ind_ICl2m_a(01)           = ind_ICl2m_a01
+no eqntag found
+
+line:   ind_IBr2m_a(01)           = ind_IBr2m_a01
+no eqntag found
+
+line:   ind_SO3m_a(01)            = ind_SO3m_a01
+no eqntag found
+
+line:   ind_SO3mm_a(01)           = ind_SO3mm_a01
+no eqntag found
+
+line:   ind_SO4m_a(01)            = ind_SO4m_a01
+no eqntag found
+
+line:   ind_SO4mm_a(01)           = ind_SO4mm_a01
+no eqntag found
+
+line:   ind_SO5m_a(01)            = ind_SO5m_a01
+no eqntag found
+
+line:   ind_HSO3m_a(01)           = ind_HSO3m_a01
+no eqntag found
+
+line:   ind_HSO4m_a(01)           = ind_HSO4m_a01
+no eqntag found
+
+line:   ind_HSO5m_a(01)           = ind_HSO5m_a01
+no eqntag found
+
+line:   ind_CH3SO3m_a(01)         = ind_CH3SO3m_a01
+no eqntag found
+
+line:   ind_CH2OHSO3m_a(01)       = ind_CH2OHSO3m_a01
+no eqntag found
+
+line:   ind_Hgp_a(01)             = ind_Hgp_a01
+no eqntag found
+
+line:   ind_Hgpp_a(01)            = ind_Hgpp_a01
+no eqntag found
+
+line:   ind_HgOHp_a(01)           = ind_HgOHp_a01
+no eqntag found
+
+line:   ind_HgClp_a(01)           = ind_HgClp_a01
+no eqntag found
+
+line:   ind_HgBrp_a(01)           = ind_HgBrp_a01
+no eqntag found
+
+line:   ind_HgSO32mm_a(01)        = ind_HgSO32mm_a01
+no eqntag found
+
+line:   ind_Fepp_a(01)            = ind_Fepp_a01
+no eqntag found
+
+line:   ind_FeOpp_a(01)           = ind_FeOpp_a01
+no eqntag found
+
+line:   ind_FeOHp_a(01)           = ind_FeOHp_a01
+no eqntag found
+
+line:   ind_FeOH2p_a(01)          = ind_FeOH2p_a01
+no eqntag found
+
+line:   ind_FeClp_a(01)           = ind_FeClp_a01
+no eqntag found
+
+line:   ind_Feppp_a(01)           = ind_Feppp_a01
+no eqntag found
+
+line:   ind_FeHOpp_a(01)          = ind_FeHOpp_a01
+no eqntag found
+
+line:   ind_FeHO2pp_a(01)         = ind_FeHO2pp_a01
+no eqntag found
+
+line:   ind_FeOHpp_a(01)          = ind_FeOHpp_a01
+no eqntag found
+
+line:   ind_FeOH4m_a(01)          = ind_FeOH4m_a01
+no eqntag found
+
+line:   ind_FeOHHO2p_a(01)        = ind_FeOHHO2p_a01
+no eqntag found
+
+line:   ind_FeClpp_a(01)          = ind_FeClpp_a01
+no eqntag found
+
+line:   ind_FeCl2p_a(01)          = ind_FeCl2p_a01
+no eqntag found
+
+line:   ind_FeBrpp_a(01)          = ind_FeBrpp_a01
+no eqntag found
+
+line:   ind_FeBr2p_a(01)          = ind_FeBr2p_a01
+no eqntag found
+
+line:   ind_FeFpp_a(01)           = ind_FeFpp_a01
+no eqntag found
+
+line:   ind_FeF2p_a(01)           = ind_FeF2p_a01
+no eqntag found
+
+line:   ind_FeSO3p_a(01)          = ind_FeSO3p_a01
+no eqntag found
+
+line:   ind_FeSO4p_a(01)          = ind_FeSO4p_a01
+no eqntag found
+
+line:   ind_FeSO42m_a(01)         = ind_FeSO42m_a01
+no eqntag found
+
+line:   ind_FeOH2Fepppp_a(01)     = ind_FeOH2Fepppp_a01
+no eqntag found
+
+line:   ind_D1O_a(01)             = ind_D1O_a01
+no eqntag found
+
+line:   ind_Nap_a(01)             = ind_Nap_a01
+no eqntag found
+
+line: END SUBROUTINE initialize_indexarrays
+no eqntag found
+
+line: #ENDINLINE {above lines go to messy_mecca_kpp_util}
+no eqntag found
+
+line: {***** START: gas-phase chemistry from gas.eqn *****}
+no eqntag found
+
+line: #INLINE F90_GLOBAL
+no eqntag found
+
+line:   ! variable declarations from gas.eqn:
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! inorganic and C1 chemistry:
+no eqntag found
+
+line:   REAL :: k_HO2_HO2, k_NO3_NO2, k_NO2_HO2, k_HNO3_OH, k_CH3OOH_OH, &
+no eqntag found
+
+line:           k_CH3CO2H_OH, k_ClO_ClO, k_BrO_NO2, k_I_NO2, k_DMS_OH, k_CH2OO_SO2
+no eqntag found
+
+line:   REAL :: k_O3s ! used in some *.rpl files
+no eqntag found
+
+line:   ! new methane chemistry:
+no eqntag found
+
+line:   REAL :: beta_null_CH3NO3, beta_inf_CH3NO3, beta_CH3NO3, &
+no eqntag found
+
+line:           k_NO2_CH3O2, k_CH2OO_NO2, beta_C2H5NO3, k_C6H5O2_NO2
+no eqntag found
+
+line:   ! NO2+OH from Amedro et al., ref3491:
+no eqntag found
+
+line:   REAL :: k_NO2_OH, alpha_HOONO, k_NO2_OH_lpl, k_NO2_OH_hpl, k_NO2_OH_logF
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! only for mim1, see mim1.rpl:
+no eqntag found
+
+line:   REAL :: k_PrO2_HO2, k_PrO2_NO, k_PrO2_CH3O2
+no eqntag found
+
+line:   REAL :: k0_NO_HO2, k1d_NO_HO2, k1w_NO_HO2, k2d_NO_HO2, k2w_NO_HO2, &
+no eqntag found
+
+line:           alpha_NO_HO2, beta_NO_HO2, f_BrO_CH3O2
+no eqntag found
+
+line:   ! end of mim1 block
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! organic chemistry (MIM, MAM, MOM...):
+no eqntag found
+
+line:   REAL :: k_CH3CO3_NO2, k_PAN_M
+no eqntag found
+
+line:   REAL(dp) :: KRO2NO, KAPHO2, KAPNO, KRO2NO3, KNO3AL, KDEC
+no eqntag found
+
+line:   ! maximum number of C atoms the rate coefficients are calculated for:
+no eqntag found
+
+line:   REAL :: k_hsb, k_hsd, k_16hs, k_16hsz14, k_16hsz41, k_15hsdhb, k_14hsal, &
+no eqntag found
+
+line:           k_15hs24vynal, k_15hs42vynal, k_hydec
+no eqntag found
+
+line:   REAL :: j_IC3H7NO3, j_ACETOL, j_HPALD, j_ketene
+no eqntag found
+
+line:   REAL(dp) :: RO2      ! sum of peroxy radicals
+no eqntag found
+
+line:   REAL(dp) :: k_CH3O2   ! CH3O2 self-reaction
+no eqntag found
+
+line:   REAL(dp) :: k_RO2RCO3, k_RO2pRO2, k_RO2sRO2, k_RO2tRO2, &
+no eqntag found
+
+line:               k_RO2pORO2, k_RO2sORO2, k_RO2tORO2, &
+no eqntag found
+
+line:               k_RO2LISOPACO2, k_RO2ISOPBO2, k_RO2ISOPDO2
+no eqntag found
+
+line:   REAL(dp) :: k_CH2CHOH_OH_HCOOH, k_CH2CHOH_OH_ALD, k_CH2CHOH_HCOOH, k_ALD_HCOOH
+no eqntag found
+
+line:   REAL(dp) :: k1_RO2RCO3, k1_RO2pRO2, k1_RO2sRO2, k1_RO2tRO2, &
+no eqntag found
+
+line:               k1_RO2pORO2, k1_RO2sORO2, k1_RO2tORO2, &
+no eqntag found
+
+line:               k1_RO2LISOPACO2, k1_RO2ISOPBO2, k1_RO2ISOPDO2
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: k_C6H5O_NO2  = 2.08E-12 ! ref3172
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: k_C6H5O_O3   = 2.86E-13 ! ref3171
+no eqntag found
+
+line:   ! SAR for OH reactions (ref3030 with introduction of temperature dependency)
+no eqntag found
+
+line:   ! parameters for the SAR on H-abstraction OH:
+no eqntag found
+
+line:   REAL(dp) :: k_p, k_s, k_t, k_ROHRO, k_CO2H, k_ROOHRO
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: &
+no eqntag found
+
+line:     f_sOH = 3.44, f_tOH = 2.68, &
+no eqntag found
+
+line:     f_sOOH = 8.,  f_tOOH = 8., &
+no eqntag found
+
+line:     f_ONO2 = 0.04 , f_CH2ONO2 = 0.2, &
+no eqntag found
+
+line:     f_cpan= 0.25, f_allyl = 3.6, f_alk= 1.23, &
+no eqntag found
+
+line:     f_CHO = 0.55, f_CO2H = 1.67, f_CO = 0.73, &
+no eqntag found
+
+line:     f_O = 8.15, f_pCH2OH = 1.29, f_tCH2OH = 0.53
+no eqntag found
+
+line:   ! parameters for the SAR on OH-addtion to alkenes
+no eqntag found
+
+line:   ! Note for ach2ooh calculated
+no eqntag found
+
+line:   ! assuming RO2 distribution in ref3159
+no eqntag found
+
+line:   ! B, E, D, F, AC are 0.41, 0.02, 0.22, 0.05, 0.30 respectively
+no eqntag found
+
+line:   REAL(dp) :: k_adp, k_ads, k_adt
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: &
+no eqntag found
+
+line:     k_adsecprim = 3.0E-11, k_adtertprim = 5.7E-11 &
+no eqntag found
+
+line:    , a_PAN = 0.56      , a_CHO = 0.31   , a_COCH3 = 0.76 &
+no eqntag found
+
+line:    , a_CH2ONO2 = 0.64  , a_CH2OH = 1.7  , a_CH2OOH = 1.7 &
+no eqntag found
+
+line:    , a_COH = 2.2       , a_COOH = 2.2   , a_CO2H = 0.25
+no eqntag found
+
+line:   ! Branching ratios for RO2 + HO2 reactions
+no eqntag found
+
+line:   ! CH3CO3 + HO2 has unique branching ratios (see reaction)
+no eqntag found
+
+line:   ! beta-hydroxy acyl peroxy radicals, e.g. HOCH2CO3
+no eqntag found
+
+line:   ! (Groß, PhD Thesis, ref3195)
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: r_CO3_OH  = 0.69, r_CO3_O3  = 0.10, r_CO3_OOH = 0.21
+no eqntag found
+
+line:   ! beta-keto peroxy radicals equal or bigger than CH3COCHO2CH3 (Dillon and Crowley, ref3192)
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: r_COCH2O2_OH  = 0.15, r_COCH2O2_OOH = 0.85
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: r_CHOHCH2O2_OH = 0.10 ! derived from Liu ref3193 for ISOPBO2 and ISOPDO2. Consistent with exp. data by C. Groß (MPIC)
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: r_CH2OCH2O2_OH  = 0.4 ! ref3175 for CH3OCH2O2
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: r_BIPERO2_OH = 0.40 ! ref3188 for toluene
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: f_HPAL = 0.5 ! HPALD-yield after 1,6-H-shift
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! Parameters included for acid-base equilibria calculation
+no eqntag found
+
+line:   ! used to enable the double use of the aqueous.eqn for liquid
+no eqntag found
+
+line:   ! and aerosol phase.
+no eqntag found
+
+line:   REAL(dp), PARAMETER :: &
+no eqntag found
+
+line:     f_equil_HO2     = 1.e5_dp, f_equil_HONO    = 1.e5_dp,  &
+no eqntag found
+
+line:     f_equil_HNO3    = 1.e7_dp, f_equil_HNO4    = 1.e5_dp,  &
+no eqntag found
+
+line:     f_equil_HCOOH   = 1.e5_dp, f_equil_SO2     = 1.e9_dp,  &
+no eqntag found
+
+line:     f_equil_HSO3m   = 1.e9_dp, f_equil_HSO4m   = 1.e7_dp,  &
+no eqntag found
+
+line:     f_equil_NH3     = 1.e7_dp, f_equil_H2O     = 1.e9_dp,  &
+no eqntag found
+
+line:     f_equil_CO2     = 1.e5_dp, f_equil_CH3CO2H = 25.e9_dp, &
+no eqntag found
+
+line:     f_equil_HCl     = 1.e2_dp, f_equil_HBr     = 1.e6_dp,  &
+no eqntag found
+
+line:     f_equil_HOCl    = 1.e2_dp, f_equil_HOBr    = 1.e2_dp,  &
+no eqntag found
+
+line:     f_equil_ICl     = 1.e2_dp, f_equil_IBr     = 1.e2_dp,  &
+no eqntag found
+
+line:     f_equil_IClBr   = 1.e2_dp, f_equil_H2SO4   = 1.e7_dp
+no eqntag found
+
+line: #ENDINLINE {above lines go to messy_mecca_kpp_global}
+no eqntag found
+
+line: #INLINE F90_RCONST
+no eqntag found
+
+line:   ! start of executable statements
+no eqntag found
+
+line:   ! define some rate constants here if the expressions are too long
+no eqntag found
+
+line:   ! for kpp or if they are used more than once
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! inorganic and C1 chemistry:
+no eqntag found
+
+line:   k_HO2_HO2    = (3.0E-13*EXP(460./temp)+2.1E-33*EXP(920./temp)*cair)* &
+no eqntag found
+
+line:                  (1.+1.4E-21*EXP(2200./temp)*C(ind_H2O))
+no eqntag found
+
+line:   k_NO3_NO2    = k_3rd(temp,cair,2.4E-30,3.0,1.6E-12,-0.1,0.6)
+no eqntag found
+
+line:   k_NO2_HO2    = k_3rd(temp,cair,1.9E-31,3.4,4.0E-12,0.3,0.6)
+no eqntag found
+
+line:   k_HNO3_OH    = 1.32E-14*EXP(527./temp) + 1./ & ! "All data" in Tab. 1 of ref3325
+no eqntag found
+
+line:                  ( 1./(7.39E-32*EXP(453./temp)*cair) + &
+no eqntag found
+
+line:                  1./(9.73E-17*EXP(1910./temp)) ) ! 15 % ref3325, p. 2389
+no eqntag found
+
+line:   k_CH3OOH_OH  = 5.3E-12*EXP(190./temp)
+no eqntag found
+
+line:   k_CH3CO2H_OH = 4.0E-14*EXP(850./temp)
+no eqntag found
+
+line:   k_ClO_ClO    = k_3rd(temp,cair,1.9E-32,3.6,3.7E-12,1.6,0.6)
+no eqntag found
+
+line:   k_BrO_NO2    = k_3rd_iupac(temp,cair,4.7E-31,3.1,1.8E-11,0.0,0.4)
+no eqntag found
+
+line:   ! JPL: k_BrO_NO2   = k_3rd(temp,cair,5.2E-31,3.2,6.9E-12,2.9,0.6)
+no eqntag found
+
+line:   k_I_NO2      = k_3rd_iupac(temp,cair,3.0E-31,1.0,6.6E-11,0.0,0.63)
+no eqntag found
+
+line:   ! for numerical reasons, the expression is multiplied by 1e30/1e30
+no eqntag found
+
+line:   k_DMS_OH     = 1.E-9*EXP(5820./temp)*C(ind_O2)/ &
+no eqntag found
+
+line:                  (1.E30+5.*EXP(6280./temp)*C(ind_O2))
+no eqntag found
+
+line:   k_CH2OO_SO2  = 3.66E-11 ! average of 3.9E-11 + 3.42E-11
+no eqntag found
+
+line:   k_O3s = (1.7E-12*EXP(-940./temp)) * C(ind_OH) &  ! <G2104>
+eqntag     = G2104
+baseeqntag = G2104
+
+line:         + (1.E-14*EXP(-490./temp)) * C(ind_HO2) &  ! <G2107>
+eqntag     = G2107
+baseeqntag = G2107
+
+line:         + jx(ip_O1D) * 2.2E-10 * C(ind_H2O) &      !
+no eqntag found
+
+line:         / ( 3.2E-11*EXP(70./temp)*C(ind_O2)   &
+no eqntag found
+
+line:            + 1.8E-11*EXP(110./temp)*C(ind_N2) &
+no eqntag found
+
+line:            + 2.2E-10*C(ind_H2O) )
+no eqntag found
+
+line:   ! new methane chemistry:
+no eqntag found
+
+line:   ! branching ratio for methyl nitrate according to Butkovskaya et al.,
+no eqntag found
+
+line:   ! (ref3177) but reduced according to Flocke et al. (ref3164)
+no eqntag found
+
+line:   ! fit of data according to Lindemann-Hinshelwood scheme by J. Crowley
+no eqntag found
+
+line:   ! http://iupac.pole-ether.fr/datasheets/pdf/ROO_1_CH3O2_NO.pdf
+no eqntag found
+
+line:   beta_null_CH3NO3 = 0.00295 + 5.15E-22*cair*(temp/298)**(7.4)
+no eqntag found
+
+line:   beta_inf_CH3NO3  = 0.022
+no eqntag found
+
+line:   beta_CH3NO3      = (beta_null_CH3NO3 * beta_inf_CH3NO3) /&
+no eqntag found
+
+line:                      (beta_null_CH3NO3 + beta_inf_CH3NO3) / 10.
+no eqntag found
+
+line:   k_NO2_CH3O2      = k_3rd(temp,cair,1.0E-30,4.8,7.2E-12,2.1,0.6)
+no eqntag found
+
+line:   k_C6H5O2_NO2     = k_NO2_CH3O2 ! Consistent with ref3167 that set 1E-12 as lower limit at 298 K and 1 bar.
+no eqntag found
+
+line:   k_CH2OO_NO2          = 4.25E-12 ! average of 7.E-12 and 1.5E-12
+no eqntag found
+
+line:   ! branching ratio for ethylnitrate formation according to Butkovskaya ref3170
+no eqntag found
+
+line:   ! ratio transformed from beta = k1b/k1a to beta_C2H5NO3 = (1-(1+beta)^(-1))
+no eqntag found
+
+line:   beta_C2H5NO3    = (1-1/(1+1.E-2*(3.88e-3*cair/2.46e19*760.+.365)*(1+1500.*(1/temp -1/298.))))
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! only for mim1, see mim1.rpl:
+no eqntag found
+
+line:   ! op_kg_20110805+ for HO2 + NO -> HNO3 (butkovskaya_*.rpl)
+no eqntag found
+
+line:   alpha_NO_HO2 = C(ind_H2O)*6.6E-27*temp*EXP(3700./temp)
+no eqntag found
+
+line:   beta_NO_HO2  = MAX(((530./temp)+(press*4.8004E-6)-1.73)*0.01,0._dp)
+no eqntag found
+
+line:   k0_NO_HO2    = 3.5E-12*EXP(250./temp)
+no eqntag found
+
+line:   ! without humidity correction
+no eqntag found
+
+line:   k2d_NO_HO2   = (beta_NO_HO2*k0_NO_HO2)/(1.+beta_NO_HO2)
+no eqntag found
+
+line:   k1d_NO_HO2   = k0_NO_HO2 - k2d_NO_HO2
+no eqntag found
+
+line:   ! with humidity correction
+no eqntag found
+
+line:   k2w_NO_HO2   = (beta_NO_HO2*k0_NO_HO2*(1.+42.*alpha_NO_HO2))/ &
+no eqntag found
+
+line:                  ((1.+alpha_NO_HO2)*(1.+beta_NO_HO2))
+no eqntag found
+
+line:   k1w_NO_HO2   = k0_NO_HO2 - k2w_NO_HO2
+no eqntag found
+
+line:   ! op_kg_20110805-
+no eqntag found
+
+line:   k_PrO2_HO2   = 1.9E-13*EXP(1300./temp)
+no eqntag found
+
+line:   k_PrO2_NO    = 2.7E-12*EXP(360./temp)
+no eqntag found
+
+line:   k_PrO2_CH3O2 = 9.46E-14*EXP(431./temp)
+no eqntag found
+
+line:   f_BrO_CH3O2 = 0.8/1.1 ! 0.8+/-0.2
+no eqntag found
+
+line:   ! end of mim1 block
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   ! NO2 + OH:
+no eqntag found
+
+line:   ! branching ratio:
+no eqntag found
+
+line:   alpha_HOONO = ((3.3E-20*(temp/300.)**(-4.4))*cair * 0.29) / &
+no eqntag found
+
+line:                 ((3.3E-20*(temp/300.)**(-4.4))*cair + 0.29) * &
+no eqntag found
+
+line:                 10**(LOG10(0.39)/(1+(LOG10((3.3E-20*(temp/300.)**(-4.4)) &
+no eqntag found
+
+line:                 *cair/0.29)/(0.75-1.27*LOG10(0.39)))**(2.0)))+0.035
+no eqntag found
+
+line:   ! low-pressure limit:
+no eqntag found
+
+line:   k_NO2_OH_lpl = C(ind_N2)  *  2.6E-30*(temp/300.)**(-3.6) + &
+no eqntag found
+
+line:                  C(ind_O2)  *  2.0E-30*(temp/300.)**(-3.6) + &
+no eqntag found
+
+line:                  C(ind_H2O) * 15.9E-30*(temp/300.)**(-3.4)
+no eqntag found
+
+line:   ! high-pressure limit:
+no eqntag found
+
+line:   k_NO2_OH_hpl = 6.3E-11
+no eqntag found
+
+line:   ! broadening factor:
+no eqntag found
+
+line:   k_NO2_OH_logF = log10(0.39) / &
+no eqntag found
+
+line:                   (1.+(log10(k_NO2_OH_lpl/k_NO2_OH_hpl)/(0.75-1.27*log10(0.39)))**2)
+no eqntag found
+
+line:   ! rate constant:
+no eqntag found
+
+line:   k_NO2_OH = ((k_NO2_OH_lpl*k_NO2_OH_hpl) / (k_NO2_OH_lpl+k_NO2_OH_hpl)) * &
+no eqntag found
+
+line:              10.**(k_NO2_OH_logF)
+no eqntag found
+
+line:   ! --------------------------------------------------------------------------
+no eqntag found
+
+line:   k_CH3CO3_NO2 = k_3rd(temp,cair,9.7E-29,5.6,9.3E-12,1.5,0.6)
+no eqntag found
+
+line:   k_PAN_M      = k_CH3CO3_NO2/(9.0E-29*EXP(14000./temp))
+no eqntag found
+
+line:   ! rate coefficients from the MCM:
+no eqntag found
+
+line:   KDEC    = 1.E6 ! moved here from parameters to avoid renaming to k_dec 
+no eqntag found
+
+line:                  ! required by medina parser for parameters
+no eqntag found
+
+line:   KRO2NO  = 2.54E-12*EXP(360./temp)
+no eqntag found
+
+line:   KAPNO   = 8.10E-12*EXP(270./temp)  ! CH3CO3 + NO
+no eqntag found
+
+line:   KRO2NO3 = 2.30E-12 ! ref2419
+no eqntag found
+
+line:   KNO3AL  = 1.4E-12*EXP(-1900./temp)
+no eqntag found
+
+line:   ! updated rate constant for the RCO3+HO2 reactions
+no eqntag found
+
+line:   ! (Groß, PhD Thesis, ref3195)
+no eqntag found
+
+line:   ! except CH3CO3+HO2 that is taken from Groß ref3156
+no eqntag found
+
+line:   KAPHO2  = 5.20E-13*EXP(980./temp)*1.865 ! at 298K k(hoch2co3 + ho2) = 2.6(+-0.4)E-11 scaled with IUPAC T-dependent expression
+no eqntag found
+
+line:   ! Rate constants for the permutation reaction formalism
+no eqntag found
+
+line:   ! calculated as in the permutation reaction formalism of MCM
+no eqntag found
+
+line:   ! k_RO2 = 2.*(KRO2self*k_CH3O2)^0.5
+no eqntag found
+
+line:   ! k_RO2self are taken from IUPAC recommendations unless noted otherwise
+no eqntag found
+
+line:   k_CH3O2     = 1.03E-13*EXP(365./temp) ! CH3O2 + CH3O2 (IUPAC)
+no eqntag found
+
+line:   ! Acyl peroxy radicals
+no eqntag found
+
+line:   k_RO2RCO3   = 2.*2.E-12*EXP(500./temp) ! K17 for the CH3CO3 + CH3O2 reaction directly taken from ref. 1759. Old MCM value 1.00E-11 at 298 K.
+no eqntag found
+
+line:   ! Alkyl radicals (unsubstituted, > C3)
+no eqntag found
+
+line:   k_RO2pRO2   = 2.*(1.E-12*k_CH3O2)**(.5)                      ! Model compound (CH3)2CHCH2O2 (isobutyl, ref3210). Old MCM value 1.30E-12 at 298 K.
+no eqntag found
+
+line:   k_RO2sRO2   = 2.*(1.6E-12*EXP(-2200./temp)*k_CH3O2)**(.5)! Model compound i-C3H7O2 (ref3175). Old MCM value 2.50E-13 at 298 K.
+no eqntag found
+
+line:   k_RO2tRO2   = 2.*3.8E-13*EXP(-1430./temp)                ! Model reaction t-C4H9O2 + CH3O2. Old MCM value 6.70E-15 at 298 K.
+no eqntag found
+
+line:   ! Alkyl radical with either O or Cl in beta
+no eqntag found
+
+line:   k_RO2pORO2  = 2.*7.5E-13*EXP(500./temp)                      ! Model reaction CH3COCH2O2 + CH3O2 (ref3175). Old MCM value 2.00E-12
+no eqntag found
+
+line:   k_RO2sORO2  = 2.*(7.7E-15*EXP(1330./temp)*k_CH3O2)**(.5) ! Model compound CH3CH(OH)CH(O2)CH3 (ref3175). Old MCM value 8.80E-13 at 298 K.
+no eqntag found
+
+line:   k_RO2tORO2  = 2.*(4.7E-13*EXP(-1420./temp)*k_CH3O2)**(.5)    ! Model compound (CH3)2C(OH)CO2(CH3)2 (ref3175). Old MCM value 9.20E-14 at 298 K.
+no eqntag found
+
+line:   ! Allyl- and beta-hydroxy alkyl radicals
+no eqntag found
+
+line:   k_RO2LISOPACO2 = 2.*((2.8E-12+3.9E-12)/2.*k_CH3O2)**(.5)  ! Model compound ISOPAO2 and ISOPCO2. Old MCM value 2.0E-12 at 298 K. K15 average from MCM ref. 2419
+no eqntag found
+
+line:   k_RO2ISOPBO2   = 2.*(6.9E-14*k_CH3O2)**(.5)                  ! Model compound ISOPBO2. Old MCM value 8.0E-13 at 298 K. K15 from MCM ref. 2419
+no eqntag found
+
+line:   k_RO2ISOPDO2   = 2.*(4.8E-12*k_CH3O2)**(.5)                  ! Model compound ISOPDO2. Old MCM value 8.0E-13 at 298 K. K15 from MCM ref. 2419
+no eqntag found
+
+line:   ! T-dependent H-abstraction group rate constants
+no eqntag found
+
+line:   k_p          = 4.49E-18*temp*temp*EXP(-320./temp) ! Kwok and Atkinson, ref3194
+no eqntag found
+
+line:   k_s          = 4.50E-18*temp*temp*EXP(253./temp)  ! Kwok and Atkinson, ref3194
+no eqntag found
+
+line:   k_t          = 2.12E-18*temp*temp*EXP(696./temp)  ! Kwok and Atkinson, ref3194
+no eqntag found
+
+line:   k_ROHRO      = 2.1E-18*temp*temp*EXP(-85./temp)   ! Kwok and Atkinson, ref3194
+no eqntag found
+
+line:   k_ROOHRO     = 0.6*k_CH3OOH_OH
+no eqntag found
+
+line:   k_CO2H       = 0.7*k_CH3CO2H_OH
+no eqntag found
+
+line:   ! T-dependent OH-addition rate constants
+no eqntag found
+
+line:   k_adp        = 4.5E-12*(temp/300.)**(-0.85)                        ! 1/2 k(OH + C2H4), high pressure limit IUPAC as in Peeters et al. 2007
+no eqntag found
+
+line:   k_ads        = 0.25*(1.1E-11*EXP(485./temp)+1.0E-11*EXP(553./temp)) ! 1/2 * k_av(OH + cis/trans 2-butene) as in Peeters et al. 2007
+no eqntag found
+
+line:   k_adt        = 1.922E-11*EXP(450./temp) - k_ads                    ! k(OH + 2-methyl-2-butene) - k_ads
+no eqntag found
+
+line:   k_hsb         = 1.52E11*EXP(-9512./temp)*1. ! 1,5-H-shift Peeters et al(2009) 0.003533 s-1 at 303K
+no eqntag found
+
+line:   k_hsd         = 6.08E10*EXP(-8893./temp)*1. ! 1,5-H-shift Peeters et al(2009) 0.0109 s-1 at 303K
+no eqntag found
+
+line:   ! 1,6-H-shift for ZISOPAO2 and ZISOPCO2
+no eqntag found
+
+line:   k_16hsz14     = 2.28E9 * exp(-6764/temp) * 0.28 ! 0.07035 s-1 at 295K ! as in SI Taraborrelli et al., Nat. Geosc. 2012
+no eqntag found
+
+line:   k_16hsz41     = 1.23E9 * exp(-6186/temp) * 0.28 ! 0.2692 s-1 at 295K
+no eqntag found
+
+line:   k_16hs        = (k_16hsz14*k_16hsz41)**(.5)
+no eqntag found
+
+line:   k_15hsdhb     = 5.                             ! 1,5-H-shift assisted by double H-bonding after Peeters and Müller(2010)
+no eqntag found
+
+line:   ! 1,4-H-shift involving an aldehydic hydrogen
+no eqntag found
+
+line:   k_14hsal = 2.9E7*exp(-5297/temp) ! Crounse ref3331 barrier 19 kcal/mol => ~ 0.5 s-1 at 295K
+no eqntag found
+
+line:   !k_14hsal      = 2.9E7*exp(-1*(5297+705)/temp) ! CCSD(T)/aug-Schartz4(DT)//M05-2X/6-311G(d,p)) yields a barrier of 20.39 (L. Vereecken 2013) => ~ 0.04 s-1 at 295K
+no eqntag found
+
+line:   k_15hs24vynal = k_16hsz14 * exp(-3500/(1.987*temp)) ! adding 3.5 kcal to the barrier of 1,6-H-shift as from SAR by L. Vereecken
+no eqntag found
+
+line:   k_15hs42vynal = k_16hsz41 * exp(-3500/(1.987*temp))
+no eqntag found
+
+line:   k_hydec       = 6.e14*exp(-16000./(1.98588*temp)) ! in cal Ea from Nguyen et al(2009) A from Baulch et al(2005)
+no eqntag found
+
+line:   ! Rate constants for the formic acid production via vinyl alcohol. Also used for some bigger and saturated aldehydes.
+no eqntag found
+
+line:   k_CH2CHOH_OH_HCOOH = 4.3E-11 ! ref3179
+no eqntag found
+
+line:   k_CH2CHOH_OH_ALD   = 2.4E-11 ! ref3179
+no eqntag found
+
+line:   k_CH2CHOH_HCOOH    = 4.67E-26*(temp)**(3.286)*EXP(4509./(1.987*temp)) ! ref3162
+no eqntag found
+
+line:   k_ALD_HCOOH        = 1.17E-19*(temp)**(1.209)*EXP(-556./(1.987*temp)) ! ref3162
+no eqntag found
+
+line:   j_IC3H7NO3   = 3.7*jx(ip_PAN)
+no eqntag found
+
+line:   j_ACETOL     = 0.65*0.11*jx(ip_CHOH)
+no eqntag found
+
+line:   j_HPALD      = (jx(ip_CH3OOH)+ jx(ip_MACR)/(2.*1.95E-3)) ! mcm.leeds.ac.uk/MCM/parameters/photolysis.htt
+no eqntag found
+
+line:   j_ketene     = jx(ip_MVK)/0.004
+no eqntag found
+
+line:   RO2 = 0.
+no eqntag found
+
+line:   IF (ind_LISOPACO2>0)            RO2 = RO2 + C(ind_LISOPACO2)
+no eqntag found
+
+line:   IF (ind_LDISOPACO2>0)           RO2 = RO2 + C(ind_LDISOPACO2)
+no eqntag found
+
+line:   IF (ind_ISOPBO2>0)              RO2 = RO2 + C(ind_ISOPBO2)
+no eqntag found
+
+line:   IF (ind_ISOPDO2>0)              RO2 = RO2 + C(ind_ISOPDO2)
+no eqntag found
+
+line:   IF (ind_LISOPEFO2>0)            RO2 = RO2 + C(ind_LISOPEFO2)
+no eqntag found
+
+line:   IF (ind_NISOPO2>0)              RO2 = RO2 + C(ind_NISOPO2)
+no eqntag found
+
+line:   IF (ind_LHC4ACCO3>0)            RO2 = RO2 + C(ind_LHC4ACCO3)
+no eqntag found
+
+line:   IF (ind_LC578O2>0)              RO2 = RO2 + C(ind_LC578O2)
+no eqntag found
+
+line:   IF (ind_C59O2>0)                RO2 = RO2 + C(ind_C59O2)
+no eqntag found
+
+line:   IF (ind_LNISO3>0)               RO2 = RO2 + C(ind_LNISO3)
+no eqntag found
+
+line:   IF (ind_CH3O2>0)                RO2 = RO2 + C(ind_CH3O2)
+no eqntag found
+
+line:   IF (ind_HOCH2O2>0)              RO2 = RO2 + C(ind_HOCH2O2)
+no eqntag found
+
+line:   IF (ind_CH3CO3>0)               RO2 = RO2 + C(ind_CH3CO3)
+no eqntag found
+
+line:   IF (ind_C2H5O2>0)               RO2 = RO2 + C(ind_C2H5O2)
+no eqntag found
+
+line:   IF (ind_HOCH2CO3>0)             RO2 = RO2 + C(ind_HOCH2CO3)
+no eqntag found
+
+line:   IF (ind_HYPROPO2>0)             RO2 = RO2 + C(ind_HYPROPO2)
+no eqntag found
+
+line:   IF (ind_LBUT1ENO2>0)            RO2 = RO2 + C(ind_LBUT1ENO2)
+no eqntag found
+
+line:   IF (ind_BUT2OLO2>0)             RO2 = RO2 + C(ind_BUT2OLO2)
+no eqntag found
+
+line:   IF (ind_HCOCO3>0)               RO2 = RO2 + C(ind_HCOCO3)
+no eqntag found
+
+line:   IF (ind_CO2H3CO3>0)             RO2 = RO2 + C(ind_CO2H3CO3)
+no eqntag found
+
+line:   IF (ind_LHMVKABO2>0)            RO2 = RO2 + C(ind_LHMVKABO2)
+no eqntag found
+
+line:   IF (ind_MACO3>0)                RO2 = RO2 + C(ind_MACO3)
+no eqntag found
+
+line:   IF (ind_MACRO2>0)               RO2 = RO2 + C(ind_MACRO2)
+no eqntag found
+
+line:   IF (ind_PRONO3BO2>0)            RO2 = RO2 + C(ind_PRONO3BO2)
+no eqntag found
+
+line:   IF (ind_HOCH2CH2O2>0)           RO2 = RO2 + C(ind_HOCH2CH2O2)
+no eqntag found
+
+line:   IF (ind_CH3COCH2O2>0)           RO2 = RO2 + C(ind_CH3COCH2O2)
+no eqntag found
+
+line:   IF (ind_IC3H7O2>0)              RO2 = RO2 + C(ind_IC3H7O2)
+no eqntag found
+
+line:   IF (ind_NC3H7O2>0)              RO2 = RO2 + C(ind_NC3H7O2)
+no eqntag found
+
+line:   IF (ind_LC4H9O2>0)              RO2 = RO2 + C(ind_LC4H9O2)
+no eqntag found
+
+line:   IF (ind_TC4H9O2>0)              RO2 = RO2 + C(ind_TC4H9O2)
+no eqntag found
+
+line:   IF (ind_LMEKO2>0)               RO2 = RO2 + C(ind_LMEKO2)
+no eqntag found
+
+line:   IF (ind_HCOCH2O2>0)             RO2 = RO2 + C(ind_HCOCH2O2)
+no eqntag found
+
+line:   IF (ind_EZCH3CO2CHCHO>0)        RO2 = RO2 + C(ind_EZCH3CO2CHCHO)
+no eqntag found
+
+line:   IF (ind_EZCHOCCH3CHO2>0)        RO2 = RO2 + C(ind_EZCHOCCH3CHO2)
+no eqntag found
+
+line:   IF (ind_CH3COCHO2CHO>0)         RO2 = RO2 + C(ind_CH3COCHO2CHO)
+no eqntag found
+
+line:   IF (ind_HCOCO2CH3CHO>0)         RO2 = RO2 + C(ind_HCOCO2CH3CHO)
+no eqntag found
+
+line:   IF (ind_C1ODC3O2C4OOH>0)        RO2 = RO2 + C(ind_C1ODC3O2C4OOH)
+no eqntag found
+
+line:   IF (ind_C1OOHC2O2C4OD>0)        RO2 = RO2 + C(ind_C1OOHC2O2C4OD)
+no eqntag found
+
+line:   IF (ind_C1ODC2O2C4OD>0)         RO2 = RO2 + C(ind_C1ODC2O2C4OD)
+no eqntag found
+
+line:   IF (ind_ISOPBDNO3O2>0)          RO2 = RO2 + C(ind_ISOPBDNO3O2)
+no eqntag found
+
+line:   IF (ind_LISOPACNO3O2>0)         RO2 = RO2 + C(ind_LISOPACNO3O2)
+no eqntag found
+
+line:   IF (ind_DB1O2>0)                RO2 = RO2 + C(ind_DB1O2)
+no eqntag found
+
+line:   IF (ind_DB2O2>0)                RO2 = RO2 + C(ind_DB2O2)
+no eqntag found
+
+line:   IF (ind_LME3FURANO2>0)          RO2 = RO2 + C(ind_LME3FURANO2)
+no eqntag found
+
+line:   IF (ind_NO3CH2CO3>0)            RO2 = RO2 + C(ind_NO3CH2CO3)
+no eqntag found
+
+line:   IF (ind_CH3COCO3>0)             RO2 = RO2 + C(ind_CH3COCO3)
+no eqntag found
+
+line:   IF (ind_LZCO3C23DBCOD>0)        RO2 = RO2 + C(ind_LZCO3C23DBCOD)
+no eqntag found
+
+line:   IF (ind_IBUTOLBO2>0)            RO2 = RO2 + C(ind_IBUTOLBO2)
+no eqntag found
+
+line:   IF (ind_IPRCO3>0)               RO2 = RO2 + C(ind_IPRCO3)
+no eqntag found
+
+line:   IF (ind_IC4H9O2>0)              RO2 = RO2 + C(ind_IC4H9O2)
+no eqntag found
+
+line:   ! MBO-related
+no eqntag found
+
+line:   IF (ind_LMBOABO2>0)             RO2 = RO2 + C(ind_LMBOABO2)
+no eqntag found
+
+line:   IF (ind_IPRHOCO3>0)             RO2 = RO2 + C(ind_IPRHOCO3)
+no eqntag found
+
+line:   IF (ind_LNMBOABO2>0)            RO2 = RO2 + C(ind_LNMBOABO2)
+no eqntag found
+
+line:   IF (ind_NC4OHCO3>0)             RO2 = RO2 + C(ind_NC4OHCO3)
+no eqntag found
+
+line:   ! APINENE-related:
+no eqntag found
+
+line:   IF (ind_LAPINABO2>0)            RO2 = RO2 + C(ind_LAPINABO2)
+no eqntag found
+
+line:   IF (ind_C96O2>0)                RO2 = RO2 + C(ind_C96O2)
+no eqntag found
+
+line:   IF (ind_C97O2>0)                RO2 = RO2 + C(ind_C97O2)
+no eqntag found
+
+line:   IF (ind_C98O2>0)                RO2 = RO2 + C(ind_C98O2)
+no eqntag found
+
+line:   IF (ind_C85O2>0)                RO2 = RO2 + C(ind_C85O2)
+no eqntag found
+
+line:   IF (ind_C86O2>0)                RO2 = RO2 + C(ind_C86O2)
+no eqntag found
+
+line:   IF (ind_PINALO2>0)              RO2 = RO2 + C(ind_PINALO2)
+no eqntag found
+
+line:   IF (ind_C96CO3>0)               RO2 = RO2 + C(ind_C96CO3)
+no eqntag found
+
+line:   IF (ind_C89CO3>0)               RO2 = RO2 + C(ind_C89CO3)
+no eqntag found
+
+line:   IF (ind_C85CO3>0)               RO2 = RO2 + C(ind_C85CO3)
+no eqntag found
+
+line:   IF (ind_OHMENTHEN6ONEO2>0)      RO2 = RO2 + C(ind_OHMENTHEN6ONEO2)
+no eqntag found
+
+line:   IF (ind_C511O2>0)               RO2 = RO2 + C(ind_C511O2)
+no eqntag found
+
+line:   IF (ind_C106O2>0)               RO2 = RO2 + C(ind_C106O2)
+no eqntag found
+
+line:   IF (ind_CO235C6CO3>0)           RO2 = RO2 + C(ind_CO235C6CO3)
+no eqntag found
+
+line:   IF (ind_CHOC3COCO3>0)           RO2 = RO2 + C(ind_CHOC3COCO3)
+no eqntag found
+
+line:   IF (ind_CO235C6O2>0)            RO2 = RO2 + C(ind_CO235C6O2)
+no eqntag found
+
+line:   IF (ind_C716O2>0)               RO2 = RO2 + C(ind_C716O2)
+no eqntag found
+
+line:   IF (ind_C614O2>0)               RO2 = RO2 + C(ind_C614O2)
+no eqntag found
+
+line:   IF (ind_HCOCH2CO3>0)            RO2 = RO2 + C(ind_HCOCH2CO3)
+no eqntag found
+
+line:   IF (ind_BIACETO2>0)             RO2 = RO2 + C(ind_BIACETO2)
+no eqntag found
+
+line:   IF (ind_CO23C4CO3>0)            RO2 = RO2 + C(ind_CO23C4CO3)
+no eqntag found
+
+line:   IF (ind_C109O2>0)               RO2 = RO2 + C(ind_C109O2)
+no eqntag found
+
+line:   IF (ind_C811CO3>0)              RO2 = RO2 + C(ind_C811CO3)
+no eqntag found
+
+line:   IF (ind_C89O2>0)                RO2 = RO2 + C(ind_C89O2)
+no eqntag found
+
+line:   IF (ind_C812O2>0)               RO2 = RO2 + C(ind_C812O2)
+no eqntag found
+
+line:   IF (ind_C813O2>0)               RO2 = RO2 + C(ind_C813O2)
+no eqntag found
+
+line:   IF (ind_C721CO3>0)              RO2 = RO2 + C(ind_C721CO3)
+no eqntag found
+
+line:   IF (ind_C721O2>0)               RO2 = RO2 + C(ind_C721O2)
+no eqntag found
+
+line:   IF (ind_C722O2>0)               RO2 = RO2 + C(ind_C722O2)
+no eqntag found
+
+line:   IF (ind_C44O2>0)                RO2 = RO2 + C(ind_C44O2)
+no eqntag found
+
+line:   IF (ind_C512O2>0)               RO2 = RO2 + C(ind_C512O2)
+no eqntag found
+
+line:   IF (ind_C513O2>0)               RO2 = RO2 + C(ind_C513O2)
+no eqntag found
+
+line:   IF (ind_CHOC3COO2>0)            RO2 = RO2 + C(ind_CHOC3COO2)
+no eqntag found
+
+line:   IF (ind_C312COCO3>0)            RO2 = RO2 + C(ind_C312COCO3)
+no eqntag found
+
+line:   IF (ind_HOC2H4CO3>0)            RO2 = RO2 + C(ind_HOC2H4CO3)
+no eqntag found
+
+line:   IF (ind_LNAPINABO2>0)           RO2 = RO2 + C(ind_LNAPINABO2)
+no eqntag found
+
+line:   IF (ind_C810O2>0)               RO2 = RO2 + C(ind_C810O2)
+no eqntag found
+
+line:   IF (ind_C514O2>0)               RO2 = RO2 + C(ind_C514O2)
+no eqntag found
+
+line:   IF (ind_CHOCOCH2O2>0)           RO2 = RO2 + C(ind_CHOCOCH2O2)
+no eqntag found
+
+line:   ! BPINENE-related:
+no eqntag found
+
+line:   IF (ind_ROO6R1O2>0)             RO2 = RO2 + C(ind_ROO6R1O2)
+no eqntag found
+
+line:   IF (ind_ROO6R3O2>0)             RO2 = RO2 + C(ind_ROO6R3O2)
+no eqntag found
+
+line:   IF (ind_RO6R1O2>0)              RO2 = RO2 + C(ind_RO6R1O2)
+no eqntag found
+
+line:   IF (ind_RO6R3O2>0)              RO2 = RO2 + C(ind_RO6R3O2)
+no eqntag found
+
+line:   IF (ind_BPINAO2>0)              RO2 = RO2 + C(ind_BPINAO2)
+no eqntag found
+
+line:   IF (ind_C8BCO2>0)               RO2 = RO2 + C(ind_C8BCO2)
+no eqntag found
+
+line:   IF (ind_NOPINDO2>0)             RO2 = RO2 + C(ind_NOPINDO2)
+no eqntag found
+
+line:   IF (ind_LNBPINABO2>0)           RO2 = RO2 + C(ind_LNBPINABO2)
+no eqntag found
+
+line:   ! aromatics-related:
+no eqntag found
+
+line:   IF (ind_BZBIPERO2>0)            RO2 = RO2 + C(ind_BZBIPERO2)
+no eqntag found
+
+line:   IF (ind_C6H5CH2O2>0)            RO2 = RO2 + C(ind_C6H5CH2O2)
+no eqntag found
+
+line:   IF (ind_TLBIPERO2>0)            RO2 = RO2 + C(ind_TLBIPERO2)
+no eqntag found
+
+line:   IF (ind_BZEMUCCO3>0)            RO2 = RO2 + C(ind_BZEMUCCO3)
+no eqntag found
+
+line:   IF (ind_BZEMUCO2>0)             RO2 = RO2 + C(ind_BZEMUCO2)
+no eqntag found
+
+line:   IF (ind_C5DIALO2>0)             RO2 = RO2 + C(ind_C5DIALO2)
+no eqntag found
+
+line:   IF (ind_NPHENO2>0)              RO2 = RO2 + C(ind_NPHENO2)
+no eqntag found
+
+line:   IF (ind_PHENO2>0)               RO2 = RO2 + C(ind_PHENO2)
+no eqntag found
+
+line:   IF (ind_CRESO2>0)               RO2 = RO2 + C(ind_CRESO2)
+no eqntag found
+
+line:   IF (ind_NCRESO2>0)              RO2 = RO2 + C(ind_NCRESO2)
+no eqntag found
+
+line:   IF (ind_TLEMUCCO3>0)            RO2 = RO2 + C(ind_TLEMUCCO3)
+no eqntag found
+
+line:   IF (ind_TLEMUCO2>0)             RO2 = RO2 + C(ind_TLEMUCO2)
+no eqntag found
+
+line:   IF (ind_C615CO2O2>0)            RO2 = RO2 + C(ind_C615CO2O2)
+no eqntag found
+
+line:   IF (ind_MALDIALCO3>0)           RO2 = RO2 + C(ind_MALDIALCO3)
+no eqntag found
+
+line:   IF (ind_EPXDLCO3>0)             RO2 = RO2 + C(ind_EPXDLCO3)
+no eqntag found
+
+line:   IF (ind_C3DIALO2>0)             RO2 = RO2 + C(ind_C3DIALO2)
+no eqntag found
+
+line:   IF (ind_MALDIALO2>0)            RO2 = RO2 + C(ind_MALDIALO2)
+no eqntag found
+
+line:   IF (ind_C6H5O2>0)               RO2 = RO2 + C(ind_C6H5O2)
+no eqntag found
+
+line:   IF (ind_C6H5CO3>0)              RO2 = RO2 + C(ind_C6H5CO3)
+no eqntag found
+
+line:   IF (ind_OXYL1O2>0)              RO2 = RO2 + C(ind_OXYL1O2)
+no eqntag found
+
+line:   IF (ind_C5CO14O2>0)             RO2 = RO2 + C(ind_C5CO14O2)
+no eqntag found
+
+line:   IF (ind_NBZFUO2>0)              RO2 = RO2 + C(ind_NBZFUO2)
+no eqntag found
+
+line:   IF (ind_BZFUO2>0)               RO2 = RO2 + C(ind_BZFUO2)
+no eqntag found
+
+line:   IF (ind_HCOCOHCO3>0)            RO2 = RO2 + C(ind_HCOCOHCO3)
+no eqntag found
+
+line:   IF (ind_CATEC1O2>0)             RO2 = RO2 + C(ind_CATEC1O2)
+no eqntag found
+
+line:   IF (ind_MCATEC1O2>0)            RO2 = RO2 + C(ind_MCATEC1O2)
+no eqntag found
+
+line:   IF (ind_C5DICARBO2>0)           RO2 = RO2 + C(ind_C5DICARBO2)
+no eqntag found
+
+line:   IF (ind_NTLFUO2>0)              RO2 = RO2 + C(ind_NTLFUO2)
+no eqntag found
+
+line:   IF (ind_TLFUO2>0)               RO2 = RO2 + C(ind_TLFUO2)
+no eqntag found
+
+line:   IF (ind_NPHEN1O2>0)             RO2 = RO2 + C(ind_NPHEN1O2)
+no eqntag found
+
+line:   IF (ind_NNCATECO2>0)            RO2 = RO2 + C(ind_NNCATECO2)
+no eqntag found
+
+line:   IF (ind_NCATECO2>0)             RO2 = RO2 + C(ind_NCATECO2)
+no eqntag found
+
+line:   IF (ind_NBZQO2>0)               RO2 = RO2 + C(ind_NBZQO2)
+no eqntag found
+
+line:   IF (ind_PBZQO2>0)               RO2 = RO2 + C(ind_PBZQO2)
+no eqntag found
+
+line:   IF (ind_NPTLQO2>0)              RO2 = RO2 + C(ind_NPTLQO2)
+no eqntag found
+
+line:   IF (ind_PTLQO2>0)               RO2 = RO2 + C(ind_PTLQO2)
+no eqntag found
+
+line:   IF (ind_NCRES1O2>0)             RO2 = RO2 + C(ind_NCRES1O2)
+no eqntag found
+
+line:   IF (ind_MNNCATECO2>0)           RO2 = RO2 + C(ind_MNNCATECO2)
+no eqntag found
+
+line:   IF (ind_MNCATECO2>0)            RO2 = RO2 + C(ind_MNCATECO2)
+no eqntag found
+
+line:   IF (ind_MECOACETO2>0)           RO2 = RO2 + C(ind_MECOACETO2)
+no eqntag found
+
+line:   IF (ind_CO2H3CO3>0)             RO2 = RO2 + C(ind_CO2H3CO3)
+no eqntag found
+
+line:   IF (ind_MALANHYO2>0)            RO2 = RO2 + C(ind_MALANHYO2)
+no eqntag found
+
+line:   IF (ind_NDNPHENO2>0)            RO2 = RO2 + C(ind_NDNPHENO2)
+no eqntag found
+
+line:   IF (ind_DNPHENO2>0)             RO2 = RO2 + C(ind_DNPHENO2)
+no eqntag found
+
+line:   IF (ind_NDNCRESO2>0)            RO2 = RO2 + C(ind_NDNCRESO2)
+no eqntag found
+
+line:   IF (ind_DNCRESO2>0)             RO2 = RO2 + C(ind_DNCRESO2)
+no eqntag found
+
+line:   IF (ind_C5CO2OHCO3>0)           RO2 = RO2 + C(ind_C5CO2OHCO3)
+no eqntag found
+
+line:   IF (ind_C6CO2OHCO3>0)           RO2 = RO2 + C(ind_C6CO2OHCO3)
+no eqntag found
+
+line:   IF (ind_MMALANHYO2>0)           RO2 = RO2 + C(ind_MMALANHYO2)
+no eqntag found
+
+line:   IF (ind_ACCOMECO3>0)            RO2 = RO2 + C(ind_ACCOMECO3)
+no eqntag found
+
+line:   IF (ind_C4CO2DBCO3>0)           RO2 = RO2 + C(ind_C4CO2DBCO3)
+no eqntag found
+
+line:   IF (ind_C5CO2DBCO3>0)           RO2 = RO2 + C(ind_C5CO2DBCO3)
+no eqntag found
+
+line:   IF (ind_NSTYRENO2>0)            RO2 = RO2 + C(ind_NSTYRENO2)
+no eqntag found
+
+line:   IF (ind_STYRENO2>0)             RO2 = RO2 + C(ind_STYRENO2)
+no eqntag found
+
+line:   ! pseudo first order rate constants    ! occurence
+no eqntag found
+
+line:   k1_RO2RCO3      = RO2 * k_RO2RCO3      ! 51
+no eqntag found
+
+line:   k1_RO2pRO2      = RO2 * k_RO2pRO2      ! 5
+no eqntag found
+
+line:   k1_RO2sRO2      = RO2 * k_RO2sRO2      ! 11+1
+no eqntag found
+
+line:   k1_RO2tRO2      = RO2 * k_RO2tRO2      ! 13+1
+no eqntag found
+
+line:   k1_RO2pORO2     = RO2 * k_RO2pORO2     ! 11+2
+no eqntag found
+
+line:   k1_RO2sORO2     = RO2 * k_RO2sORO2     ! 33+2
+no eqntag found
+
+line:   k1_RO2tORO2     = RO2 * k_RO2tORO2     ! 17
+no eqntag found
+
+line:   k1_RO2LISOPACO2 = RO2 * k_RO2LISOPACO2 ! 3
+no eqntag found
+
+line:   k1_RO2ISOPBO2   = RO2 * k_RO2ISOPBO2   ! 1
+no eqntag found
+
+line:   k1_RO2ISOPDO2   = RO2 * k_RO2ISOPDO2   ! 13
+no eqntag found
+
+line: #ENDINLINE {above lines go into the SUBROUTINES UPDATE_RCONST and UPDATE_PHOTO}
+no eqntag found
+
+line: #INLINE F90_RATES
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_SIV_H2O2 (k_298,tdep,cHp,temp)
+no eqntag found
+
+line:     ! special rate function for S(IV) + H2O2
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: k_298 ! k at T = 298.15K
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: tdep  ! temperature dependence
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: cHp   ! c(H+)
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp  ! temperature
+no eqntag found
+
+line:     INTRINSIC :: EXP
+no eqntag found
+
+line:     k_SIV_H2O2 = k_298 * EXP(tdep*(1._dp/temp-3.3540E-3_dp)) &
+no eqntag found
+
+line:       * cHp / (cHp+0.1_dp)
+no eqntag found
+
+line:   END FUNCTION k_SIV_H2O2
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_3rd_iupac(temp,cair,k0_300K,n,kinf_300K,m,fc)
+no eqntag found
+
+line:     ! IUPAC three body reaction formula (iupac.pole-ether.fr)
+no eqntag found
+
+line:     INTRINSIC :: LOG10
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: cair      ! air concentration [molecules/cm3]
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: k0_300K   ! low pressure limit at 300 K
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: n         ! exponent for low pressure limit
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: kinf_300K ! high pressure limit at 300 K
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: m         ! exponent for high pressure limit
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: fc        ! broadening factor (e.g. 0.45 or 0.6...)
+no eqntag found
+
+line:     REAL                 :: nu        ! N
+no eqntag found
+
+line:     REAL                 :: zt_help, k0_T, kinf_T, k_ratio
+no eqntag found
+
+line:     zt_help = 300._dp/temp
+no eqntag found
+
+line:     k0_T    = k0_300K   * zt_help**(n) * cair ! k_0   at current T
+no eqntag found
+
+line:     kinf_T  = kinf_300K * zt_help**(m)        ! k_inf at current T
+no eqntag found
+
+line:     k_ratio = k0_T/kinf_T
+no eqntag found
+
+line:     nu      = 0.75-1.27*LOG10(fc)
+no eqntag found
+
+line:     k_3rd_iupac = k0_T/(1._dp+k_ratio)* &
+no eqntag found
+
+line:       fc**(1._dp/(1._dp+(LOG10(k_ratio)/nu)**2))
+no eqntag found
+
+line:   END FUNCTION k_3rd_iupac
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION alpha_AN(n,ro2type,bcarb,gcarb,abic,temp,cair)
+no eqntag found
+
+line:   ! Alkyl nitrate yields dependent on T and P according to
+no eqntag found
+
+line:   ! Arey. ref3202 and Teng, ref3189
+no eqntag found
+
+line:     INTRINSIC :: LOG10
+no eqntag found
+
+line:     INTEGER,  INTENT(IN) :: n         ! number of heavy atoms (C, O, N) except the O atom of beta-carbonyls
+no eqntag found
+
+line:     INTEGER,  INTENT(IN) :: ro2type   ! 1, 2 or 3 for primary, secondary and tertiary RO2
+no eqntag found
+
+line:     INTEGER,  INTENT(IN) :: bcarb     ! 1 for beta-carbonyl group, 0 for none
+no eqntag found
+
+line:     INTEGER,  INTENT(IN) :: gcarb     ! 1 for gamma-carbonyl group, 0 for none
+no eqntag found
+
+line:     INTEGER,  INTENT(IN) :: abic      ! 1 for bicyclic peroxy from aromatics, 0 for none
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: cair      ! air concentration [molecules/cm3]
+no eqntag found
+
+line:     REAL(dp), PARAMETER  :: alpha=2.E-22, beta=1.0, Yinf_298K=0.43, F=0.41, m0=0., minf=8.0
+no eqntag found
+
+line:     REAL(dp)             :: m           ! factor for primary, secondary and tertiary RO2
+no eqntag found
+
+line:     REAL(dp)             :: bcf,gcf,abf ! reduction factors for the presence of beta-carbonyl and gamma-carbonyl group and a bicyclic peroxy from aromatics
+no eqntag found
+
+line:     REAL(dp)             :: Y0_298K, Y0_298K_tp, Yinf_298K_t, zeta, k_ratio
+no eqntag found
+
+line:     m = 1. ! According to Teng, ref3189
+no eqntag found
+
+line:     IF (bcarb .EQ. 1) THEN
+no eqntag found
+
+line:       bcf = 0.19 ! derived from Praske, ref3190: alpha_AN = 0.03 for the secondary HMKO2 relative to alpha_AN for 6C RO2 (0.16)
+no eqntag found
+
+line:     ELSE IF (bcarb .EQ. 0) THEN
+no eqntag found
+
+line:       bcf = 1.
+no eqntag found
+
+line:     ELSE
+no eqntag found
+
+line:       bcf = 1.
+no eqntag found
+
+line:     ENDIF
+no eqntag found
+
+line:     IF (gcarb .EQ. 1) THEN
+no eqntag found
+
+line:       gcf = 0.44 ! derived from Praske, ref3190: alpha_AN = 0.07 for the primary HMKO2 relative to alpha_AN for 6C RO2 (0.16)
+no eqntag found
+
+line:     ELSE IF (gcarb .EQ. 0) THEN
+no eqntag found
+
+line:       gcf = 1.
+no eqntag found
+
+line:     ELSE
+no eqntag found
+
+line:       gcf = 1.
+no eqntag found
+
+line:     ENDIF
+no eqntag found
+
+line:     IF (abic .EQ. 1) THEN
+no eqntag found
+
+line:       abf = 0.24 ! ratio of AN-yield for toluene (Elrod et al., ref3180), 5.5 % (at 200 torr), and this SAR for linear alkyl RO2 with 9 heavy atoms, 23.3 %
+no eqntag found
+
+line:     ELSE IF (abic .EQ. 0) THEN
+no eqntag found
+
+line:       abf = 1.
+no eqntag found
+
+line:     ENDIF
+no eqntag found
+
+line:     Y0_298K     = alpha*EXP(beta*n)
+no eqntag found
+
+line:     Y0_298K_tp  = Y0_298K * cair * (temp/298)**(-m0)
+no eqntag found
+
+line:     Yinf_298K_t = Yinf_298K * (temp/298)**(-minf)
+no eqntag found
+
+line:     zeta        = 1/(1+LOG10(Y0_298K_tp/Yinf_298K_t)**2)
+no eqntag found
+
+line:     k_ratio     = (Y0_298K_tp/(1+Y0_298K_tp/Yinf_298K_t))*F**zeta
+no eqntag found
+
+line:     alpha_AN    = k_ratio/(1+k_ratio) * m * bcf * gcf * abf
+no eqntag found
+
+line:   END FUNCTION alpha_AN
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_limited (k3rd,cHp)
+no eqntag found
+
+line:     ! diffusion limitation caps 3rd order rate coefficients
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: k3rd  ! 3rd order rate coefficient
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: cHp   ! c(H+)
+no eqntag found
+
+line:     REAL(dp), PARAMETER  :: DiffLimit = 1E10 ! diffusion limitation [M-1s-1]
+no eqntag found
+
+line:     INTRINSIC :: EXP
+no eqntag found
+
+line:     k_limited = 1._dp / ( 1._dp/k3rd + cHp/DiffLimit)
+no eqntag found
+
+line:   END FUNCTION k_limited
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_N2_O(temp,temp_ion)
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp_ion  ! ion temperature [K]
+no eqntag found
+
+line:     REAL                 :: temp_mean
+no eqntag found
+
+line:     temp_mean = (temp_ion + temp)/2
+no eqntag found
+
+line:     k_N2_O = 1.4E-10*(300./temp_mean)**0.44
+no eqntag found
+
+line:   END FUNCTION k_N2_O
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_Op_O2(temp,temp_ion)
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp_ion  ! ion temperature [K]
+no eqntag found
+
+line:     REAL(dp)             :: temp_mean
+no eqntag found
+
+line:     temp_mean  = 0.667*temp_ion + 0.333*temp
+no eqntag found
+
+line:     k_Op_O2  = 2.82E-11 - 7.74E-12*(temp_mean/300.) + &
+no eqntag found
+
+line:       1.073E-12*(temp_mean/300.)**2 - 5.17E-14*(temp_mean/300.)**3 + &
+no eqntag found
+
+line:       9.65E-16*(temp_mean/300.)**4
+no eqntag found
+
+line:   END FUNCTION k_Op_O2
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_Op_N2(temp,temp_ion)
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp      ! temperature [K]
+no eqntag found
+
+line:     REAL(dp), INTENT(IN) :: temp_ion  ! ion temperature [K]
+no eqntag found
+
+line:     REAL(dp)             :: temp_mean
+no eqntag found
+
+line:     temp_mean = 0.6363*temp_ion + 0.3637*temp
+no eqntag found
+
+line:     k_Op_N2 = 1.533E-12 - 5.92E-13*(temp_mean/300.) + 8.6E-14*(temp_mean/300.)**2
+no eqntag found
+
+line:   END FUNCTION k_Op_N2
+no eqntag found
+
+line:   ELEMENTAL REAL(dp) FUNCTION k_RO2_HO2(temp,nC)
+no eqntag found
+
+line:     real(dp), intent(in) :: temp      ! temperature [K]
+no eqntag found
+
+line:     integer, intent(in)  :: nC        ! q-ty of C atoms
+no eqntag found
+
+line:     k_RO2_HO2 = 2.91E-13*EXP(1300./temp)*(1.-EXP(-0.245*REAL(nC,dp))) ! ref1630
+no eqntag found
+
+line:   END FUNCTION k_RO2_HO2
+no eqntag found
+
+line:   ELEMENTAL REAL(DP) FUNCTION K_MD (A,B,C1,C2,C3,pH,temp,SEL)
+no eqntag found
+
+line:     ! SPECIFIC RATE FUNCTION FOR METHANE DIOL CHEMISTRY 
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: A   ! A
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: B   ! B
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: C1  ! C1
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: C2  ! C2
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: C3  ! C3
+no eqntag found
+
+line:     REAL,     INTENT(IN) :: pH  ! pH
+no eqntag found
+
+line:     REAL(DP), INTENT(IN) :: temp  ! temp
+no eqntag found
+
+line:     INTEGER,  INTENT(IN) :: SEL
+no eqntag found
+
+line:     REAL                 :: fac1,fac2,fac3,fac_back
+no eqntag found
+
+line:     INTRINSIC :: REAL
+no eqntag found
+
+line:     fac1 = REAL(C1,DP) * 10.**(-REAL(pH,DP))
+no eqntag found
+
+line:     fac2 = EXP(REAL(C2,DP)-(REAL(C3,DP)/temp))*10**(REAL(pH,DP))
+no eqntag found
+
+line:     fac3 = EXP(REAL(A,DP)-(REAL(B,DP)/temp))
+no eqntag found
+
+line:     fac_back = EXP(REAL(1.449E-2,DP)+(REAL(5.609E2,DP)/temp))
+no eqntag found
+
+line:     SELECT CASE (SEL)
+no eqntag found
+
+line:       CASE (1)
+no eqntag found
+
+line:       K_MD = (1._dp + fac1 + fac2) * fac3 
+no eqntag found
+
+line:       CASE (2)
+no eqntag found
+
+line:       K_MD = ((1._dp + fac1 + fac2) * fac3)/fac_back
+no eqntag found
+
+line:     END SELECT
+no eqntag found
+
+line:   END FUNCTION K_MD
+no eqntag found
+
+line: #ENDINLINE {above lines go into MODULE messy_mecca_kpp_Rates}
+no eqntag found
+
+line: #EQUATIONS
+no eqntag found
+
+line: {<G1nnn> ------------------------------- O -------------------------}{@\myhline}
+eqntag     = G1nnn
+baseeqntag = G1
+klatex    = \myhline
+
+line: <G1000>  O2   + O1D      = O3P + O2  {+ 189. kJmol} : {%UpStTrG} 3.3E-11*EXP(55./temp); {&3245}
+eqntag     = G1000
+baseeqntag = G1000
+equation  = <G1000>  O2   + O1D      = O3P + O2  {+ 189. kJmol} : {%UpStTrG} 3.3E-11*EXP(55./temp); {&3245}
+marker    = UpStTrG
+no klatex found
+no kexplatex found
+no note found

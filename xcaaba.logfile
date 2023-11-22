@@ -1,0 +1,57 @@
+xcaaba was started on 2023-11-22 at 16:47:49 by user taras on machine taras
+No config file (*.ini).
+
+You can create a new chemical mechanism with xmecca now.
+This is necessary, if:
+- you have changed any of the *.eqn, *.spc, or *.kpp files
+- you have changed your MECCA config (*.ini) file
+Start xmecca? [y|n|q|default=n] Choose an option:
+s = Start from scratch ("gmake clean", then compile)
+c = Compile recently changed files with "gmake" [default]
+r = Run existing executable
+q = Quit
+You have chosen: s = Start from scratch ("gmake clean", then compile)
+
+------------------------------------------------------------------------------
+
+gmake clean
+
+gmake validate
+exit status from "gmake validate" is: 0
+
+------------------------------------------------------------------------------
+
+gmake (writing output to gmake.log)
+exit status from "gmake" is: 0
+
+------------------------------------------------------------------------------
+
+Choose a namelist file from the nml/ directory:
+ 1) caaba_CH4.nml
+ 2) caaba_barrow.nml
+ 3) caaba_benchmark.nml
+ 4) caaba_cloud.nml
+ 5) caaba_delhi.nml
+ 6) caaba_example.nml
+ 7) caaba_example_org.nml
+ 8) caaba_free_trop.nml
+ 9) caaba_frostflower.nml
+10) caaba_isoo_o3box.nml
+11) caaba_lab.nml
+12) caaba_lab_nox.nml
+13) caaba_mbl.nml
+14) caaba_mcfct.nml
+15) caaba_mom.nml
+16) caaba_mtchem.nml
+17) caaba_multirun.nml
+18) caaba_photo.nml
+19) caaba_simple.nml
+20) caaba_skeleton.nml
+21) caaba_strato.nml
+22) caaba_traject.nml
+23) caaba_volcano.nml
+24) caaba_zeroair.nml
+25) mecca_benchmark.nml
+26) mecca_default.nml
+ q) quit
+The default is caaba_example.nml (same as last time)

@@ -1,0 +1,5 @@
+This directory contains input files for CAABA in the multirun mode.
+Details are described in the CAABA/MECCA user manual.
+
+Use the following #SETFIX when testing multirun with example_small:
+set setfixlist   = "CO2; O2; N2; O3; NO2; C5H8; CO;"

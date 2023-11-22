@@ -1,0 +1,227 @@
+./sfmakedepend --file=depend.mk caaba.f90 caaba_io.f90 caaba_mem.f90 caaba_module.f90 messy_cloudj_box.f90 messy_cloudj_cld_sub_mod.f90 messy_cloudj.f90 messy_cloudj_fjx_cmn_mod.f90 messy_cloudj_fjx_init_mod.f90 messy_cloudj_fjx_sub_mod.f90 messy_cmn_photol_mem.f90 messy_dissoc_box.f90 messy_dissoc.f90 messy_jval_box.f90 messy_jval.f90 messy_main_blather.f90 messy_main_constants_chemprop_mem.f90 messy_main_constants_mem.f90 messy_main_control_cb.f90 messy_main_rnd.f90 messy_main_rnd_lux.f90 messy_main_rnd_mtw.f90 messy_main_rnd_mtw_ja.f90 messy_main_timer.f90 messy_main_tools.f90 messy_main_tools_kp4_compress.f90 messy_mecca_aero.f90 messy_mecca_box.f90 messy_mecca.f90 messy_mecca_khet.f90 messy_mecca_kpp.f90 messy_mecca_kpp_function.f90 messy_mecca_kpp_global.f90 messy_mecca_kpp_initialize.f90 messy_mecca_kpp_integrator.f90 messy_mecca_kpp_jacobian.f90 messy_mecca_kpp_jacobiansp.f90 messy_mecca_kpp_linearalgebra.f90 messy_mecca_kpp_monitor.f90 messy_mecca_kpp_parameters.f90 messy_mecca_kpp_precision.f90 messy_mecca_kpp_rates.f90 messy_mecca_kpp_util.f90 messy_radjimt_box.f90 messy_radjimt.f90 messy_readj_box.f90 messy_readj.f90 messy_sappho_box.f90 messy_sappho.f90 messy_semidep_box.f90 messy_traject_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_constants_mem.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_rnd_lux.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_rnd_mtw.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_rnd_mtw_ja.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_precision.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cmn_photol_mem.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_jacobiansp.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_monitor.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_tools_kp4_compress.f90
+messy_main_rnd_mtw_ja.f90:75:37:
+
+   75 |   integer(INT32), parameter :: avec = Z'9908b0df'
+      |                                     1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:89:46:
+
+   89 |   integer(INT32), parameter :: MT19937_MATA  = Z'9908b0df'
+      |                                              1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:90:46:
+
+   90 |   integer(INT32), parameter :: MT19937_WMASK = Z'ffffffff'
+      |                                              1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:91:46:
+
+   91 |   integer(INT32), parameter :: MT19937_UMASK = Z'80000000'
+      |                                              1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:92:46:
+
+   92 |   integer(INT32), parameter :: MT19937_LMASK = Z'7fffffff'
+      |                                              1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:99:46:
+
+   99 |   integer(INT32), parameter :: MT19937_MASKB = Z'9d2c5680'
+      |                                              1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:100:46:
+
+  100 |   integer(INT32), parameter :: MT19937_MASKC = Z'efc60000'
+      |                                              1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_parameters.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c caaba_mem.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_blather.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_constants_chemprop_mem.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_readj.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_sappho.f90
+messy_main_rnd_mtw_ja.f90:1146:35:
+
+ 1146 |   integer(INT32), parameter :: ZE = Z'eeeeeeee'
+      |                                   1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:1147:35:
+
+ 1147 |   integer(INT32), parameter :: ZC = Z'cccccccc'
+      |                                   1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:1148:35:
+
+ 1148 |   integer(INT32), parameter :: Z8 = Z'88888888'
+      |                                   1
+Warning: BOZ literal constant at (1) is neither a data-stmt-constant nor an actual argument to INT, REAL, DBLE, or CMPLX intrinsic function
+messy_main_rnd_mtw_ja.f90:1205:7:
+
+ 1205 |   dc = Z'0'
+      |       1
+Warning: BOZ literal constant at (1) is neither a DATA statement value nor an actual argument of INT/REAL/DBLE/CMPLX intrinsic subprogram
+messy_main_rnd_mtw_ja.f90:1129:7:
+
+ 1129 |   dc = Z'0'
+      |       1
+Warning: BOZ literal constant at (1) is neither a DATA statement value nor an actual argument of INT/REAL/DBLE/CMPLX intrinsic subprogram
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cloudj_fjx_cmn_mod.f90
+messy_cloudj_fjx_cmn_mod.f90:79:39:
+
+   79 |       integer, parameter  :: JTAUMX = (N_ - 4*JXL_)/2
+      |                                       1
+Warning: Integer division truncated to constant ‘100’ at (1) [-Winteger-division]
+messy_main_rnd_mtw_ja.f90:269:25:
+
+  269 | subroutine gf2x_print_bit(this)
+      |                         ^
+Warning: ‘gf2x_print_bit’ defined but not used [-Wunused-function]
+messy_main_rnd_mtw_ja.f90:290:25:
+
+  290 | subroutine gf2x_print_hex(this)
+      |                         ^
+Warning: ‘gf2x_print_hex’ defined but not used [-Wunused-function]
+messy_main_rnd_mtw_ja.f90:665:34:
+
+  665 | subroutine gf2x_mult_assign_normal(a,b)
+      |                                  ^
+Warning: ‘gf2x_mult_assign_normal’ defined but not used [-Wunused-function]
+messy_main_rnd_mtw_ja.f90:781:22:
+
+  781 | subroutine gf2x_divrem(q,r,a,b)
+      |                      ^
+Warning: ‘gf2x_divrem’ defined but not used [-Wunused-function]
+messy_main_rnd_mtw_ja.f90:849:19:
+
+  849 | subroutine gf2x_rem(r,a,b)
+      |                   ^
+Warning: ‘gf2x_rem’ defined but not used [-Wunused-function]
+messy_main_rnd_mtw_ja.f90:1110:0:
+
+ 1110 | function deg_i64(a) result(d)
+      | 
+Warning: ‘deg_i64’ defined but not used [-Wunused-function]
+messy_main_rnd_mtw_ja.f90:1193:23:
+
+ 1193 | subroutine mult_i32_old(a,b,ch,cl)
+      |                       ^
+Warning: ‘mult_i32_old’ defined but not used [-Wunused-function]
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c caaba_io.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cloudj_fjx_sub_mod.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_function.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_global.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_tools.f90
+messy_cloudj_fjx_sub_mod.f90:653:5:
+
+  653 |    99 continue
+      |     1
+Warning: Label 99 at (1) defined but not used [-Wunused-label]
+... external include file: messy_mecca_tag_parameters.inc
+... external include file: messy_mecca_tag_parameters.inc
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_initialize.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_rates.f90
+... external include file: messy_mecca_tag_parameters.inc
+... external module: netcdf
+... external module: messy_e4chem
+... external module: netcdf
+... external module: messy_e4chem_box
+... external module: f90_unix_regexp
+... external module: messy_mecca_tag_box
+... external module: messy_mecca_tag_io_box
+... external module: messy_mecca_tag_ic_box
+... external module: messy_mecca_tag_rc_box
+... external module: messy_mecca_tag_box
+... external module: messy_mecca_tag_ih_box
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_util.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_jacobian.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_linearalgebra.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cloudj_cld_sub_mod.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cloudj_fjx_init_mod.f90
+messy_mecca_kpp_util.f90:645:20:
+
+  645 |       do i=1,NLOOKAT
+      |                    1
+Warning: DO loop at (1) will be executed zero times [-Wzerotrip]
+messy_mecca_kpp_util.f90:590:53:
+
+  590 |                    (C(LOOKAT(i))/CFACTOR, i=1,NLOOKAT)
+      |                                                     1
+Warning: DO loop at (1) will be executed zero times [-Wzerotrip]
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_timer.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_rnd.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_dissoc.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_jval.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_radjimt.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_readj_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_sappho_box.f90
+messy_radjimt.f90:2278:19:
+
+ 2278 |   SUBROUTINE H2O_IR(T,HT,Z)
+      |                   ^
+Warning: ‘h2o_ir’ defined but not used [-Wunused-function]
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cloudj.f90
+messy_dissoc.f90:4193:19:
+
+ 4193 |   subroutine linfit(n, j, x, y, xwant, ywant)
+      |                   ^
+Warning: ‘linfit’ defined but not used [-Wunused-function]
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_cloudj_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_radjimt_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_dissoc_box.f90
+messy_mecca_kpp_linearalgebra.f90:8286:46:
+
+ 8286 |       IF (incX .EQ. incY) IF (incX-1) 5,20,60
+      |                                              1
+Warning: Fortran 2018 deleted feature: Arithmetic IF statement at (1)
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_jval_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp_integrator.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_kpp.f90
+messy_mecca_kpp.f90:293:31:
+
+  293 |     SUBROUTINE montecarlo_check
+      |                               ^
+Warning: ‘montecarlo_check’ defined but not used [-Wunused-function]
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_aero.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_semidep_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_traject_box.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c caaba_module.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_khet.f90
+caaba_module.f90:756:25:
+
+  756 |        zmbl = zmbl_array(mod((mod_tim_hr+5.5), 24.))
+      |                         1
+Warning: Legacy Extension: REAL array index at (1)
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_mecca_box.f90
+messy_semidep_box.f90:628:24:
+
+  628 |     SUBROUTINE injection
+      |                        ^
+Warning: ‘injection’ defined but not used [-Wunused-function]
+messy_semidep_box.f90:801:26:
+
+  801 |     SUBROUTINE dilute_once
+      |                          ^
+Warning: ‘dilute_once’ defined but not used [-Wunused-function]
+messy_mecca_box.f90:254:48:
+
+  254 |         lwc_name(jb) = 'lwc_a'//str(jb,'(I2.2)')
+      |                                                1
+Warning: CHARACTER expression will be truncated in assignment (7/69) at (1) [-Wcharacter-truncation]
+messy_mecca_box.f90:1807:26:
+
+ 1807 |     SUBROUTINE x0_strato20
+      |                          ^
+Warning: ‘x0_strato20’ defined but not used [-Wunused-function]
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c messy_main_control_cb.f90
+gfortran -DNETCDF -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division -I/home/taras/Fortran_Compiler/Library/include -c caaba.f90
+gfortran -cpp -g -O0 -Wall -ffree-line-length-none -fno-range-check -fbacktrace -fbounds-check -fdump-core -fimplicit-none -fall-intrinsics -fallow-invalid-boz -Wno-unused-variable -frecursive -Wno-unused-dummy-argument -Wno-conversion -Winteger-division caaba.o caaba_io.o caaba_mem.o caaba_module.o messy_cloudj_box.o messy_cloudj_cld_sub_mod.o messy_cloudj.o messy_cloudj_fjx_cmn_mod.o messy_cloudj_fjx_init_mod.o messy_cloudj_fjx_sub_mod.o messy_cmn_photol_mem.o messy_dissoc_box.o messy_dissoc.o messy_jval_box.o messy_jval.o messy_main_blather.o messy_main_constants_chemprop_mem.o messy_main_constants_mem.o messy_main_control_cb.o messy_main_rnd.o messy_main_rnd_lux.o messy_main_rnd_mtw.o messy_main_rnd_mtw_ja.o messy_main_timer.o messy_main_tools.o messy_main_tools_kp4_compress.o messy_mecca_aero.o messy_mecca_box.o messy_mecca.o messy_mecca_khet.o messy_mecca_kpp.o messy_mecca_kpp_function.o messy_mecca_kpp_global.o messy_mecca_kpp_initialize.o messy_mecca_kpp_integrator.o messy_mecca_kpp_jacobian.o messy_mecca_kpp_jacobiansp.o messy_mecca_kpp_linearalgebra.o messy_mecca_kpp_monitor.o messy_mecca_kpp_parameters.o messy_mecca_kpp_precision.o messy_mecca_kpp_rates.o messy_mecca_kpp_util.o messy_radjimt_box.o messy_radjimt.o messy_readj_box.o messy_readj.o messy_sappho_box.o messy_sappho.o messy_semidep_box.o messy_traject_box.o -L/home/taras/Fortran_Compiler/Library/lib -lnetcdff -lnetcdf -o caaba.exe

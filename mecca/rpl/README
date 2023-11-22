@@ -1,0 +1,12 @@
+Replacement files can be used to modify, reduce or extend the standard
+chemistry mechanism in gas.eqn.
+
+IMPORTANT: If you apply any *.rpl files to your reaction mechanism, you
+do so at your own risk! Many files provided here are under development.
+For more information, please contact the authors mentioned in the *.rpl
+files.
+
+When adding a new reaction, please assign a PRELIMINARY equation tag by
+adding your initials as a suffix, e.g. John Doe could use "<G0001JD>".
+
+See also example.rpl.
